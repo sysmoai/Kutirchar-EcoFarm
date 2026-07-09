@@ -51,6 +51,7 @@ input:focus, select:focus, textarea:focus {
 /* Responsive visibility helpers */
 @media (max-width: 768px) {
   .desktop-only { display: none !important; }
+  .mobile-only { display: flex !important; }
 }
 @media (min-width: 769px) {
   .mobile-only { display: none !important; }

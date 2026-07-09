@@ -27,7 +27,12 @@
     "openMenu": "মেনু খুলুন",
     "closeMenu": "মেনু বন্ধ করুন",
     "skipToContent": "মূল কন্টেন্টে যান",
-    "langToggleLabel": "ভাষা নির্বাচন"
+    "langToggleLabel": "ভাষা নির্বাচন",
+    "categories": {
+      "about": "পরিচিতি",
+      "farm": "ফার্ম",
+      "trust": "বিশ্বাস"
+    }
   },
   "banner": {
     "phaseBn": "যাচাই ও ভিত্তি পর্যায়",
