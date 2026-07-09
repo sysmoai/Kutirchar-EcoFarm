@@ -1,0 +1,38 @@
+ROLE: তুমি একজন world-class creative front-end engineer + motion designer + science storyteller। Prompt 1–3-এ repo import + ৮ পেজ দ্বিভাষিক কন্টেন্ট + contact + people + SEO হয়ে গেছে। এখন লক্ষ্য: পুরো সাইটকে top 0.001% cinematic, বৈজ্ঞানিক, চক্রাকার story-তে রূপ দেওয়া — যেখানে প্রতিটি animation অর্থ বহন করে (decoration নয়)।
+
+0) GUARDRAILS (override নয়)
+- Brand token/font/logo brand.ts থেকে; নতুন রঙ/ফন্ট নয়; logo src/imports/image.png অপরিবর্তিত।
+- Content = Notion Content Pack (v2) হুবহু; নতুন দাবি/সংখ্যা নয়।
+- Privacy hard-stop: NID/PIN/ঠিকানা/আইনি নথি কোথাও নয়।
+- Science ভাষা: "AI-ভিত্তিক জাত উন্নয়ন + selective breeding" — পাবলিকলি "lab gene editing/genetic engineering" নয়।
+
+1) MOTION STACK (Vite/React 18)
+Framer Motion (motion/react) · GSAP + ScrollTrigger · Lenis smooth scroll · Lottie (micro-illustration) · optional @react-three/fiber+drei (lazy, desktop-only)। শুধু transform/opacity; 60fps; CLS<0.1; IntersectionObserver; heavy scene lazy + per-route code-split।
+
+2) MOTION TOKENS (brand.ts extend, centralized)
+duration fast150/base300/slow600/scene900–1200ms · easing enter cubic-bezier(0.22,1,0.36,1)/exit ease-in/scrub linear · stagger 60–90ms · parallax ≤12% · hover lift 2–4px।
+
+3) ACCESSIBILITY (আবশ্যক)
+prefers-reduced-motion → সব motion off/opacity-only; motion কখনো content/focus block করবে না; autoplay muted+pause; keyboard operable; aria live যেখানে দরকার।
+
+4) SECTION STORYBOARD (Notion "Storyboard" + "Domain Science" হুবহু follow)
+- Global: navbar shrink+blur, toggle cross-fade, logo mask-reveal, route fade+slide+scroll-top।
+- Home: hero wordmark reveal + tagline bn/en swap + char-land parallax; ecosystem teaser loop; trust count-up; phase mini-scrub।
+- Project: founder quote fade; ৫-বছর roadmap = GSAP pinned horizontal scrub, phase-gate "unlock" animation; people stagger।
+- Proof: Stop Rules slam-in; 7-gap ledger row stagger + progress; finance gauge grow।
+- Ecosystem (CENTERPIECE): ৮-node circular loop; scroll-scrub এ flowing particles গবাদিপশু→গোবর→বায়োগ্যাস(CH₄)→শক্তি→স্লারি→জৈব সার→ঘাস/সাইলেজ→খাদ্য→দুধ/জাত উন্নয়ন→লুপ; node expand → science card; কেন্দ্রে helix; feed-cost animated drop।
+- Products: Now/Next/Later chip fill + filter layout-animate।
+- Digital: 4-layer build-up + connection line draw।
+- Updates: timeline reveal + filter chip।
+- Contact: field micro-interaction + validation + pin drop।
+
+5) SCIENCE ACCURACY
+জাত উন্নয়ন (AI/verified semen/F1/record), silage (DM২৫–৩০%, chop১.৫–২.৫সেমি, molasses২–৪%, pH৩.৮–৪.৫, ২১–৩০দিন), biogas (anaerobic→CH₄→slurry, 6m³), bio-slurry→জৈব সার→ঘাস, solar (৫–১০kWp, self-use→SREDA), dairy (F1→দুধ) — প্রতিটি node card-এ সঠিক বিজ্ঞান, ভুল দাবি নয়।
+
+6) PERFORMANCE
+Lighthouse ≥95 (motion সত্ত্বেও); LCP<2.5s CLS<0.1 INP<200ms; heavy animation route-split + lazy; poster/fallback; low-power device এ scene degrade।
+
+7) ACCEPTANCE
+প্রতিটি section-এ meaningful motion; ecosystem loop scroll-scrub কাজ করছে; reduced-motion সম্পূর্ণ সম্মান; দুই ভাষায় label; hardcoded text নেই; Lighthouse ≥95; pnpm run build clean; console error নেই।
+
+8) RULE: ধরে নেবে না — missing/অস্পষ্ট হলে থেমে জিজ্ঞেস করবে।

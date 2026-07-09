@@ -8,30 +8,12 @@
     "shortDesc": "Dairy · Biogas · Solar · Silage",
     "phase": "Verification & Foundation Phase"
   },
-  "home": {
-    "heroTag": "VERIFICATION & FOUNDATION PHASE",
-    "heroTitle": "Kutirchar EcoFarm",
-    "heroTagline": "Smart Cattle & Circular Energy Ecosystem",
-    "heroSubtitle": "Dairy · Biogas · Solar · Silage",
-    "heroCtaBank": "Bank & Govt Pack",
-    "heroCtaProducts": "Products & Services",
-    "heroCtaPartner": "Partnership",
-    "whatIsTitle": "What is Kutirchar EcoFarm?",
-    "whatIsDesc1": "A proof-based, phased rural smart farm in Kutirchar, Sirajganj.",
-    "readOverview": "Read Full Overview",
-    "ecosystemTitle": "The Circular Ecosystem",
-    "proofTitle": "Proof & Governance",
-    "updatesTitle": "Latest Updates",
-    "viewAllUpdates": "View All Updates",
-    "startPartnership": "Start Partnership Discussion",
-    "viewProofPack": "View Proof Pack"
-  },
   "nav": {
     "home": "Home",
-    "project": "The Project",
+    "project": "Project",
     "proof": "Proof & Governance",
     "ecosystem": "Ecosystem",
-    "products": "Products",
+    "products": "Products & Services",
     "digital": "Digital",
     "updates": "Updates",
     "contact": "Contact",
@@ -44,7 +26,7 @@
     "partnershipInquiry": "Partnership Inquiry",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
-    "skipToContent": "Skip to main content",
+    "skipToContent": "Skip to content",
     "langToggleLabel": "Select language"
   },
   "banner": {
@@ -57,56 +39,713 @@
     "addressLine2": "Sirajganj, Bangladesh",
     "navigate": "Navigate",
     "contactHeading": "Contact",
-    "inquiryForm": "Inquiry form",
+    "inquiryForm": "Inquiry Form",
     "trustHeading": "Trust Policy",
-    "trust1": "All claims are phase-gated and evidence-first. No NID, PIN, or sensitive identifiers are published.",
-    "trust2": "Zone B: non-private/ejmali land — removable use only. No permanent structures until legal verification.",
+    "trust1": "All claims are phase-gated and evidence-first. No NID, PIN, or sensitive identity documents are ever published.",
+    "trust2": "Zone B: non-private/ejmali land — removable use only. No permanent structures without legal verification.",
     "copyright": "© 2026 Kutirchar EcoFarm — Emon Hossain. All rights reserved. Brand locked: 21 June 2026.",
-    "motto": "Kutirchar EcoFarm — verification-first, evidence-based"
+    "motto": "Kutirchar EcoFarm — Verification-first, evidence-based"
+  },
+  "home": {
+    "heroTag": "Verification & Foundation Phase",
+    "heroTagline": "Smart Cattle & Circular Energy Ecosystem",
+    "heroSubtitle": "Dairy · Biogas · Solar · Silage — Kutirchar, Sirajganj, Bangladesh",
+    "heroPromise": "Starting with AI-based breed improvement — a proof-driven rural ecosystem built step by step. Each phase unlocks only with evidence from the previous one.",
+    "founderNote": "Founder Emon Hossain — CEO of SYSmoAI and lead of Bangladesh AI Mission. Passion: Bangladesh's soil, agriculture, and food self-sufficiency.",
+    "ctaBank": "Bank & Government Pack",
+    "ctaProducts": "Products & Services",
+    "ctaVisit": "Visit / Partnership",
+    "trustItems": [
+      { "label": "AI-based breed improvement", "value": "Verified semen only", "safe": true },
+      { "label": "Goat-first", "value": "Low capital, faster cash flow", "safe": true },
+      { "label": "Zone A — private", "value": "10 decimal, soil-test gated G+5-ready", "safe": true },
+      { "label": "Zone B — non-private", "value": "12 decimal, removable use only", "safe": true },
+      { "label": "Permanent construction", "value": "None without soil/boundary/drainage survey", "safe": false },
+      { "label": "EMI cap", "value": "≤ 50% of verified income", "safe": false }
+    ],
+    "whatIsTitle": "What is Kutirchar EcoFarm?",
+    "whatIsP1": "A proof-based, phased rural smart farm at Kutirchar, Sirajganj — starting with AI-based breed improvement (Artificial Insemination), alongside a goat nucleus, grass/silage, biogas, bio-slurry fertilizer, solar, and digital monitoring.",
+    "whatIsP2": "Every claim is gate-controlled: no phase begins without verified evidence from the previous one. No permanent construction without soil test, boundary survey, and legal clearance.",
+    "readOverview": "Read Full Overview",
+    "homeStopRule": "Non-negotiable stop rules: no permanent structures on Zone B until ejmali status is legally verified. No G+5 foundation without a passed SPT soil test. No blind filling without a confirmed drainage outlet. EMI must stay ≤ 50% of verified income.",
+    "stopRulesLabel": "Non-negotiable stop rules:",
+    "stats": [
+      { "num": "10", "unit": "decimal", "label": "Zone A — private" },
+      { "num": "12", "unit": "decimal", "label": "Zone B — ejmali (removable only)" },
+      { "num": "0", "unit": "permanent", "label": "Structures on Zone B (legal verification pending)" },
+      { "num": "~80", "unit": "decimal", "label": "Grass/silage field (~2 km away)" }
+    ],
+    "glanceTitle": "Project at a Glance",
+    "glance": [
+      { "label": "Location", "value": "Kutirchar, Bhadraghat, Kamarkhanda, Sirajganj" },
+      { "label": "Phase", "value": "Verification" },
+      { "label": "Focus", "value": "Breed improvement → goat nucleus → silage/grass → biogas → solar → expansion" },
+      { "label": "Land", "value": "10 decimal private + 12 decimal support + ~80 decimal grass/silage field" }
+    ],
+    "ecosystemTitle": "The Circular Ecosystem",
+    "ecosystemDesc": "Cattle → dung → biogas → bio-slurry → grass/silage → animal feed + solar = a circular, profitable system.",
+    "ecosystemNodes": [
+      { "icon": "🐄", "label": "Cattle & Breed Improvement", "value": "AI-based breed improvement + goat nucleus" },
+      { "icon": "⚗️", "label": "Biogas", "value": "Dung → energy & cooking gas" },
+      { "icon": "🌿", "label": "Bio-Slurry", "value": "Organic liquid fertilizer from digester" },
+      { "icon": "☀️", "label": "Solar", "value": "Farm power + load reduction" },
+      { "icon": "🌾", "label": "Silage / Grass", "value": "Pakchong-1 + BLRI Napier-3 surplus preservation" },
+      { "icon": "📊", "label": "Dashboard", "value": "CCTV + Starlink monitoring" }
+    ],
+    "seeFullFlow": "See Full Circular Flow",
+    "proofTitle": "Proof & Governance",
+    "proofDesc": "Built for bank officers, government partners, and serious investors. Every phase is locked to verified evidence. Open gaps are shown publicly — no hidden problems. Currently: 7 open gaps.",
+    "gaps": [
+      { "label": "Land documents", "status": "In Progress" },
+      { "label": "Boundary survey", "status": "In Progress" },
+      { "label": "SPT soil test", "status": "Not Started" },
+      { "label": "Zone B legal status", "status": "Open Gap" },
+      { "label": "Level & drainage survey", "status": "Not Started" }
+    ],
+    "viewFullAudit": "View Full Audit",
+    "govLabel": "Governance Policy",
+    "govQuote": "\"Verification-first, phased execution — the next phase unlocks only after evidence from the previous phase is confirmed.\"",
+    "govNote": "This means: no skipped steps. No future services claimed as current. No permanent construction until all verification gates pass.",
+    "whyTitle": "Why This Matters for Bangladesh",
+    "whyItems": [
+      "A working rural model for food self-sufficiency",
+      "Unused char land converted into income-generating assets",
+      "A documented project aligned with DLS/BLRI/SREDA/IDCOL/PKSF",
+      "A replicable playbook — applicable to other char regions"
+    ],
+    "updatesTitle": "Latest Updates",
+    "viewAllUpdates": "View All Updates",
+    "readFull": "Read Full Update",
+    "brandCtaKicker": "Complete Brand System",
+    "brandCtaTitle": "Brand Identity Guide — Complete System",
+    "brandCtaDesc": "Logo system · Color tokens · Typography · Seal · Export assets · AI agent tokens",
+    "brandCtaOpen": "Open Brand Guide",
+    "brandCtaDownload": "Download All Assets",
+    "partnerKicker": "Partnership & Collaboration",
+    "partnerTitle": "Bank, Government & Investor Inquiries",
+    "partnerDesc": "We welcome serious partnerships with banks, government agencies, NGOs, vendors, and investors. All documentation is available in the Proof & Governance section.",
+    "startPartnership": "Start Partnership Discussion",
+    "viewProofPack": "View Proof Pack"
   },
   "project": {
-    "heroTitle": "The Project",
-    "whatIsTitle": "What is Kutirchar EcoFarm?"
+    "heroTitle": "The Project — Overview",
+    "heroSubtitle": "An evidence-first smart farm and circular energy ecosystem at Kutirchar, Sirajganj — starting with AI-based breed improvement. Every phase is evidence-gated. No phase begins without documented proof from the previous step.",
+    "whatIsTitle": "What is Kutirchar EcoFarm?",
+    "whatIsP1": "A rural circular ecosystem at Kutirchar, Bhadraghat, Kamarkhanda, Sirajganj. It starts with AI-based breed improvement, alongside a goat nucleus, selective dairy, dung-fed biogas, Pakchong-1 and BLRI Napier-3 grass/silage, bio-slurry fertilizer, rooftop solar, and digital farm monitoring — on family land.",
+    "whatIsP2": "The circular loop: cattle produce dung → dung powers biogas → biogas gives energy + bio-slurry → bio-slurry fertilizes grass → grass feeds the animals again. Every output cuts a cost. Every cycle builds asset value.",
+    "zoneBStopRule": "Zone B (12 decimal non-private/ejmali land): removable use only — fodder racks, temporary shade, portable compost, water tank. No permanent concrete structures until legal verification is complete.",
+    "founderLabel": "From the Founder",
+    "founderQuote": "\"I believe Bangladesh's agriculture will change not through big stories, but through small capital, honest accounting, the science of breed improvement, and evidence-based governance. Kutirchar EcoFarm is the first living model of that belief.\"",
+    "founderName": "Emon Hossain (Md. Emon Hossain)",
+    "founderRole": "Founder & Project Lead",
+    "founderBio": "CEO & Founder — SYSmoAI · AIPS · BangladeshAI Mission. BBA Marketing, North South University (2024). 10,000+ verified customers served in the AI Systems business. Career: SEO/WordPress → AI Systems Architecture → agricultural technology.",
+    "missionTitle": "Mission",
+    "missionBody": "Starting from AI-based breed improvement (Artificial Insemination) in the char region, build — step by step — a proof-driven, circular, family-safe smart farm ecosystem: a working rural model for Bangladesh's food self-sufficiency.",
+    "vision10Title": "10-Year Vision (2026–2036)",
+    "vision10Body": "The char region's first bank-grade, evidence-first, replicable smart farm template (aligned with DLS, BLRI, SREDA, IDCOL, PKSF).",
+    "tenYearPhases": [
+      { "phase": "Phase 1 (Years 0–2)", "title": "Verification & pilot" },
+      { "phase": "Phase 2 (Years 3–5)", "title": "Circular income" },
+      { "phase": "Phase 3 (Years 6–8)", "title": "Scale & institutional trust" },
+      { "phase": "Phase 4 (Years 9–10)", "title": "Legacy & replication" }
+    ],
+    "whyTitle": "Why This Project",
+    "whyItems": [
+      { "heading": "Food self-sufficiency", "body": "A working, documented rural production model for Bangladesh's food security." },
+      { "heading": "Char region development", "body": "Step-by-step conversion of unused char land into income-generating, productive assets." },
+      { "heading": "Family asset protection", "body": "Proper documentation, boundary survey, and legal clarity — before construction." },
+      { "heading": "Circular economy", "body": "Every output is the next step's input — value, not waste. Costs fall, resilience rises." },
+      { "heading": "Bank-grade governance", "body": "A stop rule behind every decision. No progress without evidence. Auditor-tone reporting." }
+    ],
+    "locationTitle": "Project Location",
+    "locationSubtitle": "All operations at Kutirchar village (Milk Vita dairy belt). Site visits by appointment only.",
+    "locationRows": [
+      { "label": "Village", "value": "Kutirchar" },
+      { "label": "Union", "value": "Bhadraghat" },
+      { "label": "Upazila", "value": "Kamarkhanda" },
+      { "label": "District", "value": "Sirajganj" },
+      { "label": "Country", "value": "Bangladesh" },
+      { "label": "Zone A", "value": "10 decimal private/core land" },
+      { "label": "Zone B", "value": "12 decimal non-private/ejmali — removable use only" }
+    ],
+    "landStatusTitle": "Land Status Summary",
+    "landStatus": [
+      "Zone A land documents — under review",
+      "Zone A boundary survey",
+      "Zone A SPT soil test",
+      "Zone B ejmali legal status",
+      "Zone B removable-use clearance",
+      "Post office address verification"
+    ],
+    "roadmapTitle": "5-Year Phase-Gated Roadmap",
+    "roadmapSubtitle": "Year 0 through Year 5 — each year unlocks on documented evidence from the previous one. No skipped steps.",
+    "phases": [
+      { "phase": "Year 0", "label": "Current", "title": "Verification & Foundation", "items": [
+        "Land document index & legal review",
+        "Boundary survey (Zones A & B)",
+        "SPT soil test",
+        "Drainage outlet survey & level mapping",
+        "Zone B ejmali status legal clarification",
+        "Digital infrastructure planning (Starlink, CCTV, UPS)"
+      ]},
+      { "phase": "Year 1", "label": "Next", "title": "Goat Nucleus Pilot + AI Breeding Kickoff", "items": [
+        "Goat nucleus pilot: 35–40 does + 2 bucks",
+        "AI-based breed improvement kickoff (verified semen)",
+        "Small solar — for operations",
+        "Animal record system launched",
+        "Verified animal sourcing service"
+      ]},
+      { "phase": "Year 2", "label": "Next", "title": "Compost Loop + Selective Dairy + Silage Scale", "items": [
+        "Compost/vermicompost loop launched",
+        "Grass/silage scale-up (Pakchong-1 + BLRI Napier-3)",
+        "Selective dairy: 2–4 local cows + AI F1",
+        "Documented tracking of feed-cost reduction"
+      ]},
+      { "phase": "Year 3", "label": "Later", "title": "6m³ Biogas + Slurry Loop + Rooftop Solar Pilot", "items": [
+        "6m³ biogas digester (gate: consistent dung input)",
+        "Bio-slurry loop — organic fertilizer production",
+        "Rooftop solar pilot",
+        "Product catalog v1 + bank evidence pack v1"
+      ]},
+      { "phase": "Year 4", "label": "Later", "title": "Expansion + Brand Authority", "items": [
+        "Premium breeding stock sales + fattening",
+        "Larger biogas + 5–10kWp solar",
+        "Irrigation pump (gravity or solar)",
+        "Training/demo + first replication contract"
+      ]},
+      { "phase": "Year 5", "label": "Later", "title": "Valuation + Replication-Ready Playbook", "items": [
+        "Land-inclusive valuation 1 crore+ (indicative)",
+        "Demand-gated service residence (subject to legal clearance + verified demand)",
+        "Replication-ready playbook published",
+        "All items subject to evidence from Phases 0–4"
+      ]}
+    ],
+    "roadmapStopRule": "This roadmap is indicative. Year 1 will not begin until every Year 0 verification item is complete and documented. Each year is conditional on stable, documented results from the previous one.",
+    "peopleTitle": "Our People",
+    "peopleSubtitle": "Public bios — not legal records. NID/PIN/verification documents are never published on this website.",
+    "people": [
+      { "name": "Emon Hossain (Md. Emon Hossain)", "role": "Founder & CEO / Strategy Owner", "bio": "Vision, strategy, capital & debt discipline, bank/government relations, documentation, and public narrative." },
+      { "name": "Md. Anisur Rahman", "role": "Family Land Guardian & Asset Stakeholder", "bio": "Emon's father; landowner and family head. Senior support on land documentation, family consent, boundaries, and local matters. (Deeds/khatian/NID are not public.)" },
+      { "name": "MD Esteak Ahmed", "role": "Co-Founder & Director — Operations & Partnerships", "bio": "Brother of founder Emon Hossain; institutional operations, partnerships, and coordination; Additional Director at SYSmoAI; supports team, vendor, and field coordination." },
+      { "name": "Md. Al Amin", "role": "Field Operations Coordinator (Sirajganj)", "bio": "Field photo/video capture, vendor and haat coordination, price logging, daily field notes, and evidence uploads." },
+      { "name": "Refat Ara Rumi", "role": "Family Stakeholder", "bio": "Family-connected stakeholder; provides family support and trust to the project." }
+    ],
+    "kycNote": "🔒 KYC/legal note: NID/PIN/address verification documents of the founder and family members are held privately for bank and government due diligence only — never published on the public website or GitHub repo.",
+    "positioningTitle": "Brand Positioning",
+    "positioningSubtitle": "Who this project is designed for — in priority order.",
+    "audiences": [
+      { "icon": "🏦", "title": "1. Bank & Credit Officers", "body": "Clear land documentation, phase-gated investment, verifiable income progression, conservative EMI discipline, and stop-rule governance." },
+      { "icon": "🏛️", "title": "2. Government & Agriculture Departments", "body": "An evidence-based circular farm model — aligned with DLS, BLRI, SREDA, IDCOL, PKSF. Soil and water verification first." },
+      { "icon": "🌍", "title": "3. NGOs & Development Partners / CSR", "body": "Rural livelihoods, food security (silage, organic fertilizer), circular energy, local employment." },
+      { "icon": "📊", "title": "4. Investors · 5. Buyers/Vendors/Partners", "body": "Asset-backed (family land), conservative phase progression, no hype, verifiable outputs at every step." }
+    ],
+    "viewProofPack": "View Proof & Governance Pack"
   },
   "proof": {
     "heroTitle": "Proof & Governance",
-    "auditTitle": "Verification Audit Ledger"
+    "heroSubtitle": "Due Diligence Summary + Stop Rules for banks/government/NGOs/investors — auditor-tone, hype-free. Every open gap is publicly documented. No hidden problems.",
+    "privacyBanner": "🔒 Privacy policy: no NID, PIN, bank account numbers, sensitive IDs, or private legal documents are published on this website. Only safe summaries and redacted evidence are shown publicly.",
+    "ledgerTitle": "Verification Audit Ledger (7 Open Gaps)",
+    "ledgerSubtitle": "The real status of every verification requirement. Updated as progress occurs. An open gap means that stage has not started.",
+    "tableHeaders": ["Verification Gap", "Current Status", "Evidence Required", "Stop Rule"],
+    "auditRows": [
+      { "gap": "Land documents", "status": "In Progress", "statusKey": "inProgress", "evidence": "Deed, khatian/porcha, mutation", "stopRule": "No major CAPEX without papers" },
+      { "gap": "Boundary survey", "status": "In Progress", "statusKey": "inProgress", "evidence": "Survey + sketch + photos", "stopRule": "No permanent work" },
+      { "gap": "SPT soil test", "status": "Not Started", "statusKey": "notStarted", "evidence": "SPT report", "stopRule": "No G+5 foundation" },
+      { "gap": "Level & drainage", "status": "Not Started", "statusKey": "notStarted", "evidence": "Level table, outlet plan", "stopRule": "No blind fill" },
+      { "gap": "Zone B legal status", "status": "Open Gap", "statusKey": "openGap", "evidence": "Written legal note", "stopRule": "No RCC/septic" },
+      { "gap": "Address/post office match", "status": "Open Gap", "statusKey": "openGap", "evidence": "Corrected address", "stopRule": "No loan application" },
+      { "gap": "Rental demand evidence", "status": "Not Applicable", "statusKey": "notApplicable", "evidence": "15–30 interviews + LOI", "stopRule": "No apartment" }
+    ],
+    "stopRulesTitle": "Non-Negotiable Stop Rules",
+    "stopRules": [
+      "No permanent construction without verification",
+      "Zone B = removable-only (RCC/room/septic = 0 without a written legal note)",
+      "No G+5 foundation decision without SPT",
+      "No blind filling until the drainage outlet is confirmed",
+      "Active EMI ≤ 50% of verified rolling 12-month income",
+      "Breed improvement: verified semen only (DLS/BRAC/ACI/Lal Teer/ST Genetics)",
+      "Lab-based gene editing/embryo transfer: only with an institutional partner",
+      "NID/PIN/sensitive data/raw legal documents: never public"
+    ],
+    "financeTitle": "Financial Discipline",
+    "financeItems": [
+      "Phase-wise CAPEX — each phase's spend gated on previous-phase evidence",
+      "3 vendor quotes mandatory for every major purchase",
+      "Low/Base/High stress test at every phase",
+      "CAPEX freeze if runway < 45 days"
+    ],
+    "breedingTitle": "Breed Improvement Governance",
+    "breedingBody": "Publicly, this is not \"genetic engineering\" — it is AI-based improvement + selective breeding, supported by DLS/BLRI/BRAC/ACI/Lal Teer/ST Genetics.",
+    "breedingRecordsLabel": "Mandatory Records",
+    "breedingRecords": ["Cow ID", "Heat timing", "Semen breed", "Bull ID", "Technician", "PD date", "Calf record"],
+    "evidenceTitle": "Evidence Pack (Public) Status",
+    "evidenceSubtitle": "Documentation is shared with qualified stakeholders (banks, government, serious investors) on formal request.",
+    "evidenceCards": [
+      { "label": "Land Document Index", "status": "pending", "note": "Deed and ownership chain under review. Summary PDF on request — without NID or sensitive IDs." },
+      { "label": "Soil Test Report", "status": "missing", "note": "SPT soil test not yet done. Required before foundation planning. Scheduled in Year 0." },
+      { "label": "Survey Sketch + Photos", "status": "missing", "note": "Boundary demarcation survey not yet complete. Surveyor engaged." },
+      { "label": "Drainage Level Table", "status": "missing", "note": "Site level and drainage outlet survey required before any filling or earthwork." },
+      { "label": "Vendor Quote Comparison", "status": "pending", "note": "3-quote policy for every major purchase. First comparison being compiled." },
+      { "label": "Monthly Breeding Log Summary", "status": "missing", "note": "Monthly summaries will be published once Year 1 AI breeding begins. Brand and identity locked (21 June 2026)." }
+    ],
+    "requestNote": "For the full evidence pack: submit a formal inquiry via the Contact page. Select \"Bank / Government / Investor\" and describe your purpose. Appropriate documentation is shared based on your role. NID, PIN, or private legal documents are never shared publicly.",
+    "requestNoteLabel": "How to request the full evidence pack:",
+    "financingTitle": "Financing Structure (verified sources)",
+    "financingSubtitle": "Government-backed financing channels — relevant by project phase.",
+    "financingItems": [
+      "Bangladesh Bank Agriculture & Rural Refinance (~4%)",
+      "Bangladesh Bank Green Refinance (~5%)",
+      "IDCOL biogas financing",
+      "SREDA Net Metering 2025",
+      "PKSF GREEN (IFAD $70M)",
+      "BIFFL Agribusiness",
+      "DYD/Karmasangsthan youth loans"
+    ],
+    "zoneTitle": "The Land Zone System",
+    "zoneSubtitle": "Two zones — different legal statuses, different rules. This distinction underpins all planning.",
+    "zoneA": {
+      "title": "Zone A — Private Core Land",
+      "sub": "10 decimal, private family land",
+      "body": "Full ownership. SPT soil test required before any foundation. Permanent structures allowed once all Year 0 verification passes. G+5 potential after the soil-test gate.",
+      "uses": ["Goat/cattle shed (Year 1)", "Biogas digester (Year 3)", "Solar rooftop", "Permanent structures (after soil test)"]
+    },
+    "zoneB": {
+      "title": "Zone B — Non-Private / Ejmali",
+      "sub": "12 decimal, ejmali verification pending",
+      "body": "Legal status under verification. Removable structures only until ejmali confirmation. No concrete, no RCC, no permanent plumbing.",
+      "stopRule": "Permanent RCC / rooms / septic on Zone B = zero — until legal verification is complete.",
+      "uses": ["Fodder racks", "Temporary shade", "Portable compost", "Loading/parking area", "Removable water tank"]
+    },
+    "ctaTitle": "Request the Bank & Government Pack",
+    "ctaBody": "Bank credit officers, government departments, NGOs, or serious investors — submit an inquiry with your role and purpose for the formal evidence pack.",
+    "ctaButton": "Request Evidence Pack"
   },
   "ecosystem": {
-    "heroTitle": "The Circular Ecosystem"
+    "heroTitle": "The Circular Ecosystem",
+    "heroSubtitle": "Cattle, energy, soil, and feed — in one closed loop. Every waste is the next step's input. Every input cuts a cost. Every cycle builds resilience.",
+    "loopTitle": "Core Loop — 8 Nodes",
+    "loopSubtitle": "The core logic of Kutirchar EcoFarm's circular system. Every arrow is a real, documented value transfer.",
+    "loopNodes": [
+      { "num": "1", "title": "Cattle & Goats", "desc": "Dung/droppings production" },
+      { "num": "2", "title": "Dung → Biogas", "desc": "Year 3+, 6m³ digester" },
+      { "num": "3", "title": "Biogas → Energy & Income", "desc": "Cooking gas, LPG savings" },
+      { "num": "4", "title": "Bio-Slurry → Organic Fertilizer", "desc": "\"Farm Bio-Organic Fertilizer\"" },
+      { "num": "5", "title": "Fertilizer → Grass/Silage", "desc": "80 decimal; Pakchong-1 + BLRI Napier-3 + maize" },
+      { "num": "6", "title": "Grass/Silage → Animal Feed", "desc": "Target: cut feed cost from 65–75%" },
+      { "num": "7", "title": "Solar → Farm Power", "desc": "5–10kWp, self-use first; net metering if SREDA" },
+      { "num": "8", "title": "Records + Brand", "desc": "Training + content + sourcing services" }
+    ],
+    "loopRestart": "The loop restarts — grass feeds the animals again",
+    "breedingCenterTitle": "Breed Improvement at the Center",
+    "breedingCenterBody": "Every good F1 calf is the foundation of better future genetics. AI-based breed improvement is the central engine of this ecosystem.",
+    "systemsTitle": "System Components — Input → Output",
+    "systemsSubtitle": "Real input-output mapping for each component, by phase.",
+    "flowCards": [
+      { "icon": "🐐", "title": "Goats & Cattle + Breed Improvement",
+        "inputs": ["Goat nucleus (Year 1: 35–40 does + 2 bucks)", "Selective dairy (Year 2: 2–4 local cows + AI F1)", "Verified semen (DLS/BRAC/ACI/Lal Teer/ST Genetics)"],
+        "outputs": ["Breeding stock (full records)", "Milk (selective dairy)", "Dung/droppings (biogas input)"],
+        "phase": "Next", "phaseNote": "Year 1: goat nucleus pilot; Year 2: selective dairy" },
+      { "icon": "⚗️", "title": "Biogas Digester",
+        "inputs": ["Dung (daily)", "Water for slurry mix", "Organic waste"],
+        "outputs": ["Cooking gas (LPG savings BDT 1–2k/month, indicative)", "Bio-slurry liquid fertilizer", "Reduced waste odor"],
+        "phase": "Later", "phaseNote": "Year 3: 6m³ digester (gate: consistent dung)" },
+      { "icon": "🌿", "title": "Bio-Slurry Fertilizer",
+        "inputs": ["Digester effluent", "Water dilution", "Compost blend"],
+        "outputs": ["Organic liquid fertilizer", "Soil microbiome improvement", "Higher grass yield"],
+        "phase": "Later", "phaseNote": "Year 3+: after biogas is operational" },
+      { "icon": "🌾", "title": "Grass / Silage / Fodder",
+        "inputs": ["Bio-slurry fertilizer", "Rain + irrigation", "~80 decimal field (~2 km)"],
+        "outputs": ["Year-round animal feed", "Silage surplus sales", "Reduced feed purchase costs"],
+        "phase": "Next", "phaseNote": "Year 2: Pakchong-1 + BLRI Napier-3 scale-up" },
+      { "icon": "☀️", "title": "Solar Energy",
+        "inputs": ["Rooftop installation area", "Panels + inverter", "Battery / grid tie"],
+        "outputs": ["Farm operations power", "CCTV and monitoring power", "Reduced electricity bills"],
+        "phase": "Next", "phaseNote": "Year 1: small solar; Year 4: 5–10kWp" },
+      { "icon": "📊", "title": "Digital Monitoring",
+        "inputs": ["Starlink connectivity", "CCTV cameras", "UPS backup"],
+        "outputs": ["Real-time farm visibility", "Remote monitoring dashboard", "Evidence for governance"],
+        "phase": "Later", "phaseNote": "After connectivity is confirmed" }
+    ],
+    "inputsLabel": "Inputs",
+    "outputsLabel": "Outputs",
+    "bankableTitle": "Why It's Bankable",
+    "bankableItems": [
+      "Phase-wise CAPEX — risk controlled",
+      "Real input-output mapping",
+      "Clear stop rules",
+      "Government-aligned (DLS/BLRI/SREDA/IDCOL/PKSF)",
+      "Replicable model"
+    ],
+    "impactTitle": "Financial Impact (Year 5 forecast — indicative)",
+    "impactNote": "The figures below are forecasts — not guaranteed income. Each number is conditional on real evidence from the relevant phase.",
+    "impactRows": [
+      { "label": "Feed cost", "value": "65–75% → 45–55%" },
+      { "label": "LPG savings", "value": "BDT 1–2k/month" },
+      { "label": "Solar (10kWp)", "value": "BDT 17–24k/month" },
+      { "label": "Bio-slurry", "value": "BDT 12–30k/month" },
+      { "label": "Silage surplus", "value": "BDT 10–30k/month" }
+    ],
+    "whyTitle": "Why Circular?",
+    "whySubtitle": "Every loop reduces dependence on purchased inputs and increases farm resilience.",
+    "whyItems": [
+      { "icon": "💸", "title": "Cuts input costs", "body": "Bio-slurry replaces chemical fertilizer. Silage reduces feed purchases. Biogas replaces LPG." },
+      { "icon": "♻️", "title": "Zero-waste target", "body": "Dung → biogas → bio-slurry → fertilizer → grass → dung. Nothing is wasted." },
+      { "icon": "🏦", "title": "Bankable model", "body": "Documented circular outputs create verifiable income streams at every phase. A clear audit trail." },
+      { "icon": "🌱", "title": "Soil regeneration", "body": "Bio-slurry increases soil organic matter over time. Long-term land value growth." },
+      { "icon": "⚡", "title": "Energy independence", "body": "Solar + biogas together reduce dependence on the grid and LPG supply." },
+      { "icon": "📡", "title": "Monitored & verified", "body": "Digital monitoring ensures every output is measured and documented for governance." }
+    ],
+    "seeProducts": "See Phase-Gated Products"
   },
   "products": {
     "heroTitle": "Products & Services",
+    "heroSubtitle": "Phase-gated offerings. We only offer what we can deliver now. Future services are labeled Next or Later — they are not yet available.",
+    "legendNow": "Active / available today",
+    "legendNext": "Next phase — gates must pass",
+    "legendLater": "Future — demand-gated",
     "nowTitle": "Available Now",
-    "nextTitle": "Next Phase",
-    "laterTitle": "Later"
+    "nowSubtitle": "Verified sourcing, consultation, vendor onboarding, and partnership discussions are open today.",
+    "now": [
+      { "title": "Verified Animal Sourcing & Verification", "body": "Animal sourcing and verification service using a 100-point scorecard. Every animal comes with records and a verification report.", "ctaLabel": "Sourcing Inquiry" },
+      { "title": "AI-Based Breed Improvement Consultation", "body": "Artificial Insemination-based breed improvement consultation — built on verified semen sources (DLS/BRAC/ACI/Lal Teer/ST Genetics).", "ctaLabel": "Consultation Inquiry" },
+      { "title": "Vendor / Partner Onboarding", "body": "Quotes invited from soil test, survey, solar, biogas, CCTV, construction (Zone A only), vet, and AI semen vendors. 3-quote policy on every purchase.", "ctaLabel": "Submit Vendor Quote" },
+      { "title": "Partnership Discussion", "body": "Partnership discussions open with banks/government/NGOs/CSR. No commitments — discussion and due diligence only.", "ctaLabel": "Start a Discussion" }
+    ],
+    "nextTitle": "Next (Phases 1–3)",
+    "nextSubtitle": "Available once the relevant phase's verification gates pass. Not yet active.",
+    "next": [
+      { "title": "Goat Breeding Stock", "body": "Goat breeding stock with full records — once the Year 1 nucleus (35–40 does + 2 bucks) is stable.", "gated": "Gate: Year 1 goat nucleus operational and documented" },
+      { "title": "Local Cows + F1 Selective Dairy", "body": "2–4 local cows + AI F1 selective dairy. Small volume, subject to complete health records.", "gated": "Gate: Year 2 dairy operational with health records" },
+      { "title": "Compost / Vermicompost", "body": "Organic compost from dung and grass residue — for local farmers and gardens.", "gated": "Gate: Year 2 compost loop operational" },
+      { "title": "Grass / Silage / Fodder (Pakchong-1 cuttings)", "body": "Pakchong-1 cuttings and silage surplus — subject to season and the farm's own demand.", "gated": "Gate: grass established with confirmed surplus" },
+      { "title": "Bio-Slurry Fertilizer", "body": "Organic liquid fertilizer from biogas digester effluent. Pricing and volume after Year 3.", "gated": "Gate: Year 3 biogas operational" }
+    ],
+    "laterTitle": "Later (Phases 4–5) — Demand-Gated",
+    "laterSubtitle": "Far future. Unlocks only when all previous phases are verified and stable.",
+    "later": [
+      { "title": "Training & Farm Tours (Paid)", "body": "Training in circular farming, biogas, and digital monitoring — once Year 4+ and monitoring are live.", "gated": "Gate: Year 4 + monitoring system operational" },
+      { "title": "Smart Monitoring Demo", "body": "Live dashboard demos for agricultural institutions, development agencies, and other farmers — after our own system is proven.", "gated": "Gate: Starlink + CCTV + dashboard fully operational" },
+      { "title": "Premium Breeding Stock (Pedigree)", "body": "Premium breeding stock sales with pedigree records — subject to multi-generation documented genetics.", "gated": "Gate: multi-year breeding records verified" },
+      { "title": "Demand-Gated Service Residence", "body": "Strictly demand-gated. Will not even be planned unless legal clearance and demand proven in formal inquiry records.", "gated": "Gate: legal clearance + verified demand + Year 4 stability" },
+      { "title": "Content / Documentation Service", "body": "Documentation and evidence-first reporting services for rural farms — after Kutirchar EcoFarm is a proven reference.", "gated": "Gate: Phases 0–4 complete and externally verified" }
+    ],
+    "laterStopRule": "Later-phase services are not currently available and are not guaranteed. They are listed only to show the project's potential direction once all required verification gates pass and are documented.",
+    "whyUsTitle": "Why From Us",
+    "whyUs": [
+      "Full records for every animal",
+      "Verified semen partners (DLS/BRAC/ACI/Lal Teer/ST Genetics)",
+      "Auditor-tone reporting — no hype",
+      "Phase-gated growth — no claims without evidence",
+      "SYSmoAI / Bangladesh AI Mission ecosystem"
+    ],
+    "inquiryTitle": "Submit an Inquiry",
+    "inquiryBody": "Buyer · Vendor quotation · Partnership/CSR/NGO · Training/Visit — submit a specific inquiry and we will respond promptly.",
+    "inquiryCta": "Go to Contact Form"
   },
   "digital": {
-    "heroTitle": "Digital Infrastructure"
+    "heroTitle": "Digital Infrastructure",
+    "heroSubtitle": "Connectivity, security, power backup, and monitoring — framed as operational reliability and governance infrastructure, not internet hype.",
+    "archTitle": "4-Layer Architecture",
+    "archSubtitle": "Connectivity · Power Safety · Security · Network — each layer is independent and gate-controlled.",
+    "modules": [
+      { "icon": "📡", "title": "Connectivity (Starlink)", "items": ["Starlink satellite internet", "Primary WAN for monitoring", "Portability & address check required", "Clear sky view test at site"], "phase": "Later" },
+      { "icon": "⚡", "title": "Power Safety (UPS + Battery)", "items": ["UPS backup (load-shedding protection)", "Solar integration for UPS charging", "Grounding plan required", "Protects all monitoring devices"], "phase": "Next" },
+      { "icon": "🔒", "title": "Security (CCTV/NVR — Local-First)", "items": ["IP cameras (PoE)", "Local NVR storage (primary)", "Cloud secondary", "Tamper-evident evidence"], "phase": "Next" },
+      { "icon": "🌐", "title": "Network (Wi-Fi 6 + Switch + VLAN)", "items": ["Wi-Fi 6 + managed switch", "VLAN — isolated camera network", "Scalable for future devices"], "phase": "Next" }
+    ],
+    "gatesTitle": "The 5 Gates",
+    "gates": [
+      "Availability + final price verified",
+      "Service address / portability cleared",
+      "Clear sky view test",
+      "UPS + grounding plan",
+      "CCTV bandwidth = local NVR first"
+    ],
+    "stopRule": "Digital infrastructure must not be treated as a \"nice to have.\" It is a governance requirement — CCTV footage provides tamper-evident evidence for insurance, governance, and partner reporting. NVR local storage is mandatory before any cloud storage is considered.",
+    "systemsTitle": "Verification Gates Per System",
+    "systemsSubtitle": "Each system has gates that must be confirmed before installation proceeds.",
+    "systems": [
+      { "icon": "📡", "title": "Starlink Connectivity", "phase": "Later",
+        "desc": "High-speed satellite internet for remote farm monitoring, dashboard access, and real-time reporting.",
+        "gates": ["Availability at Kutirchar confirmed", "Final checkout price verified", "Service address portability rules cleared", "Clear sky view test passed at site"],
+        "outputs": ["Remote monitoring access", "Cloud backup for CCTV footage", "Dashboard access from anywhere", "Report generation and file uploads"] },
+      { "icon": "📷", "title": "CCTV & NVR Security", "phase": "Next",
+        "desc": "IP camera coverage of the shed, biogas site, and main entrance. Local NVR storage first, cloud second.",
+        "gates": ["Camera placement plan completed", "NVR local storage setup (priority over cloud)", "Bandwidth plan = local NVR first", "Power backup from UPS confirmed"],
+        "outputs": ["24/7 site security footage", "Evidence for governance and insurance", "Remote viewing (when connected)", "Incident documentation"] },
+      { "icon": "🔋", "title": "UPS & Power Backup", "phase": "Next",
+        "desc": "Uninterruptible power supply to protect CCTV, monitoring, and network during load-shedding.",
+        "gates": ["Load calculation complete (CCTV + router + NVR)", "Battery capacity + grounding plan ready", "UPS connection verified with solar output"],
+        "outputs": ["Continuous monitoring during outages", "Protects NVR from data loss", "Extends farm operations during load-shedding"] },
+      { "icon": "🌐", "title": "Network & Router", "phase": "Next",
+        "desc": "Local network for NVR, cameras, and monitoring devices. Starlink as WAN when available.",
+        "gates": ["Device inventory complete", "Cable routing plan for shed + biogas area", "Router/switch placement decided"],
+        "outputs": ["Local LAN for all monitoring devices", "Isolated network for security cameras", "Scalable for future devices"] }
+    ],
+    "gatesLabel": "Verification Gates",
+    "outputsLabel": "Outputs",
+    "breedingLinkTitle": "Link to Breed Improvement",
+    "breedingLinkItems": [
+      "AI session video records",
+      "Heat detection timestamps",
+      "Calf archive",
+      "Notion-cloud sync",
+      "Vet video consults"
+    ],
+    "rolloutTitle": "Phased Rollout",
+    "rolloutSubtitle": "Do not skip the order — each step depends on the previous one. Costs are indicative.",
+    "rollout": [
+      { "step": "P1", "title": "Router + 1–2 cameras + small UPS", "note": "Basic connectivity and security.", "cost": "BDT 25–40k (indicative)" },
+      { "step": "P2", "title": "Starlink + UPS + 4 cameras + NVR", "note": "Full connectivity and local-first security.", "cost": "BDT 1.5–2.5 lakh (indicative)" },
+      { "step": "P3", "title": "8 cameras + VLAN + battery", "note": "Complete coverage and network segmentation.", "cost": "BDT 2–4 lakh (indicative)" },
+      { "step": "P4", "title": "IoT sensors + dashboard", "note": "Sensor data and the full monitoring dashboard.", "cost": "BDT 1–3 lakh (indicative)" }
+    ],
+    "outputsTitle": "Outputs",
+    "outputsItems": [
+      "Installation evidence",
+      "Monthly uptime/speed logs",
+      "Security coverage map",
+      "Cost transparency (CAPEX/OPEX/ROI)"
+    ],
+    "financingNote": "Financing: BB CMSME Refinance · BB Green Refinance · own revenue.",
+    "privacyNote": "Privacy: footage is internal-only, encrypted backups, no public real-time streams.",
+    "vendorCta": "Vendor / Tech Partner Inquiry"
   },
   "updates": {
-    "heroTitle": "Updates & Reports",
-    "filterAll": "All"
+    "heroTitle": "Updates / Reports",
+    "heroSubtitle": "A living trust engine. Transparent, date-stamped updates showing progress, open gaps, evidence added, and next steps. No hype — only facts.",
+    "editorialNote": "📸 Photo-first · Evidence-referenced · No confidential IDs · Auditor tone · Negative-news transparency",
+    "cadenceLabel": "Cadence: monthly (1st–5th) · quarterly (Q1 April, Q2 July, Q3 October, Q4 January) · annual (January)",
+    "categories": [
+      { "id": "all", "label": "All" },
+      { "id": "verification", "label": "Verification" },
+      { "id": "breedLivestock", "label": "Breed/Livestock" },
+      { "id": "fodderSilage", "label": "Fodder/Silage" },
+      { "id": "energy", "label": "Energy" },
+      { "id": "digitalInfra", "label": "Digital" },
+      { "id": "governance", "label": "Governance" },
+      { "id": "partnership", "label": "Partnership" },
+      { "id": "monetization", "label": "Monetization" }
+    ],
+    "entries": [
+      { "date": "June 2026", "categoryId": "governance", "phase": "Now", "statusKey": "completed", "status": "Completed",
+        "title": "Brand and digital identity locked — FINAL",
+        "summary": "Official brand name 'Kutirchar EcoFarm / কুটিরচর ইকোফার্ম' locked on 21 June 2026. Logo, color system, bilingual typography, and identity documentation published and version-controlled.",
+        "evidenceAdded": ["Brand identity guide published", "Color tokens documented", "Logo system finalised"],
+        "openGaps": [],
+        "next30": ["Brand guide pushed to GitHub", "Begin domain registration confirmation"] },
+      { "date": "June 2026", "categoryId": "verification", "phase": "Now", "statusKey": "inProgress", "status": "In Progress",
+        "title": "Zone A boundary survey — initiated",
+        "summary": "Formal process for Zone A (10 decimal private land) boundary demarcation started. Surveyor identified. Appointment pending at district land survey office.",
+        "evidenceAdded": ["Surveyor contact confirmed"],
+        "openGaps": ["Survey appointment not yet secured", "Boundary pegs not placed"],
+        "next30": ["Book formal survey appointment", "Coordinate with upazila land office"] },
+      { "date": "May 2026", "categoryId": "verification", "phase": "Now", "statusKey": "open", "status": "Open",
+        "title": "Zone B ejmali legal status — open gap",
+        "summary": "Zone B (12 decimal) is non-private/ejmali. Legal clarification from the upazila land office is required before any planning on that land. Currently: removable use only.",
+        "evidenceAdded": [],
+        "openGaps": ["Ejmali status not legally confirmed", "No survey sketch for Zone B", "Upazila verification outstanding"],
+        "next30": ["Request formal legal opinion from upazila land office", "Prepare Zone B documentation brief"] },
+      { "date": "May 2026", "categoryId": "verification", "phase": "Now", "statusKey": "inProgress", "status": "In Progress",
+        "title": "Soil test planning — Year 0 requirement",
+        "summary": "SPT soil test required before any foundation planning on Zone A. This is a hard gate — no G+5 or structural foundation decision until the result is in hand. Lab identified, sample collection pending.",
+        "evidenceAdded": ["Soil test lab identified"],
+        "openGaps": ["Sample collection not done", "Lab report not available"],
+        "next30": ["Schedule sample collection", "Confirm SPT test parameters with structural engineer"] },
+      { "date": "April 2026", "categoryId": "governance", "phase": "Now", "statusKey": "completed", "status": "Completed",
+        "title": "Year 0 checklist formalised",
+        "summary": "All Year 0 verification requirements documented: land title, boundary, soil test, drainage, ejmali status, post office address. No phase advance until all items are checked.",
+        "evidenceAdded": ["Year 0 checklist document created", "Stop rules written and published"],
+        "openGaps": [],
+        "next30": ["Continue working through Year 0 items in priority order"] },
+      { "date": "April 2026", "categoryId": "digitalInfra", "phase": "Next", "statusKey": "planning", "status": "Planning",
+        "title": "Digital infrastructure scoping — Starlink + CCTV + UPS",
+        "summary": "Preliminary scope of digital infrastructure needs: Starlink for connectivity, IP cameras + NVR for security, UPS for power backup. Installation sequence drafted. No purchases until Year 0 is complete.",
+        "evidenceAdded": ["Infrastructure scoping document created", "Vendor shortlist started"],
+        "openGaps": ["Starlink address portability not confirmed", "Clear sky view test at site not done", "UPS load calculation not complete"],
+        "next30": ["Get 3 vendor quotes for UPS + CCTV", "Confirm Starlink address eligibility"] }
+    ],
+    "evidenceLabel": "Evidence Added",
+    "gapsLabel": "Open Gaps",
+    "next30Label": "Next 30 Days",
+    "emptyState": "No updates in this category yet.",
+    "howTitle": "How We Report",
+    "howSubtitle": "Our commitment to transparent, evidence-first communication.",
+    "howItems": [
+      { "icon": "📅", "title": "Date-stamped", "body": "Every update is dated. Nothing is backdated or modified without notation." },
+      { "icon": "🔗", "title": "Evidence-referenced", "body": "Claims reference specific documentation, available to qualified stakeholders on formal request. No claim without supporting evidence." },
+      { "icon": "🔓", "title": "Open gaps shown", "body": "We publicly show what is not done. Gaps are not hidden — they drive the work. Negative-news transparency." },
+      { "icon": "🔒", "title": "Privacy protected", "body": "No NID, PIN, bank details, or sensitive personal identifiers ever published." }
+    ]
   },
   "contact": {
     "heroTitle": "Contact & Partnership",
-    "formTitle": "Submit Inquiry"
+    "heroSubtitle": "Submit a specific inquiry. Bank/government: 24–48 hours · Buyers/vendors: 3–5 days. Select your inquiry type so it reaches the right person.",
+    "directTitle": "Direct Contact",
+    "emailLabel": "Email",
+    "emailDesc": "Best for formal inquiries and documentation requests",
+    "phoneDesc": "Available 9am–6pm (Bangladesh time)",
+    "whatsappLabel": "WhatsApp",
+    "whatsappValue": "WhatsApp Chat",
+    "whatsappDesc": "Quick questions and pre-inquiry chat",
+    "teamTitle": "Project Lead & Team",
+    "teamLead": {
+      "name": "Emon Hossain",
+      "role": "Founder & Project Lead",
+      "phone": "+8801730679999",
+      "orgs": "SYSmoAI · Bangladesh AI Mission"
+    },
+    "teamOthersLabel": "Additional Contacts",
+    "teamOthers": [
+      { "name": "MD Esteak Ahmed", "role": "Director — Operations & Partnerships", "phone": "+8801730679998" },
+      { "name": "Md. Anisur Rahman", "role": "Family Land Guardian", "phone": "+8801718761373" }
+    ],
+    "locationTitle": "Location",
+    "addressLines": "Kutirchar Village, Bhadraghat\nKamarkhanda, Sirajganj\nBangladesh",
+    "milkVitaNote": "Milk Vita dairy-belt region",
+    "visitNote": "Visits are pre-scheduled (Phase 1+). Please submit a formal inquiry first.",
+    "responseTitle": "Response Commitment",
+    "responseItems": [
+      "Bank/government/investor: 24–48 hours",
+      "Buyers/vendors: 3–5 days",
+      "Visits: pre-scheduled (Phase 1+)"
+    ],
+    "notSharedTitle": "What We Never Share",
+    "notShared": [
+      "NID / PIN / financial details",
+      "Family members' identity documents",
+      "Raw legal documents",
+      "Real-time CCTV feeds",
+      "Pricing — not publicly"
+    ],
+    "partnersTitle": "Partner Ecosystem",
+    "partners": [
+      { "name": "SYSmoAI", "note": "Parent tech organisation" },
+      { "name": "Bangladesh AI Mission", "note": "AI initiative" },
+      { "name": "emonhossain.pro", "note": "Founder profile" }
+    ],
+    "inquiryTypesTitle": "Inquiry Types",
+    "inquiryTypes": [
+      { "value": "bank-govt-investor", "label": "Bank / Government / Investor / NGO-CSR", "desc": "Agriculture & rural refinance, green refinance, IDCOL biogas, SREDA net metering, NGO/CSR, equity — due diligence and evidence pack" },
+      { "value": "vendor", "label": "Vendor / Contractor", "desc": "Soil test, survey, solar, biogas, CCTV, construction (Zone A only), vet, AI semen — quote submission" },
+      { "value": "buyer", "label": "Buyer", "desc": "Breeding stock, fattening goats, compost, silage, bio-slurry, milk surplus (Next-phase offerings)" },
+      { "value": "training", "label": "Training / Visit / Internship", "desc": "Farm tour, training, or internship inquiry (Later phase)" },
+      { "value": "general", "label": "General Inquiry", "desc": "Any other question or message" }
+    ],
+    "form": {
+      "title": "Submit Formal Inquiry",
+      "inquiryType": "Inquiry Type *",
+      "inquiryTypePlaceholder": "Select inquiry type...",
+      "name": "Full Name *",
+      "namePlaceholder": "Your full name",
+      "org": "Organisation / Institution",
+      "orgPlaceholder": "Bank, NGO, government dept., company (if applicable)",
+      "designation": "Designation",
+      "designationPlaceholder": "Your designation (if applicable)",
+      "phone": "Phone / WhatsApp",
+      "phonePlaceholder": "+880 ...",
+      "email": "Email",
+      "emailPlaceholder": "you@example.com",
+      "budget": "Budget Range (optional)",
+      "budgetNone": "Prefer not to say",
+      "budgetOptions": [
+        { "value": "under-50k", "label": "Under BDT 50,000" },
+        { "value": "50k-200k", "label": "BDT 50,000 – 2,00,000" },
+        { "value": "200k-1m", "label": "BDT 2,00,000 – 10,00,000" },
+        { "value": "above-1m", "label": "Above BDT 10,00,000" }
+      ],
+      "visit": "Would you like a site visit?",
+      "message": "Message *",
+      "messagePlaceholder": "Describe your inquiry, purpose, and what you need from Kutirchar EcoFarm...",
+      "privacyNote": "🔒 Your contact information is used only to respond to your inquiry. We do not share your details with third parties. No sensitive documents are collected through this form.",
+      "submit": "Submit Inquiry",
+      "submitting": "Submitting...",
+      "errors": {
+        "name": "Name is required",
+        "inquiryType": "Please select an inquiry type",
+        "contact": "Provide at least phone or email",
+        "email": "Enter a valid email address",
+        "message": "Message must be at least 20 characters"
+      },
+      "successTitle": "Inquiry Received",
+      "successBody": "Thank you for reaching out to Kutirchar EcoFarm. Bank/government inquiries receive a response within 24–48 hours; others within 3–5 days.",
+      "successUrgent": "For urgent matters, email us directly at support@kutircharecofarm.com",
+      "submitAnother": "Submit Another Inquiry"
+    }
   },
   "faq": {
-    "heroTitle": "Frequently Asked Questions"
+    "heroTitle": "Frequently Asked Questions",
+    "heroSubtitle": "Honest, evidence-first answers about Kutirchar EcoFarm — the project, financing, Zone B, products, privacy, visits, jobs, environment, and disaster risk.",
+    "items": [
+      { "q": "What is Kutirchar EcoFarm?", "a": "A proof-based, phased rural smart farm and circular energy ecosystem at Kutirchar, Sirajganj — starting with AI-based breed improvement, alongside a goat nucleus, selective dairy, biogas, grass/silage, bio-slurry fertilizer, solar, and digital monitoring." },
+      { "q": "What phase is the project currently in?", "a": "Year 0: Verification & Foundation. Land document review, boundary survey planning, soil test arrangements, Zone B ejmali status verification, and drainage survey. No construction until every Year 0 item is complete." },
+      { "q": "How does banking/financing work?", "a": "Conservative financial policy: monthly EMI stays within 50% of verified rolling 12-month income. Phase-wise CAPEX, 3 vendor quotes per major purchase, Low/Base/High stress tests, CAPEX freeze if runway < 45 days. Relevant channels: BB agriculture & rural refinance, BB Green Refinance, IDCOL biogas, SREDA net metering, PKSF GREEN, BIFFL." },
+      { "q": "What is Zone B and what is allowed there?", "a": "Zone B is 12 decimal non-private/ejmali land under legal verification. Only removable structures are permitted: fodder racks, temporary shade, portable compost, loading area, removable water tank. No concrete or permanent structures." },
+      { "q": "How does breed improvement work? Is it genetic engineering?", "a": "No. It is Artificial Insemination-based breed improvement and selective breeding — using only verified semen from DLS/BRAC/ACI/Lal Teer/ST Genetics. Lab-based gene editing/embryo transfer could only ever happen with an institutional partner." },
+      { "q": "What products/services are available now?", "a": "Now: verified animal sourcing & verification (100-point scorecard), AI-based breed improvement consultation, vendor/partner onboarding, and partnership discussions. Next/Later products (breeding stock, dairy, compost, silage, bio-slurry, training) unlock when the relevant phase gates pass." },
+      { "q": "How can I visit?", "a": "Pre-scheduled appointments only (Phase 1+). Submit an inquiry via the Contact page. Location: Kutirchar, Bhadraghat, Kamarkhanda, Sirajganj, Bangladesh." },
+      { "q": "Why show open gaps publicly?", "a": "Credibility through transparency. Built for bank officers, government, and investors. Open gaps prove we know what to work on — nothing is hidden." },
+      { "q": "How do I apply as a vendor or partner?", "a": "Use the Contact form. Select Vendor/Contractor or Bank/Government/NGO-CSR and describe your qualifications and proposal. The 3-quote policy applies to every major purchase." },
+      { "q": "Are there jobs or internships?", "a": "No regular hiring at present (Year 0). A Field Operations Coordinator is active on site. Training/internships may open in later phases on a demand-gated basis — select 'Training / Visit / Internship' on the Contact form." },
+      { "q": "How are environment and sustainability ensured?", "a": "The circular model is the core: dung → biogas → bio-slurry → organic fertilizer → grass → animal feed. Reduced chemical fertilizer and LPG dependence, solar self-use first, and soil organic matter regeneration." },
+      { "q": "How is flood/disaster risk handled?", "a": "Because this is char land, verification comes first: level and drainage surveys are mandatory, no blind filling until the drainage outlet is confirmed, and permanent construction only after the soil-test gate. Risks and stop rules are reported in every update." },
+      { "q": "Is personal information collected?", "a": "Only what is needed to respond. Never NID, PIN, bank details, or sensitive documents. See the Privacy page for details." }
+    ],
+    "moreQuestions": "More questions? Email us at support@kutircharecofarm.com"
   },
   "privacy": {
-    "heroTitle": "Privacy Policy"
+    "heroTitle": "Privacy & Data Use",
+    "heroSubtitle": "Kutirchar EcoFarm respects your privacy. This policy explains what we collect and how we use and protect it.",
+    "lastUpdated": "Last updated: July 2026",
+    "sections": [
+      { "title": "Hard boundary — never public", "body": "NID, PIN, bank information, family identity documents, and raw legal documents are never published on the public website or repositories. They are held privately for bank/government due diligence only." },
+      { "title": "What information we collect", "body": "Only what you voluntarily provide through the Contact form (name, organisation, designation, phone/email, message). We never request or collect NID, PIN, passport numbers, bank accounts, or sensitive identity documents." },
+      { "title": "How we use your information", "body": "Information you provide is used solely to respond to your specific inquiry. No marketing emails, no selling/sharing with third parties, no automated profiling." },
+      { "title": "Retention and security", "body": "Inquiry data is retained for up to ~24 months after resolution (longer if legally required). The website uses HTTPS encryption." },
+      { "title": "Cookies and analytics", "body": "This website does not use cookies for personalized advertising, user tracking, or behavioral profiling. Only cookieless, aggregate analytics (such as Plausible/Umami-style tools) may be used." },
+      { "title": "Third-party sharing", "body": "We do not sell, trade, or rent your information. Sharing happens only at your explicit request, under legal obligation, or to protect legal rights." },
+      { "title": "Your rights", "body": "You may ask what information we hold, request correction, request deletion (subject to legal limits), and withdraw from future communications. We respond to all data requests within 14 business days." },
+      { "title": "Data breach policy", "body": "If a data breach is detected, affected individuals will be notified within 3 working days." },
+      { "title": "Contact", "body": "For questions about this policy or your data: support@kutircharecofarm.com. Postal address: Kutirchar EcoFarm, Kutirchar, Bhadraghat, Kamarkhanda, Sirajganj, Bangladesh." }
+    ]
   },
   "execSummary": {
-    "heroTitle": "Executive Summary"
+    "heroTitle": "Executive Summary",
+    "heroSubtitle": "A one-page summary for banks and government. For qualified stakeholders conducting due diligence.",
+    "cards": [
+      { "title": "Project Summary", "body": "Kutirchar EcoFarm — a proof-based, phased rural smart farm and circular energy ecosystem at Kutirchar, Sirajganj. Starts with AI-based breed improvement; goat nucleus, selective dairy, biogas, grass/silage, bio-slurry, solar, and digital monitoring. Zone A (10 decimal, private) for core operations; Zone B (12 decimal, non-private/ejmali) removable-use only until legal verification." },
+      { "title": "Phase Status", "body": "Currently in Year 0: Verification & Foundation. 7 open verification gaps. No permanent construction until all Year 0 items are complete. Conservative financial policy: EMI within 50% of verified rolling 12-month income. 6 phases (Years 0–5), each gated by evidence from the previous one." },
+      { "title": "Contact", "body": "Founder & Project Lead: Emon Hossain (+8801730679999). Director — Operations & Partnerships: MD Esteak Ahmed (+8801730679998). Email: support@kutircharecofarm.com. Location: Kutirchar, Bhadraghat, Kamarkhanda, Sirajganj. Field Ops: Md. Al Amin. Full documentation on formal request — see Proof & Governance." }
+    ]
   },
   "notFound": {
-    "title": "Page Not Found"
+    "title": "Page Not Found",
+    "body": "The page you are looking for does not exist or has been moved.",
+    "goHome": "Go Home",
+    "contactUs": "Contact Us"
   },
   "common": {
     "now": "Now",
     "next": "Next",
     "later": "Later"
+  },
+  "seo": {
+    "siteName": "Kutirchar EcoFarm | কুটিরচর ইকোফার্ম",
+    "pages": {
+      "home": { "title": "Kutirchar EcoFarm — Smart Cattle & Circular Energy Ecosystem | Sirajganj", "description": "Starting with AI-based breed improvement — a proof-driven rural smart farm ecosystem. Dairy, biogas, solar, silage — Kutirchar, Sirajganj, Bangladesh." },
+      "project": { "title": "Project Overview — Kutirchar EcoFarm", "description": "Evidence-first smart farm: mission, 5-year phase-gated roadmap, 10-year vision, our people — Kutirchar, Sirajganj." },
+      "proof": { "title": "Proof & Governance — Due Diligence | Kutirchar EcoFarm", "description": "Due Diligence Summary for banks/government/investors: 7 open-gap audit ledger, stop rules, financial discipline, financing structure." },
+      "ecosystem": { "title": "Circular Ecosystem — 8-Node Core Loop | Kutirchar EcoFarm", "description": "Cattle → biogas → bio-slurry → grass/silage → animal feed + solar — the full map of a circular, profitable system." },
+      "products": { "title": "Products & Services — Now/Next/Later | Kutirchar EcoFarm", "description": "Phase-gated products: verified animal sourcing, AI breed improvement consultation, breeding stock, compost, silage, bio-slurry." },
+      "digital": { "title": "Digital Infrastructure — Starlink, CCTV, UPS | Kutirchar EcoFarm", "description": "4-layer digital infrastructure: connectivity, power safety, security, network — governance-first, gate-controlled rollout." },
+      "updates": { "title": "Updates & Reports — Kutirchar EcoFarm", "description": "Date-stamped transparent updates: progress, open gaps, evidence added, and next-30-day plans." },
+      "contact": { "title": "Contact & Partnership — Kutirchar EcoFarm", "description": "Bank/government/NGO/buyer/vendor inquiries. Email, phone/WhatsApp, and a formal inquiry form. Response: 24–48h (bank/government)." },
+      "faq": { "title": "FAQ — Kutirchar EcoFarm", "description": "Auditor-tone Q&A on the project, financing, Zone B, breed improvement, privacy, visits, and disaster risk." },
+      "privacy": { "title": "Privacy & Data Use — Kutirchar EcoFarm", "description": "Hard boundary: NID/PIN/bank/legal documents never public. Cookieless analytics, ~24-month data retention, your rights." },
+      "execSummary": { "title": "Executive Summary — Kutirchar EcoFarm", "description": "One-page project summary for banks and government — phase status, stop rules, and contact." },
+      "brandGuide": { "title": "Brand Identity Guide — Kutirchar EcoFarm", "description": "The complete brand system: logo, 12 color tokens, typography, seal, export assets." },
+      "notFound": { "title": "Page Not Found — Kutirchar EcoFarm", "description": "The requested page does not exist or has been moved." }
+    }
   }
 }
