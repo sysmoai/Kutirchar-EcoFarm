@@ -1,32 +1,21 @@
 import { createBrowserRouter } from "react-router";
 import { Root } from "./components/layout/Root";
-import { HomePage } from "./components/pages/HomePage";
-import { ProjectPage } from "./components/pages/ProjectPage";
-import { ProofPage } from "./components/pages/ProofPage";
-import { ProductsPage } from "./components/pages/ProductsPage";
-import { EcosystemPage } from "./components/pages/EcosystemPage";
-import { DigitalPage } from "./components/pages/DigitalPage";
-import { UpdatesPage } from "./components/pages/UpdatesPage";
-import { ContactPage } from "./components/pages/ContactPage";
-import { FaqPage } from "./components/pages/FaqPage";
-import { PrivacyPage } from "./components/pages/PrivacyPage";
-import { ExecSummaryPage } from "./components/pages/ExecSummaryPage";
-import { NotFound } from "./components/pages/NotFound";
-import { BrandGuidePage } from "./components/pages/BrandGuidePage";
 
+// Per-route code-splitting: the data router waits for each chunk before
+// rendering, so lazy routes compose cleanly with the route transitions.
 export const router = createBrowserRouter([
   { path: "/", Component: Root, children: [
-    { index: true, Component: HomePage },
-    { path: "project", Component: ProjectPage },
-    { path: "proof", Component: ProofPage },
-    { path: "products", Component: ProductsPage },
-    { path: "ecosystem", Component: EcosystemPage },
-    { path: "digital", Component: DigitalPage },
-    { path: "updates", Component: UpdatesPage },
-    { path: "contact", Component: ContactPage },
-    { path: "faq", Component: FaqPage },
-    { path: "privacy", Component: PrivacyPage },
-    { path: "executive-summary", Component: ExecSummaryPage },
-    { path: "brand-guide", Component: BrandGuidePage },
-    { path: "*", Component: NotFound },
+    { index: true,                lazy: async () => ({ Component: (await import("./components/pages/HomePage")).HomePage }) },
+    { path: "project",            lazy: async () => ({ Component: (await import("./components/pages/ProjectPage")).ProjectPage }) },
+    { path: "proof",              lazy: async () => ({ Component: (await import("./components/pages/ProofPage")).ProofPage }) },
+    { path: "products",           lazy: async () => ({ Component: (await import("./components/pages/ProductsPage")).ProductsPage }) },
+    { path: "ecosystem",          lazy: async () => ({ Component: (await import("./components/pages/EcosystemPage")).EcosystemPage }) },
+    { path: "digital",            lazy: async () => ({ Component: (await import("./components/pages/DigitalPage")).DigitalPage }) },
+    { path: "updates",            lazy: async () => ({ Component: (await import("./components/pages/UpdatesPage")).UpdatesPage }) },
+    { path: "contact",            lazy: async () => ({ Component: (await import("./components/pages/ContactPage")).ContactPage }) },
+    { path: "faq",                lazy: async () => ({ Component: (await import("./components/pages/FaqPage")).FaqPage }) },
+    { path: "privacy",            lazy: async () => ({ Component: (await import("./components/pages/PrivacyPage")).PrivacyPage }) },
+    { path: "executive-summary",  lazy: async () => ({ Component: (await import("./components/pages/ExecSummaryPage")).ExecSummaryPage }) },
+    { path: "brand-guide",        lazy: async () => ({ Component: (await import("./components/pages/BrandGuidePage")).BrandGuidePage }) },
+    { path: "*",                  lazy: async () => ({ Component: (await import("./components/pages/NotFound")).NotFound }) },
   ]}]);

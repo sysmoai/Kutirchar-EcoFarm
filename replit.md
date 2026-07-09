@@ -28,13 +28,16 @@ A bilingual (Bangla default / English toggle) production website for Kutirchar E
   - `src/app/brand.ts` — **source of truth** for all brand colors, fonts, and contact info. Never invent new colors/fonts/claims outside this file.
   - `src/app/routes.tsx` — defines all pages: `/`, `/project`, `/proof`, `/ecosystem`, `/products`, `/digital`, `/updates`, `/contact`, plus `/brand-guide` (14-section brand identity guide)
   - `src/app/components/layout/Root.tsx` — shared navbar/footer/phase-banner layout
-  - `src/app/components/shared/i18n.tsx` — `LocaleProvider`/`useLocale` bilingual i18n system (bn default, en toggle)
+  - `src/app/components/shared/i18n.tsx` — `LocaleProvider`/`useLocale` bilingual i18n system (bn default, en toggle; `?lang=bn|en` URL param overrides initial locale)
   - `src/i18n/bn.json`, `src/i18n/en.json` — centralized translation dictionaries (source of truth for all copy)
+  - `src/app/motion.ts` + `src/app/components/shared/motion.tsx` — motion tokens (EASE, MOTION.dur/stagger/viewportMargin) and primitives (Reveal, Stagger/StaggerItem, CountUp, Marquee, IllustrativeImage, MonogramAvatar); framer-motion only
+  - `src/app/components/shared/seo.ts` — per-page OG/Twitter meta, canonical, and JSON-LD (Organization, LocalBusiness, BreadcrumbList, FAQPage) injected from Root's SEO effect
 
 ## Architecture decisions
 
 - Kutirchar EcoFarm pages are self-contained inline-styled React components (no shadcn/radix dependency) — this matched the original repo structure and was preserved as-is during import.
-- Zero Fake Data Policy: all content on the site comes from the original repo's real, verified copy (bn.json/en.json, brand.ts). Phone/WhatsApp contact fields are intentionally left empty in `brand.ts` pending verification — do not fabricate values.
+- Zero Fake Data Policy: all content on the site comes from real, verified copy (bn.json/en.json, brand.ts). Contact email + 3 phone/WhatsApp lines in `brand.ts` are verified public lines (Content Pack v2, July 2026) — do not add others without verification.
+- Motion rules (Master Build v5): framer-motion ONLY (no GSAP/Lenis/Lottie), transform/opacity animations only, parallax ≤12%, `prefers-reduced-motion` respected globally (`MotionConfig reducedMotion="user"` + `useReducedMotion` gates). AI-generated visuals must use `IllustrativeImage` (adds localized "illustrative" disclosure); no real faces — use `MonogramAvatar`.
 - Site is frontend-only; the contact form is a mailto-based fallback per the original repo's design (no backend wiring yet).
 
 ## Product

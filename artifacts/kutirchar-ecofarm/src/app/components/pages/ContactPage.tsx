@@ -1,8 +1,11 @@
 import * as React from "react";
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { COLORS, FONTS, BRAND } from "../../brand";
+import { EASE, MOTION } from "../../motion";
 import { PageHero, PageSection, SectionHeading, Card } from "../shared/Shared";
 import { useLocale } from "../shared/i18n";
+import { Reveal, Stagger, StaggerItem } from "../shared/motion";
 
 type InquiryType = "" | "bank-govt-investor" | "vendor" | "buyer" | "training" | "general";
 
@@ -72,20 +75,28 @@ export function ContactPage() {
 
           {/* Left: contact channels */}
           <div>
-            <SectionHeading title={c.directTitle} />
-            <div style={{ display: "flex", flexDirection: "column", gap: 16, marginBottom: 24 }}>
+            <Reveal>
+              <SectionHeading title={c.directTitle} />
+            </Reveal>
+            <Stagger style={{ display: "flex", flexDirection: "column", gap: 16, marginBottom: 24 }}>
               {channels.map((ch) => (
-                <a key={ch.label} href={ch.href} target={ch.href.startsWith("http") ? "_blank" : undefined} rel="noopener noreferrer"
-                  style={{ display: "flex", gap: 14, alignItems: "flex-start", padding: "14px 18px", background: "white", borderRadius: 12, border: "1px solid #e5eee9", textDecoration: "none", transition: "border-color 0.15s" }}>
-                  <span style={{ fontSize: 22, flexShrink: 0 }}>{ch.icon}</span>
-                  <div>
-                    <p style={{ fontFamily: FONTS.sans, fontSize: 13, fontWeight: 700, color: COLORS.kutircharGreen, margin: "0 0 2px" }}>{ch.label}</p>
-                    <p style={{ fontFamily: FONTS.sans, fontSize: 13, color: COLORS.charcoalText, margin: "0 0 3px" }}>{ch.value}</p>
-                    <p style={{ fontFamily: FONTS.sans, fontSize: 11, color: "#6b7280", margin: 0 }}>{ch.desc}</p>
-                  </div>
-                </a>
+                <StaggerItem key={ch.label} y={12}>
+                  <motion.a
+                    href={ch.href} target={ch.href.startsWith("http") ? "_blank" : undefined} rel="noopener noreferrer"
+                    whileHover={{ y: -2 }}
+                    transition={{ duration: MOTION.dur.fast, ease: EASE }}
+                    style={{ display: "flex", gap: 14, alignItems: "flex-start", padding: "14px 18px", background: "white", borderRadius: 12, border: "1px solid #e5eee9", textDecoration: "none" }}
+                  >
+                    <span style={{ fontSize: 22, flexShrink: 0 }}>{ch.icon}</span>
+                    <div>
+                      <p style={{ fontFamily: FONTS.sans, fontSize: 13, fontWeight: 700, color: COLORS.kutircharGreen, margin: "0 0 2px" }}>{ch.label}</p>
+                      <p style={{ fontFamily: FONTS.sans, fontSize: 13, color: COLORS.charcoalText, margin: "0 0 3px" }}>{ch.value}</p>
+                      <p style={{ fontFamily: FONTS.sans, fontSize: 11, color: "#6b7280", margin: 0 }}>{ch.desc}</p>
+                    </div>
+                  </motion.a>
+                </StaggerItem>
               ))}
-            </div>
+            </Stagger>
 
             {/* Team block */}
             <SectionHeading title={c.teamTitle} />
@@ -150,7 +161,11 @@ export function ContactPage() {
           {/* Right: form */}
           <div>
             {status === "success" ? (
-              <div role="status" aria-live="polite" style={{ background: "#f0f9f3", border: "2px solid #c0ddc8", borderRadius: 16, padding: "40px 32px", textAlign: "center" }}>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.96 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: MOTION.dur.base, ease: EASE }}
+                role="status" aria-live="polite" style={{ background: "#f0f9f3", border: "2px solid #c0ddc8", borderRadius: 16, padding: "40px 32px", textAlign: "center" }}>
                 <p style={{ fontSize: 48, margin: "0 0 16px" }}>✓</p>
                 <h3 style={{ fontFamily: FONTS.serif, fontSize: 24, color: COLORS.kutircharGreen, margin: "0 0 10px" }}>{c.form.successTitle}</h3>
                 <p style={{ fontFamily: FONTS.sans, fontSize: 14, color: "#444", lineHeight: 1.7, margin: "0 0 8px" }}>
@@ -162,7 +177,7 @@ export function ContactPage() {
                 <button onClick={handleReset} style={{ background: COLORS.kutircharGreen, color: "white", fontFamily: FONTS.sans, fontSize: 14, fontWeight: 600, padding: "11px 24px", borderRadius: 10, border: "none", cursor: "pointer" }}>
                   {c.form.submitAnother}
                 </button>
-              </div>
+              </motion.div>
             ) : (
               <form onSubmit={handleSubmit} noValidate>
                 <h3 style={{ fontFamily: FONTS.serif, fontSize: 22, color: COLORS.charcoalText, margin: "0 0 24px" }}>{c.form.title}</h3>
@@ -231,9 +246,10 @@ export function ContactPage() {
                   {c.form.privacyNote}
                 </p>
 
-                <button
+                <motion.button
                   type="submit"
                   disabled={status === "submitting"}
+                  whileTap={{ scale: 0.98 }}
                   style={{
                     width: "100%", background: status === "submitting" ? "#888" : COLORS.kutircharGreen,
                     color: "white", fontFamily: FONTS.sans, fontSize: 15, fontWeight: 700,
@@ -242,7 +258,7 @@ export function ContactPage() {
                   }}
                 >
                   {status === "submitting" ? c.form.submitting : `${c.form.submit} →`}
-                </button>
+                </motion.button>
               </form>
             )}
           </div>

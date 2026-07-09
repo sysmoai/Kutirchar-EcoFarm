@@ -1,0 +1,26 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "q-UI1vK1ARFGBLjgRKhnJ"
+uri = "file://artifacts/kutirchar-ecofarm/src/assets/images/hero-char-farm.png"
+type = "image"
+title = "char farm hero illustration"
+
+[[generated]]
+id = "cmsOI6_n9evQ9plOTR1au"
+uri = "file://artifacts/kutirchar-ecofarm/src/assets/images/project-fields.png"
+type = "image"
+title = "project page fields illustration"
+
+[[generated]]
+id = "TAmretItF1VNasdgowfM1"
+uri = "file://artifacts/kutirchar-ecofarm/src/assets/images/digital-isometric.png"
+type = "image"
+title = "digital infrastructure isometric illustration"
+
+[[generated]]
+id = "6YoEm9w398VJ6vc8SGwE5"
+uri = "file://artifacts/kutirchar-ecofarm/src/assets/images/ecosystem-aerial.png"
+type = "image"
+title = "ecosystem aerial illustration"

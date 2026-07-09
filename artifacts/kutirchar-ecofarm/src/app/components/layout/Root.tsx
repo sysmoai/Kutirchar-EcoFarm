@@ -1,8 +1,11 @@
 import { useState, useEffect } from "react";
-import { Outlet, NavLink, Link, useLocation } from "react-router";
+import { useOutlet, NavLink, Link, useLocation } from "react-router";
+import { AnimatePresence, motion } from "framer-motion";
 import logoIcon from "../../../imports/image.png";
 import { BRAND, COLORS, FONTS } from "../../brand";
+import { EASE, MOTION } from "../../motion";
 import { useLocale, type Locale } from "../shared/i18n";
+import { applySeo } from "../shared/seo";
 
 const navRoutes = [
   { to: "/",           key: "home" },
@@ -86,15 +89,14 @@ export function Root() {
     const key = seoKeyByPath[pathname] ?? "notFound";
     const page = (t.seo.pages as Record<string, { title: string; description: string }>)[key];
     if (!page) return;
-    document.title = page.title;
-    let meta = document.querySelector('meta[name="description"]');
-    if (!meta) {
-      meta = document.createElement("meta");
-      meta.setAttribute("name", "description");
-      document.head.appendChild(meta);
-    }
-    meta.setAttribute("content", page.description);
-  }, [pathname, t]);
+    applySeo({
+      pathname,
+      page,
+      locale,
+      homeLabel: t.nav.home,
+      faqItems: t.faq.items,
+    });
+  }, [pathname, t, locale]);
 
   // Close the mobile menu on Escape (standard keyboard expectation)
   useEffect(() => {
@@ -110,11 +112,8 @@ export function Root() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "instant" });
-  }, [pathname]);
-
   const navLabel = (key: (typeof navRoutes)[number]["key"]) => t.nav[key];
+  const outlet = useOutlet();
 
   return (
     <div style={{ minHeight: "100vh", background: COLORS.documentIvory, fontFamily: locale === "bn" ? FONTS.bengali : FONTS.sans }}>
@@ -135,15 +134,17 @@ export function Root() {
         role="navigation"
         aria-label="Main navigation"
         style={{
-          background: COLORS.deepFarmGreen,
+          background: scrolled ? "rgba(11,79,42,0.92)" : COLORS.deepFarmGreen,
+          backdropFilter: scrolled ? "blur(8px)" : "none",
+          WebkitBackdropFilter: scrolled ? "blur(8px)" : "none",
           position: "sticky",
           top: 0,
           zIndex: 100,
           boxShadow: scrolled ? "0 2px 12px rgba(0,0,0,0.3)" : "none",
-          transition: "box-shadow 0.2s",
+          transition: "box-shadow 0.2s, background 0.2s",
         }}
       >
-        <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 20px", display: "flex", alignItems: "center", height: 60, gap: 16 }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 20px", display: "flex", alignItems: "center", height: scrolled ? 52 : 60, gap: 16, transition: "height 0.25s cubic-bezier(0.22,1,0.36,1)" }}>
 
           {/* Logo — dual-script lockup, always both scripts (brand identity) */}
           <Link to="/" aria-label={`${BRAND.nameEn} — ${t.nav.home}`} style={{ display: "flex", alignItems: "center", gap: 10, textDecoration: "none", flexShrink: 0 }}>
@@ -273,9 +274,22 @@ export function Root() {
         )}
       </nav>
 
-      {/* ── Page content ─────────────────────────────────────────────────── */}
+      {/* ── Page content — route transition: fade + 8px slide + scroll-top ── */}
       <main id="main-content" tabIndex={-1} style={{ outline: "none" }}>
-        <Outlet />
+        <AnimatePresence
+          mode="wait"
+          onExitComplete={() => window.scrollTo({ top: 0, behavior: "instant" })}
+        >
+          <motion.div
+            key={pathname}
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8, transition: { duration: MOTION.dur.fast, ease: EASE } }}
+            transition={{ duration: MOTION.dur.base, ease: EASE }}
+          >
+            {outlet}
+          </motion.div>
+        </AnimatePresence>
       </main>
 
       {/* ── Footer ───────────────────────────────────────────────────────── */}
