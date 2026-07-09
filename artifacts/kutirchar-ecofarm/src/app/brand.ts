@@ -17,12 +17,17 @@ export const BRAND = {
     full:     "Kutirchar, Bhadraghat, Kamarkhanda, Sirajganj, Bangladesh",
   },
   contact: {
-    email:    "info@kutircharecofarm.com",
+    email:    "support@kutircharecofarm.com",
     website:  "kutircharecofarm.com",
-    // Left empty on purpose: no fabricated numbers are published. When a real,
-    // verified line exists, set it here and the footer/contact channels auto-enable.
-    whatsapp: "" as string,
-    phone:    "" as string,
+    // Verified public lines (Content Pack v2, July 2026). Primary = Founder & Project Lead.
+    whatsapp: "+8801730679999" as string,
+    phone:    "+8801730679999" as string,
+    // All verified public phone/WhatsApp lines with owner names.
+    phones: [
+      { nameEn: "Md. Emon Hossain",  nameBn: "ইমন হোসেন",           roleEn: "Founder & Project Lead",                    roleBn: "প্রতিষ্ঠাতা ও প্রকল্প প্রধান",              number: "+8801730679999" },
+      { nameEn: "MD Esteak Ahmed",   nameBn: "এমডি ইশতিয়াক আহমেদ", roleEn: "Director — Operations & Partnerships",       roleBn: "পরিচালক — পরিচালনা ও অংশীদারিত্ব",        number: "+8801730679998" },
+      { nameEn: "Md. Anisur Rahman", nameBn: "মোঃ আনিছুর রহমান",    roleEn: "Family Land Guardian",                       roleBn: "পারিবারিক ভূমি অভিভাবক",                   number: "+8801718761373" },
+    ],
   },
   zoneA: "10 decimal private/core land",
   zoneB: "12 decimal non-private/ejmali — removable use only",

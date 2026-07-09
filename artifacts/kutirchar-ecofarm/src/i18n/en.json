@@ -31,17 +31,38 @@
     "project": "The Project",
     "proof": "Proof & Governance",
     "ecosystem": "Ecosystem",
-    "products": "Products & Services",
-    "digital": "Digital Infra",
+    "products": "Products",
+    "digital": "Digital",
     "updates": "Updates",
     "contact": "Contact",
     "faq": "FAQ",
     "privacy": "Privacy",
     "executiveSummary": "Executive Summary",
     "brandGuide": "Brand Guide",
+    "brandGuideFull": "Brand Identity Guide",
+    "partnership": "Partnership",
+    "partnershipInquiry": "Partnership Inquiry",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
-    "skipToContent": "Skip to content"
+    "skipToContent": "Skip to main content",
+    "langToggleLabel": "Select language"
+  },
+  "banner": {
+    "phaseBn": "যাচাই ও ভিত্তি পর্যায়",
+    "phaseEn": "VERIFICATION & FOUNDATION PHASE — Evidence-first execution"
+  },
+  "footer": {
+    "tagline": "Smart Cattle & Circular Energy Ecosystem",
+    "address": "Kutirchar, Bhadraghat, Kamarkhanda",
+    "addressLine2": "Sirajganj, Bangladesh",
+    "navigate": "Navigate",
+    "contactHeading": "Contact",
+    "inquiryForm": "Inquiry form",
+    "trustHeading": "Trust Policy",
+    "trust1": "All claims are phase-gated and evidence-first. No NID, PIN, or sensitive identifiers are published.",
+    "trust2": "Zone B: non-private/ejmali land — removable use only. No permanent structures until legal verification.",
+    "copyright": "© 2026 Kutirchar EcoFarm — Emon Hossain. All rights reserved. Brand locked: 21 June 2026.",
+    "motto": "Kutirchar EcoFarm — verification-first, evidence-based"
   },
   "project": {
     "heroTitle": "The Project",
