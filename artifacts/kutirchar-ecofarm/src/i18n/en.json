@@ -1,0 +1,91 @@
+{
+  "lang": "en",
+  "langName": "English",
+  "dir": "ltr",
+  "brand": {
+    "nameEn": "Kutirchar EcoFarm",
+    "tagline": "Smart Cattle & Circular Energy Ecosystem",
+    "shortDesc": "Dairy · Biogas · Solar · Silage",
+    "phase": "Verification & Foundation Phase"
+  },
+  "home": {
+    "heroTag": "VERIFICATION & FOUNDATION PHASE",
+    "heroTitle": "Kutirchar EcoFarm",
+    "heroTagline": "Smart Cattle & Circular Energy Ecosystem",
+    "heroSubtitle": "Dairy · Biogas · Solar · Silage",
+    "heroCtaBank": "Bank & Govt Pack",
+    "heroCtaProducts": "Products & Services",
+    "heroCtaPartner": "Partnership",
+    "whatIsTitle": "What is Kutirchar EcoFarm?",
+    "whatIsDesc1": "A proof-based, phased rural smart farm in Kutirchar, Sirajganj.",
+    "readOverview": "Read Full Overview",
+    "ecosystemTitle": "The Circular Ecosystem",
+    "proofTitle": "Proof & Governance",
+    "updatesTitle": "Latest Updates",
+    "viewAllUpdates": "View All Updates",
+    "startPartnership": "Start Partnership Discussion",
+    "viewProofPack": "View Proof Pack"
+  },
+  "nav": {
+    "home": "Home",
+    "project": "The Project",
+    "proof": "Proof & Governance",
+    "ecosystem": "Ecosystem",
+    "products": "Products & Services",
+    "digital": "Digital Infra",
+    "updates": "Updates",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "privacy": "Privacy",
+    "executiveSummary": "Executive Summary",
+    "brandGuide": "Brand Guide",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "skipToContent": "Skip to content"
+  },
+  "project": {
+    "heroTitle": "The Project",
+    "whatIsTitle": "What is Kutirchar EcoFarm?"
+  },
+  "proof": {
+    "heroTitle": "Proof & Governance",
+    "auditTitle": "Verification Audit Ledger"
+  },
+  "ecosystem": {
+    "heroTitle": "The Circular Ecosystem"
+  },
+  "products": {
+    "heroTitle": "Products & Services",
+    "nowTitle": "Available Now",
+    "nextTitle": "Next Phase",
+    "laterTitle": "Later"
+  },
+  "digital": {
+    "heroTitle": "Digital Infrastructure"
+  },
+  "updates": {
+    "heroTitle": "Updates & Reports",
+    "filterAll": "All"
+  },
+  "contact": {
+    "heroTitle": "Contact & Partnership",
+    "formTitle": "Submit Inquiry"
+  },
+  "faq": {
+    "heroTitle": "Frequently Asked Questions"
+  },
+  "privacy": {
+    "heroTitle": "Privacy Policy"
+  },
+  "execSummary": {
+    "heroTitle": "Executive Summary"
+  },
+  "notFound": {
+    "title": "Page Not Found"
+  },
+  "common": {
+    "now": "Now",
+    "next": "Next",
+    "later": "Later"
+  }
+}

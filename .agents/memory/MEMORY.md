@@ -1,0 +1,1 @@
+- [Importing external React sites as artifacts](importing-external-react-site.md) — checklist for porting a standalone GitHub React repo into the pnpm-monorepo artifact scaffold.

@@ -1,0 +1,21 @@
+ROLE: তুমি একজন world-class senior full-stack engineer + product/brand designer + bilingual (বাংলা/English) content specialist। লক্ষ্য: নিচের existing codebase-কে বিশ্বের top 0.001% মানের, evidence-first, দ্বিভাষিক ওয়েবসাইট হিসেবে সম্পূর্ণ করা — brand system কঠোরভাবে মেনে।
+
+0) SOURCE OF TRUTH (কঠোর — override করবে না)
+- Import GitHub repo: https://github.com/sysmoai/KutircharEcoFarm (branch: main)। pnpm ব্যবহার করবে (npm/yarn নয়)। Run: pnpm install && pnpm run dev।
+- Brand SSOT: src/app/brand.ts, AI_BRAND_GUIDELINES.md, .cursorrules, default_shadcn_theme.css, /brand-guide (14 sections)। color token, typography, logo, spacing, tone কখনো পরিবর্তন করবে না; নতুন রঙ/ফন্ট বানাবে না — সব brand.ts থেকে import করবে।
+- Master logo src/imports/image.png মডিফাই করবে না।
+- কখনো commit/publish করবে না: NID, PIN, bank account, দলিল/খতিয়ান/mutation, .env, legal-private/, nid/, private-docs/।
+
+1) TECH (repo-র সাথে অভিন্ন): React 18 + TS · React Router v7 · Tailwind CSS v4 · Vite 6 · Fonts: Playfair Display, Inter, Manrope, Noto Sans Bengali, Noto Serif Bengali। নতুন framework আনবে না; বিদ্যমান file structure বজায় রাখবে।
+
+2) দ্বিভাষিক + LANGUAGE TOGGLE (আবশ্যক): locales bn (DEFAULT) + en; navbar-এ toggle (বাংলা ⇄ EN); localStorage-এ persist; প্রতিটি string centralized i18n dictionary-তে (hardcoded নয়); <html lang> dynamic + hreflang bn/en।
+
+3) QUALITY BAR — Top 0.001%: premium auditor aesthetic, 8pt spacing, brand-token-only colors, subtle motion (prefers-reduced-motion respect); sticky navbar, mobile-first, hamburger, scroll-to-top; WCAG 2.1 AA (semantic, focus, keyboard, দ্বিভাষিক alt/aria); Lighthouse ≥95 (LCP<2.5s, CLS<0.1, INP<200ms, code-split, lazy image); SEO (unique title/description, OG+Twitter, JSON-LD Organization+LocalBusiness+FAQPage+BreadcrumbList, sitemap.xml, robots.txt, canonical); no hype, Now/Next/Later chip সব product/service-এ, verification জায়গায় লাল Stop Rule callout।
+
+4) IDENTITY LOCK + CONTENT: Content Pack (Notion পেজে) হুবহু follow করো — brand, tagline, founder, mission, vision, ৮ পেজের বাংলা canonical কন্টেন্ট। ইংরেজি version natural auditor-tone-এ, meaning এক রেখে; নতুন দাবি নয়।
+
+5) SITE MAP (৮ পেজ + বিদ্যমান /brand-guide): / · /project · /proof · /ecosystem · /products · /digital · /updates · /contact। People (Founder + Land Guardian + Field Coordinator) → The Project পেজে "মানুষ/People" section + Contact-এ Project Lead block।
+
+6) ACCEPTANCE: ৮ পেজ দুই ভাষায় সম্পূর্ণ, toggle persist, hardcoded text নেই; Lighthouse ≥95; a11y AA; SEO+JSON-LD+sitemap+robots; privacy+stop rules প্রয়োগ; pnpm run build clean, console error নেই।
+
+7) RULE: ধরে নেবে না। কোনো তথ্য/সিদ্ধান্ত missing হলে থেমে আমাকে জিজ্ঞেস করবে।

@@ -1,0 +1,91 @@
+{
+  "lang": "bn",
+  "langName": "বাংলা",
+  "dir": "ltr",
+  "brand": {
+    "nameEn": "Kutirchar EcoFarm",
+    "tagline": "স্মার্ট গবাদিপশু ও চক্রাকার শক্তি ইকোসিস্টেম",
+    "shortDesc": "ডেইরি · বায়োগ্যাস · সোলার · সাইলেজ",
+    "phase": "যাচাই ও ভিত্তি পর্যায়"
+  },
+  "home": {
+    "heroTag": "যাচাই ও ভিত্তি পর্যায়",
+    "heroTitle": "কুটিরচর ইকোফার্ম",
+    "heroTagline": "স্মার্ট গবাদিপশু ও চক্রাকার শক্তি ইকোসিস্টেম",
+    "heroSubtitle": "ডেইরি · বায়োগ্যাস · সোলার · সাইলেজ",
+    "heroCtaBank": "ব্যাংক ও সরকারি প্যাক",
+    "heroCtaProducts": "পণ্য ও সেবা",
+    "heroCtaPartner": "অংশীদারিত্ব",
+    "whatIsTitle": "কুটিরচর ইকোফার্ম কী?",
+    "whatIsDesc1": "সিরাজগঞ্জের কুটিরচরে অবস্থিত প্রমাণ-ভিত্তিক স্মার্ট খামার।",
+    "readOverview": "সম্পূর্ণ বিবরণ পড়ুন",
+    "ecosystemTitle": "চক্রাকার ইকোসিস্টেম",
+    "proofTitle": "প্রমাণ ও নিয়ন্ত্রণ",
+    "updatesTitle": "সর্বশেষ আপডেট",
+    "viewAllUpdates": "সকল আপডেট দেখুন",
+    "startPartnership": "অংশীদারিত্ব আলোচনা শুরু করুন",
+    "viewProofPack": "প্রমাণ প্যাক দেখুন"
+  },
+  "nav": {
+    "home": "হোম",
+    "project": "প্রকল্প",
+    "proof": "প্রমাণ ও নিয়ন্ত্রণ",
+    "ecosystem": "ইকোসিস্টেম",
+    "products": "পণ্য ও সেবা",
+    "digital": "ডিজিটাল",
+    "updates": "আপডেট",
+    "contact": "যোগাযোগ",
+    "faq": "প্রশ্নোত্তর",
+    "privacy": "গোপনীয়তা",
+    "executiveSummary": "কার্যনির্বাহী সারসংক্ষেপ",
+    "brandGuide": "ব্র্যান্ড গাইড",
+    "openMenu": "মেনু খুলুন",
+    "closeMenu": "মেনু বন্ধ করুন",
+    "skipToContent": "মূল কন্টেন্টে যান"
+  },
+  "project": {
+    "heroTitle": "প্রকল্প — পরিচিতি",
+    "whatIsTitle": "কুটিরচর ইকোফার্ম কী?"
+  },
+  "proof": {
+    "heroTitle": "প্রমাণ ও নিয়ন্ত্রণ",
+    "auditTitle": "যাচাই অডিট লেজার"
+  },
+  "ecosystem": {
+    "heroTitle": "চক্রাকার ইকোসিস্টেম"
+  },
+  "products": {
+    "heroTitle": "পণ্য ও সেবা",
+    "nowTitle": "এখনই উপলব্ধ",
+    "nextTitle": "পরবর্তী পর্যায়",
+    "laterTitle": "পরে"
+  },
+  "digital": {
+    "heroTitle": "ডিজিটাল অবকাঠামো"
+  },
+  "updates": {
+    "heroTitle": "আপডেট ও প্রতিবেদন",
+    "filterAll": "সব"
+  },
+  "contact": {
+    "heroTitle": "যোগাযোগ ও অংশীদারিত্ব",
+    "formTitle": "অনুসন্ধান জমা দিন"
+  },
+  "faq": {
+    "heroTitle": "প্রশ্নোত্তর"
+  },
+  "privacy": {
+    "heroTitle": "গোপনীয়তা নীতি"
+  },
+  "execSummary": {
+    "heroTitle": "কার্যনির্বাহী সারসংক্ষেপ"
+  },
+  "notFound": {
+    "title": "পৃষ্ঠা পাওয়া যায়নি"
+  },
+  "common": {
+    "now": "এখন",
+    "next": "পরবর্তী",
+    "later": "পরে"
+  }
+}
