@@ -196,7 +196,7 @@ export function HomePage() {
             <StopRule>
               <strong>{h.stopRulesLabel}</strong> {h.homeStopRule}
             </StopRule>
-            <div style={{ marginTop: 20, display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+            <div style={{ marginTop: 20, display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 12 }}>
               {h.stats.map((stat, i) => {
                 const parsed = parseLocaleNumber(stat.num);
                 return (

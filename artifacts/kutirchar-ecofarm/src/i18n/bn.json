@@ -20,10 +20,10 @@
     "faq": "প্রশ্নোত্তর",
     "privacy": "গোপনীয়তা",
     "executiveSummary": "কার্যনির্বাহী সারসংক্ষেপ",
-    "brandGuide": "ব্র্যান্ড গাইড",
-    "brandGuideFull": "ব্র্যান্ড পরিচিতি গাইড",
-    "partnership": "অংশীদারিত্ব",
-    "partnershipInquiry": "অংশীদারিত্ব অনুসন্ধান",
+    "brandGuide": "ব্রান্ড",
+    "brandGuideFull": "ব্রান্ড গাইড",
+    "partnership": "পার্টনারশিপ",
+    "partnershipInquiry": "পার্টনারশিপ আবেদন",
     "openMenu": "মেনু খুলুন",
     "closeMenu": "মেনু বন্ধ করুন",
     "skipToContent": "মূল কন্টেন্টে যান",
@@ -37,14 +37,19 @@
     "tagline": "স্মার্ট গবাদিপশু ও চক্রাকার শক্তি ইকোসিস্টেম",
     "address": "কুটিরচর, ভদ্রঘাট, কামারখন্দ",
     "addressLine2": "সিরাজগঞ্জ, বাংলাদেশ",
-    "navigate": "নেভিগেশন",
+    "navigate": "নেভিগেট",
     "contactHeading": "যোগাযোগ",
-    "inquiryForm": "অনুসন্ধান ফর্ম",
-    "trustHeading": "ট্রাস্ট নীতি",
+    "inquiryForm": "আবেদন ফর্ম",
+    "trustHeading": "বিশ্বাস ও পরিবর্তন",
     "trust1": "সব দাবি পর্যায়ভিত্তিক ও প্রমাণ-প্রথম। কোনো NID, PIN বা সংবেদনশীল পরিচয় প্রকাশ করা হয় না।",
     "trust2": "জোন বি: অ-ব্যক্তিগত/এজমালি জমি — শুধুমাত্র অপসারণযোগ্য ব্যবহার। আইনি যাচাই ছাড়া কোনো স্থায়ী স্থাপনা নয়।",
     "copyright": "© ২০২৬ কুটিরচর ইকোফার্ম — ইমন হোসেন। সর্বস্বত্ব সংরক্ষিত। ব্র্যান্ড লকড: ২১ জুন ২০২৬।",
-    "motto": "কুটিরচর ইকোফার্ম — যাচাই-প্রথম, প্রমাণ-ভিত্তিক"
+    "motto": "কুটিরচর ইকোফার্ম — যাচাই-প্রথম, প্রমাণ-ভিত্তিক",
+    "mission": "যাচাই-প্রথম, প্রমাণ-ভিত্তিক গ্রামীণ স্মার্ট ফার্ম ইকোসিস্টেম — ডেইরি, বায়োগ্যাস, সোলার ও সাইলেজ।",
+    "poweredBy": "Powered by SYSmoAI · Bangladesh AI Mission",
+    "legal": "আইনি",
+    "faq": "প্রশ্নোত্তর",
+    "privacy": "প্রাইভেসি"
   },
   "home": {
     "heroTag": "যাচাই ও ভিত্তি পর্যায়",
@@ -56,12 +61,36 @@
     "ctaProducts": "পণ্য ও সেবা",
     "ctaVisit": "পরিদর্শন / অংশীদারিত্ব",
     "trustItems": [
-      { "label": "AI-ভিত্তিক জাত উন্নয়ন", "value": "শুধুমাত্র verified semen", "safe": true },
-      { "label": "Goat-first", "value": "অল্প পুঁজি, দ্রুত ক্যাশ ফ্লো", "safe": true },
-      { "label": "জোন এ — ব্যক্তিগত", "value": "১০ ডেসিমাল, soil-test gated G+5-ready", "safe": true },
-      { "label": "জোন বি — অ-ব্যক্তিগত", "value": "১২ ডেসিমাল, শুধুমাত্র অপসারণযোগ্য ব্যবহার", "safe": true },
-      { "label": "স্থায়ী নির্মাণ", "value": "soil/boundary/drainage survey ছাড়া নয়", "safe": false },
-      { "label": "EMI সীমা", "value": "প্রমাণিত আয়ের ≤ ৫০%", "safe": false }
+      {
+        "label": "AI-ভিত্তিক জাত উন্নয়ন",
+        "value": "শুধুমাত্র verified semen",
+        "safe": true
+      },
+      {
+        "label": "Goat-first",
+        "value": "অল্প পুঁজি, দ্রুত ক্যাশ ফ্লো",
+        "safe": true
+      },
+      {
+        "label": "জোন এ — ব্যক্তিগত",
+        "value": "১০ ডেসিমাল, soil-test gated G+5-ready",
+        "safe": true
+      },
+      {
+        "label": "জোন বি — অ-ব্যক্তিগত",
+        "value": "১২ ডেসিমাল, শুধুমাত্র অপসারণযোগ্য ব্যবহার",
+        "safe": true
+      },
+      {
+        "label": "স্থায়ী নির্মাণ",
+        "value": "soil/boundary/drainage survey ছাড়া নয়",
+        "safe": false
+      },
+      {
+        "label": "EMI সীমা",
+        "value": "প্রমাণিত আয়ের ≤ ৫০%",
+        "safe": false
+      }
     ],
     "whatIsTitle": "কুটিরচর ইকোফার্ম কী?",
     "whatIsP1": "সিরাজগঞ্জের কুটিরচরে একটি প্রমাণ-নির্ভর, পর্যায়ভিত্তিক গ্রামীণ স্মার্ট ফার্ম — শুরু AI-ভিত্তিক জাত উন্নয়ন (Artificial Insemination-based breed improvement) দিয়ে; সাথে ছাগল nucleus, ঘাস/সাইলেজ, বায়োগ্যাস, বায়ো-স্লারি সার, সোলার ও ডিজিটাল মনিটরিং।",
@@ -70,37 +99,104 @@
     "homeStopRule": "অলঙ্ঘনীয় Stop Rules: এজমালি স্ট্যাটাস আইনিভাবে যাচাই না হওয়া পর্যন্ত জোন বি-তে কোনো স্থায়ী স্থাপনা নয়। SPT soil test পাস না হলে G+5 foundation নয়। ড্রেনেজ outlet নিশ্চিত না হলে blind filling নয়। EMI অবশ্যই যাচাইকৃত আয়ের ≤ ৫০%।",
     "stopRulesLabel": "অলঙ্ঘনীয় Stop Rules:",
     "stats": [
-      { "num": "১০", "unit": "ডেসিমাল", "label": "জোন এ — ব্যক্তিগত" },
-      { "num": "১২", "unit": "ডেসিমাল", "label": "জোন বি — এজমালি (শুধু অপসারণযোগ্য)" },
-      { "num": "০", "unit": "স্থায়ী", "label": "জোন বি-তে স্থাপনা (আইনি যাচাই বাকি)" },
-      { "num": "~৮০", "unit": "ডেসিমাল", "label": "ঘাস/সাইলেজ ক্ষেত্র (~২ কিমি দূরে)" }
+      {
+        "num": "১০",
+        "unit": "ডেসিমাল",
+        "label": "জোন এ — ব্যক্তিগত"
+      },
+      {
+        "num": "১২",
+        "unit": "ডেসিমাল",
+        "label": "জোন বি — এজমালি (শুধু অপসারণযোগ্য)"
+      },
+      {
+        "num": "০",
+        "unit": "স্থায়ী",
+        "label": "জোন বি-তে স্থাপনা (আইনি যাচাই বাকি)"
+      },
+      {
+        "num": "~৮০",
+        "unit": "ডেসিমাল",
+        "label": "ঘাস/সাইলেজ ক্ষেত্র (~২ কিমি দূরে)"
+      }
     ],
     "glanceTitle": "প্রকল্পের এক ঝলক",
     "glance": [
-      { "label": "অবস্থান", "value": "কুটিরচর, ভদ্রঘাট, কামারখন্দ, সিরাজগঞ্জ" },
-      { "label": "পর্যায়", "value": "Verification (যাচাই)" },
-      { "label": "ফোকাস", "value": "জাত উন্নয়ন → ছাগল nucleus → সাইলেজ/ঘাস → বায়োগ্যাস → সোলার → সম্প্রসারণ" },
-      { "label": "জমি", "value": "১০ ডেসিমাল private + ১২ ডেসিমাল support + ~৮০ ডেসিমাল ঘাস/সাইলেজ ক্ষেত্র" }
+      {
+        "label": "অবস্থান",
+        "value": "কুটিরচর, ভদ্রঘাট, কামারখন্দ, সিরাজগঞ্জ"
+      },
+      {
+        "label": "পর্যায়",
+        "value": "Verification (যাচাই)"
+      },
+      {
+        "label": "ফোকাস",
+        "value": "জাত উন্নয়ন → ছাগল nucleus → সাইলেজ/ঘাস → বায়োগ্যাস → সোলার → সম্প্রসারণ"
+      },
+      {
+        "label": "জমি",
+        "value": "১০ ডেসিমাল private + ১২ ডেসিমাল support + ~৮০ ডেসিমাল ঘাস/সাইলেজ ক্ষেত্র"
+      }
     ],
     "ecosystemTitle": "চক্রাকার ইকোসিস্টেম",
     "ecosystemDesc": "গবাদিপশু → গোবর → বায়োগ্যাস → বায়ো-স্লারি → ঘাস/সাইলেজ → পশুখাদ্য + সোলার = চক্রাকার লাভজনক সিস্টেম।",
     "ecosystemNodes": [
-      { "icon": "🐄", "label": "গবাদিপশু ও জাত উন্নয়ন", "value": "AI-ভিত্তিক জাত উন্নয়ন + ছাগল nucleus" },
-      { "icon": "⚗️", "label": "বায়োগ্যাস", "value": "গোবর → শক্তি ও রান্নার গ্যাস" },
-      { "icon": "🌿", "label": "বায়ো-স্লারি", "value": "ডাইজেস্টার থেকে জৈব তরল সার" },
-      { "icon": "☀️", "label": "সোলার", "value": "ফার্ম পাওয়ার + লোড হ্রাস" },
-      { "icon": "🌾", "label": "সাইলেজ / ঘাস", "value": "Pakchong-1 + BLRI Napier-3 surplus সংরক্ষণ" },
-      { "icon": "📊", "label": "ড্যাশবোর্ড", "value": "CCTV + Starlink মনিটরিং" }
+      {
+        "icon": "🐄",
+        "label": "গবাদিপশু ও জাত উন্নয়ন",
+        "value": "AI-ভিত্তিক জাত উন্নয়ন + ছাগল nucleus"
+      },
+      {
+        "icon": "⚗️",
+        "label": "বায়োগ্যাস",
+        "value": "গোবর → শক্তি ও রান্নার গ্যাস"
+      },
+      {
+        "icon": "🌿",
+        "label": "বায়ো-স্লারি",
+        "value": "ডাইজেস্টার থেকে জৈব তরল সার"
+      },
+      {
+        "icon": "☀️",
+        "label": "সোলার",
+        "value": "ফার্ম পাওয়ার + লোড হ্রাস"
+      },
+      {
+        "icon": "🌾",
+        "label": "সাইলেজ / ঘাস",
+        "value": "Pakchong-1 + BLRI Napier-3 surplus সংরক্ষণ"
+      },
+      {
+        "icon": "📊",
+        "label": "ড্যাশবোর্ড",
+        "value": "CCTV + Starlink মনিটরিং"
+      }
     ],
     "seeFullFlow": "সম্পূর্ণ চক্রাকার প্রবাহ দেখুন",
     "proofTitle": "প্রমাণ ও নিয়ন্ত্রণ",
     "proofDesc": "ব্যাংক কর্মকর্তা, সরকারি অংশীদার ও সিরিয়াস বিনিয়োগকারীদের জন্য নির্মিত। প্রতিটি পর্যায় যাচাইকৃত প্রমাণে locked। Open gap প্রকাশ্যে দেখানো হয় — কোনো লুকানো সমস্যা নেই। বর্তমানে Open Gaps: ৭টি।",
     "gaps": [
-      { "label": "জমির কাগজপত্র", "status": "চলমান" },
-      { "label": "বাউন্ডারি সার্ভে", "status": "চলমান" },
-      { "label": "SPT মাটি পরীক্ষা", "status": "শুরু হয়নি" },
-      { "label": "জোন বি আইনি স্ট্যাটাস", "status": "Open Gap" },
-      { "label": "লেভেল ও ড্রেনেজ সার্ভে", "status": "শুরু হয়নি" }
+      {
+        "label": "জমির কাগজপত্র",
+        "status": "চলমান"
+      },
+      {
+        "label": "বাউন্ডারি সার্ভে",
+        "status": "চলমান"
+      },
+      {
+        "label": "SPT মাটি পরীক্ষা",
+        "status": "শুরু হয়নি"
+      },
+      {
+        "label": "জোন বি আইনি স্ট্যাটাস",
+        "status": "Open Gap"
+      },
+      {
+        "label": "লেভেল ও ড্রেনেজ সার্ভে",
+        "status": "শুরু হয়নি"
+      }
     ],
     "viewFullAudit": "সম্পূর্ণ অডিট দেখুন",
     "govLabel": "গভর্নেন্স নীতি",
@@ -125,7 +221,8 @@
     "partnerTitle": "ব্যাংক, সরকার ও বিনিয়োগকারী অনুসন্ধান",
     "partnerDesc": "ব্যাংক, সরকারি সংস্থা, NGO, ভেন্ডর ও বিনিয়োগকারীদের সাথে সিরিয়াস অংশীদারিত্বকে স্বাগত জানাই। সব ডকুমেন্টেশন প্রমাণ ও নিয়ন্ত্রণ সেকশনে পাওয়া যায়।",
     "startPartnership": "অংশীদারিত্ব আলোচনা শুরু করুন",
-    "viewProofPack": "প্রমাণ প্যাক দেখুন"
+    "viewProofPack": "প্রমাণ প্যাক দেখুন",
+    "scrollHint": "নিচে স্ক্রল করুন ↓"
   },
   "project": {
     "heroTitle": "প্রকল্প — পরিচিতি",
@@ -144,29 +241,77 @@
     "vision10Title": "১০-বছর ভিশন (২০২৬–২০৩৬)",
     "vision10Body": "চরাঞ্চলের প্রথম bank-grade, evidence-first, replicable smart farm template (DLS, BLRI, SREDA, IDCOL, PKSF aligned)।",
     "tenYearPhases": [
-      { "phase": "Phase 1 (বছর 0–2)", "title": "যাচাই ও pilot" },
-      { "phase": "Phase 2 (বছর 3–5)", "title": "চক্রাকার আয়" },
-      { "phase": "Phase 3 (বছর 6–8)", "title": "Scale ও institutional trust" },
-      { "phase": "Phase 4 (বছর 9–10)", "title": "Legacy ও replication" }
+      {
+        "phase": "Phase 1 (বছর 0–2)",
+        "title": "যাচাই ও pilot"
+      },
+      {
+        "phase": "Phase 2 (বছর 3–5)",
+        "title": "চক্রাকার আয়"
+      },
+      {
+        "phase": "Phase 3 (বছর 6–8)",
+        "title": "Scale ও institutional trust"
+      },
+      {
+        "phase": "Phase 4 (বছর 9–10)",
+        "title": "Legacy ও replication"
+      }
     ],
     "whyTitle": "কেন এই প্রকল্প",
     "whyItems": [
-      { "heading": "খাদ্য স্বয়ংসম্পূর্ণতা", "body": "বাংলাদেশের খাদ্য নিরাপত্তার জন্য একটি কার্যকর, নথিভুক্ত গ্রামীণ উৎপাদন মডেল।" },
-      { "heading": "চরাঞ্চল উন্নয়ন", "body": "চরের অব্যবহৃত জমি ধাপে ধাপে আয়মুখী, উৎপাদনশীল সম্পদে রূপান্তর।" },
-      { "heading": "পারিবারিক সম্পদ সুরক্ষা", "body": "সঠিক documentation, boundary survey ও আইনি স্বচ্ছতা — নির্মাণের আগে।" },
-      { "heading": "Circular economy", "body": "প্রতিটি output পরের ধাপের input — বর্জ্য নয়, মূল্য। খরচ কমে, resilience বাড়ে।" },
-      { "heading": "Bank-grade governance", "body": "প্রতিটি সিদ্ধান্তে stop rule। প্রমাণ ছাড়া অগ্রগতি নয়। Auditor-tone reporting।" }
+      {
+        "heading": "খাদ্য স্বয়ংসম্পূর্ণতা",
+        "body": "বাংলাদেশের খাদ্য নিরাপত্তার জন্য একটি কার্যকর, নথিভুক্ত গ্রামীণ উৎপাদন মডেল।"
+      },
+      {
+        "heading": "চরাঞ্চল উন্নয়ন",
+        "body": "চরের অব্যবহৃত জমি ধাপে ধাপে আয়মুখী, উৎপাদনশীল সম্পদে রূপান্তর।"
+      },
+      {
+        "heading": "পারিবারিক সম্পদ সুরক্ষা",
+        "body": "সঠিক documentation, boundary survey ও আইনি স্বচ্ছতা — নির্মাণের আগে।"
+      },
+      {
+        "heading": "Circular economy",
+        "body": "প্রতিটি output পরের ধাপের input — বর্জ্য নয়, মূল্য। খরচ কমে, resilience বাড়ে।"
+      },
+      {
+        "heading": "Bank-grade governance",
+        "body": "প্রতিটি সিদ্ধান্তে stop rule। প্রমাণ ছাড়া অগ্রগতি নয়। Auditor-tone reporting।"
+      }
     ],
     "locationTitle": "প্রকল্পের অবস্থান",
     "locationSubtitle": "সব কার্যক্রম কুটিরচর গ্রামে (Milk Vita দুধ-বেল্ট)। পরিদর্শন শুধুমাত্র অ্যাপয়েন্টমেন্টে।",
     "locationRows": [
-      { "label": "গ্রাম", "value": "কুটিরচর" },
-      { "label": "ইউনিয়ন", "value": "ভদ্রঘাট" },
-      { "label": "উপজেলা", "value": "কামারখন্দ" },
-      { "label": "জেলা", "value": "সিরাজগঞ্জ" },
-      { "label": "দেশ", "value": "বাংলাদেশ" },
-      { "label": "জোন এ", "value": "১০ ডেসিমাল ব্যক্তিগত/মূল জমি" },
-      { "label": "জোন বি", "value": "১২ ডেসিমাল অ-ব্যক্তিগত/এজমালি — শুধু অপসারণযোগ্য ব্যবহার" }
+      {
+        "label": "গ্রাম",
+        "value": "কুটিরচর"
+      },
+      {
+        "label": "ইউনিয়ন",
+        "value": "ভদ্রঘাট"
+      },
+      {
+        "label": "উপজেলা",
+        "value": "কামারখন্দ"
+      },
+      {
+        "label": "জেলা",
+        "value": "সিরাজগঞ্জ"
+      },
+      {
+        "label": "দেশ",
+        "value": "বাংলাদেশ"
+      },
+      {
+        "label": "জোন এ",
+        "value": "১০ ডেসিমাল ব্যক্তিগত/মূল জমি"
+      },
+      {
+        "label": "জোন বি",
+        "value": "১২ ডেসিমাল অ-ব্যক্তিগত/এজমালি — শুধু অপসারণযোগ্য ব্যবহার"
+      }
     ],
     "landStatusTitle": "জমির স্ট্যাটাস সারসংক্ষেপ",
     "landStatus": [
@@ -180,66 +325,332 @@
     "roadmapTitle": "৫-বছর Phase-Gated রোডম্যাপ",
     "roadmapSubtitle": "Year 0 থেকে Year 5 — প্রতিটি বছর আগের বছরের নথিভুক্ত প্রমাণে আনলক। কোনো ধাপ বাদ নয়।",
     "phases": [
-      { "phase": "Year 0", "label": "বর্তমান", "title": "Verification ও Foundation", "items": [
-        "জমির document index ও আইনি পর্যালোচনা",
-        "বাউন্ডারি সার্ভে (জোন এ ও বি)",
-        "SPT মাটি পরীক্ষা",
-        "ড্রেনেজ outlet সার্ভে ও লেভেল ম্যাপিং",
-        "জোন বি এজমালি স্ট্যাটাস আইনি স্পষ্টীকরণ",
-        "ডিজিটাল অবকাঠামো পরিকল্পনা (Starlink, CCTV, UPS)"
-      ]},
-      { "phase": "Year 1", "label": "পরবর্তী", "title": "Goat Nucleus Pilot + AI Breeding শুরু", "items": [
-        "ছাগল nucleus pilot: ৩৫–৪০ ছাগী + ২ পাঁঠা",
-        "AI-ভিত্তিক জাত উন্নয়ন kickoff (verified semen)",
-        "ছোট সোলার — অপারেশনের জন্য",
-        "পশু-রেকর্ড সিস্টেম চালু",
-        "যাচাইকৃত পশু sourcing service"
-      ]},
-      { "phase": "Year 2", "label": "পরবর্তী", "title": "Compost Loop + Selective Dairy + সাইলেজ Scale", "items": [
-        "কম্পোস্ট/ভার্মিকম্পোস্ট লুপ চালু",
-        "ঘাস/সাইলেজ scale (Pakchong-1 + BLRI Napier-3)",
-        "Selective dairy: ২–৪ দেশি গাভী + AI F1",
-        "ফিড খরচ হ্রাসের নথিভুক্ত ট্র্যাকিং"
-      ]},
-      { "phase": "Year 3", "label": "পরে", "title": "6m³ বায়োগ্যাস + Slurry Loop + Rooftop Solar Pilot", "items": [
-        "6m³ বায়োগ্যাস ডাইজেস্টার (gate: ধারাবাহিক গোবর input)",
-        "বায়ো-স্লারি লুপ — জৈব সার উৎপাদন",
-        "রুফটপ সোলার pilot",
-        "পণ্য catalog v1 + bank evidence pack v1"
-      ]},
-      { "phase": "Year 4", "label": "পরে", "title": "সম্প্রসারণ + Brand Authority", "items": [
-        "Premium breeding stock বিক্রয় + fattening",
-        "বড় বায়োগ্যাস + ৫–১০kWp সোলার",
-        "সেচ পাম্প (gravity বা solar)",
-        "প্রশিক্ষণ/ডেমো + প্রথম replication contract"
-      ]},
-      { "phase": "Year 5", "label": "পরে", "title": "Valuation + Replication-Ready Playbook", "items": [
-        "Land-inclusive valuation ১ কোটি+ (indicative)",
-        "Demand-gated service residence (আইনি ছাড় + যাচাইকৃত চাহিদা সাপেক্ষে)",
-        "Replication-ready playbook প্রকাশ",
-        "সব item পর্যায় 0–4 এর প্রমাণ সাপেক্ষে"
-      ]}
+      {
+        "phase": "Year 0",
+        "label": "বর্তমান",
+        "title": "Verification ও Foundation",
+        "items": [
+          "জমির document index ও আইনি পর্যালোচনা",
+          "বাউন্ডারি সার্ভে (জোন এ ও বি)",
+          "SPT মাটি পরীক্ষা",
+          "ড্রেনেজ outlet সার্ভে ও লেভেল ম্যাপিং",
+          "জোন বি এজমালি স্ট্যাটাস আইনি স্পষ্টীকরণ",
+          "ডিজিটাল অবকাঠামো পরিকল্পনা (Starlink, CCTV, UPS)"
+        ]
+      },
+      {
+        "phase": "Year 1",
+        "label": "পরবর্তী",
+        "title": "Goat Nucleus Pilot + AI Breeding শুরু",
+        "items": [
+          "ছাগল nucleus pilot: ৩৫–৪০ ছাগী + ২ পাঁঠা",
+          "AI-ভিত্তিক জাত উন্নয়ন kickoff (verified semen)",
+          "ছোট সোলার — অপারেশনের জন্য",
+          "পশু-রেকর্ড সিস্টেম চালু",
+          "যাচাইকৃত পশু sourcing service"
+        ]
+      },
+      {
+        "phase": "Year 2",
+        "label": "পরবর্তী",
+        "title": "Compost Loop + Selective Dairy + সাইলেজ Scale",
+        "items": [
+          "কম্পোস্ট/ভার্মিকম্পোস্ট লুপ চালু",
+          "ঘাস/সাইলেজ scale (Pakchong-1 + BLRI Napier-3)",
+          "Selective dairy: ২–৪ দেশি গাভী + AI F1",
+          "ফিড খরচ হ্রাসের নথিভুক্ত ট্র্যাকিং"
+        ]
+      },
+      {
+        "phase": "Year 3",
+        "label": "পরে",
+        "title": "6m³ বায়োগ্যাস + Slurry Loop + Rooftop Solar Pilot",
+        "items": [
+          "6m³ বায়োগ্যাস ডাইজেস্টার (gate: ধারাবাহিক গোবর input)",
+          "বায়ো-স্লারি লুপ — জৈব সার উৎপাদন",
+          "রুফটপ সোলার pilot",
+          "পণ্য catalog v1 + bank evidence pack v1"
+        ]
+      },
+      {
+        "phase": "Year 4",
+        "label": "পরে",
+        "title": "সম্প্রসারণ + Brand Authority",
+        "items": [
+          "Premium breeding stock বিক্রয় + fattening",
+          "বড় বায়োগ্যাস + ৫–১০kWp সোলার",
+          "সেচ পাম্প (gravity বা solar)",
+          "প্রশিক্ষণ/ডেমো + প্রথম replication contract"
+        ]
+      },
+      {
+        "phase": "Year 5",
+        "label": "পরে",
+        "title": "Valuation + Replication-Ready Playbook",
+        "items": [
+          "Land-inclusive valuation ১ কোটি+ (indicative)",
+          "Demand-gated service residence (আইনি ছাড় + যাচাইকৃত চাহিদা সাপেক্ষে)",
+          "Replication-ready playbook প্রকাশ",
+          "সব item পর্যায় 0–4 এর প্রমাণ সাপেক্ষে"
+        ]
+      }
     ],
     "roadmapStopRule": "এই রোডম্যাপ নির্দেশক (indicative)। Year 0-এর সব verification item সম্পূর্ণ ও নথিভুক্ত না হলে Year 1 শুরু হবে না। প্রতিটি বছর আগের বছরের স্থিতিশীল, নথিভুক্ত ফলাফল সাপেক্ষে।",
     "peopleTitle": "আমাদের মানুষ",
     "peopleSubtitle": "Public bio — আইনি তথ্য নয়। NID/PIN/যাচাই-নথি কখনো পাবলিক ওয়েবসাইটে প্রকাশ পাবে না।",
     "people": [
-      { "name": "ইমন হোসেন (Md. Emon Hossain)", "role": "Founder & CEO / Strategy Owner", "bio": "ভিশন, কৌশল, capital ও debt discipline, ব্যাংক/সরকারি যোগাযোগ, documentation ও public narrative।" },
-      { "name": "মোঃ আনিছুর রহমান (Md. Anisur Rahman)", "role": "Family Land Guardian & Asset Stakeholder", "bio": "ইমনের পিতা; জমির মালিক ও পরিবার-প্রধান। জমি documentation, পারিবারিক সম্মতি, সীমানা ও স্থানীয় বিষয়ে সিনিয়র সমর্থন। (দলিল/খতিয়ান/NID পাবলিক নয়)" },
-      { "name": "এমডি ইশতিয়াক আহমেদ (MD Esteak Ahmed)", "role": "সহ-প্রতিষ্ঠাতা ও পরিচালক — Operations & Partnerships", "bio": "প্রতিষ্ঠাতা ইমন হোসেনের সহোদর (ভাই); প্রাতিষ্ঠানিক পরিচালনা, অংশীদারিত্ব ও সমন্বয়; SYSmoAI Additional Director; টিম, ভেন্ডর ও মাঠ সমন্বয়ে সহায়তা।" },
-      { "name": "মোঃ আল আমিন", "role": "Field Operations Coordinator (সিরাজগঞ্জ)", "bio": "মাঠ photo/video capture, vendor ও হাট coordination, দাম logging, daily field note ও evidence upload।" },
-      { "name": "রিফাত আরা রুমি (Refat Ara Rumi)", "role": "Family Stakeholder", "bio": "পরিবার-সম্পৃক্ত স্টেকহোল্ডার; প্রকল্পে পারিবারিক সমর্থন ও আস্থা।" }
+      {
+        "name": "ইমন হোসেন (Md. Emon Hossain)",
+        "role": "Founder & CEO / Strategy Owner",
+        "bio": "ভিশন, কৌশল, capital ও debt discipline, ব্যাংক/সরকারি যোগাযোগ, documentation ও public narrative।"
+      },
+      {
+        "name": "মোঃ আনিছুর রহমান (Md. Anisur Rahman)",
+        "role": "Family Land Guardian & Asset Stakeholder",
+        "bio": "ইমনের পিতা; জমির মালিক ও পরিবার-প্রধান। জমি documentation, পারিবারিক সম্মতি, সীমানা ও স্থানীয় বিষয়ে সিনিয়র সমর্থন। (দলিল/খতিয়ান/NID পাবলিক নয়)"
+      },
+      {
+        "name": "এমডি ইশতিয়াক আহমেদ (MD Esteak Ahmed)",
+        "role": "সহ-প্রতিষ্ঠাতা ও পরিচালক — Operations & Partnerships",
+        "bio": "প্রতিষ্ঠাতা ইমন হোসেনের সহোদর (ভাই); প্রাতিষ্ঠানিক পরিচালনা, অংশীদারিত্ব ও সমন্বয়; SYSmoAI Additional Director; টিম, ভেন্ডর ও মাঠ সমন্বয়ে সহায়তা।"
+      },
+      {
+        "name": "মোঃ আল আমিন",
+        "role": "Field Operations Coordinator (সিরাজগঞ্জ)",
+        "bio": "মাঠ photo/video capture, vendor ও হাট coordination, দাম logging, daily field note ও evidence upload।"
+      },
+      {
+        "name": "রিফাত আরা রুমি (Refat Ara Rumi)",
+        "role": "Family Stakeholder",
+        "bio": "পরিবার-সম্পৃক্ত স্টেকহোল্ডার; প্রকল্পে পারিবারিক সমর্থন ও আস্থা।"
+      }
     ],
     "kycNote": "🔒 KYC/আইনি নোট: প্রতিষ্ঠাতা ও পরিবারের সদস্যদের NID/PIN/ঠিকানা যাচাই-নথি শুধুমাত্র ব্যাংক ও সরকারি due-diligence-এর জন্য প্রাইভেটভাবে সংরক্ষিত — কখনো পাবলিক ওয়েবসাইট বা GitHub repo-তে প্রকাশ পাবে না।",
     "positioningTitle": "ব্র্যান্ড পজিশনিং",
     "positioningSubtitle": "এই প্রকল্প কার জন্য — অগ্রাধিকারক্রমে।",
     "audiences": [
-      { "icon": "🏦", "title": "১. ব্যাংক ও ক্রেডিট কর্মকর্তা", "body": "স্পষ্ট জমি documentation, phase-gated বিনিয়োগ, যাচাইযোগ্য আয়ের অগ্রগতি, রক্ষণশীল EMI শৃঙ্খলা ও stop-rule governance।" },
-      { "icon": "🏛️", "title": "২. সরকার ও কৃষি বিভাগ", "body": "প্রমাণ-নির্ভর চক্রাকার ফার্ম মডেল — DLS, BLRI, SREDA, IDCOL, PKSF aligned। মাটি ও পানি যাচাই আগে।" },
-      { "icon": "🌍", "title": "৩. NGO ও উন্নয়ন অংশীদার / CSR", "body": "গ্রামীণ জীবিকা, খাদ্য নিরাপত্তা (সাইলেজ, জৈব সার), চক্রাকার শক্তি, স্থানীয় কর্মসংস্থান।" },
-      { "icon": "📊", "title": "৪. বিনিয়োগকারী · ৫. Buyer/Vendor/Partner", "body": "Asset-backed (পারিবারিক জমি), রক্ষণশীল পর্যায়-অগ্রগতি, hype নয়, প্রতিটি ধাপে যাচাইযোগ্য output।" }
+      {
+        "icon": "🏦",
+        "title": "১. ব্যাংক ও ক্রেডিট কর্মকর্তা",
+        "body": "স্পষ্ট জমি documentation, phase-gated বিনিয়োগ, যাচাইযোগ্য আয়ের অগ্রগতি, রক্ষণশীল EMI শৃঙ্খলা ও stop-rule governance।"
+      },
+      {
+        "icon": "🏛️",
+        "title": "২. সরকার ও কৃষি বিভাগ",
+        "body": "প্রমাণ-নির্ভর চক্রাকার ফার্ম মডেল — DLS, BLRI, SREDA, IDCOL, PKSF aligned। মাটি ও পানি যাচাই আগে।"
+      },
+      {
+        "icon": "🌍",
+        "title": "৩. NGO ও উন্নয়ন অংশীদার / CSR",
+        "body": "গ্রামীণ জীবিকা, খাদ্য নিরাপত্তা (সাইলেজ, জৈব সার), চক্রাকার শক্তি, স্থানীয় কর্মসংস্থান।"
+      },
+      {
+        "icon": "📊",
+        "title": "৪. বিনিয়োগকারী · ৫. Buyer/Vendor/Partner",
+        "body": "Asset-backed (পারিবারিক জমি), রক্ষণশীল পর্যায়-অগ্রগতি, hype নয়, প্রতিটি ধাপে যাচাইযোগ্য output।"
+      }
     ],
-    "viewProofPack": "প্রমাণ ও নিয়ন্ত্রণ প্যাক দেখুন"
+    "viewProofPack": "প্রমাণ ও নিয়ন্ত্রণ প্যাক দেখুন",
+    "breedScience": {
+      "title": "AI-ভিত্তিক জাত উন্নয়ন ও সিলেক্টিভ ব্রিডিং",
+      "process": [
+        "দেশি গাভী + BLRI/DLS verified semen (AI)",
+        "F1 কাফ → পরবর্তী প্রজন্মে দুধ ও ওজন বৃদ্ধি",
+        "রেকর্ড ছক সহ: milk yield, fat %, conception rate, calf weight",
+        "পরবর্তী প্রজন্মে নিজ সিন্ড প্রস্তাবেরণ"
+      ],
+      "note": "Genetic engineering / lab gene editing শব্দটি প্রজন্মে শুধু BLRI/DLS institutional partner-সহ ব্যবহার করা হবে",
+      "orgs": "BLRI (Bangladesh Livestock Research Institute), DLS (Department of Livestock Services)"
+    },
+    "roadmap5Year": {
+      "title": "৫-বছর রোডম্যাপ (Year 0 → 5)",
+      "phases": [
+        {
+          "year": "Year 0",
+          "label": "যাচাই ও ভিত্তি",
+          "gates": [
+            "জমি document পর্যালোচনা",
+            "বাধার সার্ভেয়",
+            "soil test",
+            "Zone B এজমালি স্ট্যাটাস চেক"
+          ],
+          "status": "চলমান"
+        },
+        {
+          "year": "Year 1",
+          "label": "নিউক্লিয়াস ও ফর্মেশন",
+          "gates": [
+            "AI জাত উন্নয়ন",
+            "ছাগল nucleus",
+            "ঘাস প্লাট",
+            "সাইলেজ 1st batch",
+            "5 kWp সোলার"
+          ],
+          "status": "প্ল্যানিং"
+        },
+        {
+          "year": "Year 2–3",
+          "label": "প্রমাণ ও বিস্তার",
+          "gates": [
+            "F1 বাছুর ব্রেক সাকসেস",
+            "সাইলেজ full cycle",
+            "6m³ বায়োগ্যাস digester",
+            "সারাবছর গ্যাস চেক"
+          ],
+          "status": "প্ল্যানিং"
+        },
+        {
+          "year": "Year 4–5",
+          "label": "স্কেল ও রেপ্লিকেশন",
+          "gates": [
+            "F2 সিলেকশন",
+            "10 kWp + net metering",
+            "বায়ো-স্লারি fertilizer sales",
+            "digital monitoring live"
+          ],
+          "status": "লেটার"
+        },
+        {
+          "year": "Year 5+",
+          "label": "গোল্ড স্ট্যান্ডার্ড",
+          "gates": [
+            "Govt/bank audit pass",
+            "Milk Vita / processor tie-up",
+            "replication model ready"
+          ],
+          "status": "লেটার"
+        }
+      ]
+    },
+    "subProjects": [
+      {
+        "name": "1. জাত উন্নয়ন (Breed Improvement)",
+        "goal": "দেশি গাবীর দুগ্ধ ও ওজন বৃদ্ধি করতে AI + selective breeding",
+        "science": "Artificial Insemination (BLRI/DLS verified semen) → F1 → F2 record-based selection",
+        "inputs": [
+          "Local breed cows",
+          "Verified semen straws",
+          "AI technician",
+          "Record sheets"
+        ],
+        "outputs": [
+          "Higher milk yield F1/F2",
+          "Better calf weight",
+          "Improved conception rate"
+        ],
+        "capex": "CAPEX: 50,000–100,000 BDT (semen + AI kit + record system)",
+        "opex": "OPEX: 5,000–8,000 BDT/month (semen + technician)",
+        "timing": "Year 0–1: nucleus herd → Year 2–3: F1 expansion → Year 4–5: F2 selection",
+        "stopRule": "No sire record = no crossbreeding; no BLRI/DLS partner = no expansion",
+        "proof": "AI receipt, semen source certificate, calf weight log, milk yield log"
+      },
+      {
+        "name": "2. ছাগল Nucleus (Goat-first)",
+        "goal": "Low-capital fast cash flow; goat nucleus test before dairy scale-up",
+        "science": "Black Bengal / Jamunapari cross → fast reproduction (5-month kidding) → meat + hide",
+        "inputs": [
+          "10–15 nucleus does",
+          "Improved buck",
+          "Elevated shed",
+          "Fodder plot"
+        ],
+        "outputs": [
+          "Kid sales 4–6 months",
+          "Manure for biogas",
+          "Low-risk cash flow"
+        ],
+        "capex": "CAPEX: 40,000–80,000 BDT",
+        "opex": "OPEX: 3,000–5,000 BDT/month (fodder + vet)",
+        "timing": "Year 0: shed + purchase → Year 1: first kidding cycle → Year 2: expansion decision",
+        "stopRule": "No scale-up if kidding rate < 60% or mortality > 15%",
+        "proof": "Purchase receipt, kidding log, weight log, vet visit record"
+      },
+      {
+        "name": "3. ঘাস ও সাইলেজ (Fodder & Silage)",
+        "goal": "Year-round green fodder supply; silage cuts feed cost 65–75%",
+        "science": "Napier / Maize → wilting → chop → molasses → airtight 21–30 days → pH 3.8–4.5",
+        "inputs": [
+          "1–2 bigha fodder plot",
+          "Seeds (Pakchong-1, BLRI Napier-3)",
+          "Silo bags / pit",
+          "Molasses"
+        ],
+        "outputs": [
+          "Year-round green fodder",
+          "Silage for dry season",
+          "Reduced feed purchase"
+        ],
+        "capex": "CAPEX: 30,000–60,000 BDT (silo + tools)",
+        "opex": "OPEX: 5,000–8,000 BDT/month (seed + labour)",
+        "timing": "Year 0: plot prep + planting → Year 1: first silage batch → Year 2: full cycle",
+        "stopRule": "pH < 3.8 or > 4.5 = reject batch; no fodder plot = no silage",
+        "proof": "Soil test, seed receipt, silage pH log, feed cost before/after"
+      },
+      {
+        "name": "4. বায়োগ্যাস (6m³, Year 3+)",
+        "goal": "Convert goat + cattle dung to cooking gas + organic fertilizer",
+        "science": "6m³ fixed-dome digester → CH₄ 55–65% → cooking gas + bio-slurry fertilizer",
+        "inputs": [
+          "Daily 50–80 kg dung",
+          "6m³ fixed-dome digester",
+          "Water mix 1:1",
+          "Temp ≥35°C"
+        ],
+        "outputs": [
+          "2–4 hrs cooking gas/day",
+          "Bio-slurry for fodder field",
+          "Reduced LPG / wood"
+        ],
+        "capex": "CAPEX: 1,50,000–3,00,000 BDT (IDCOL subsidy available)",
+        "opex": "OPEX: negligible (maintenance only)",
+        "timing": "Year 2–3: digester build → Year 3: gas production → Year 4: stable output",
+        "stopRule": "Daily dung < 40 kg = delay; no IDCOL approval = no build",
+        "proof": "IDCOL approval letter, digester photo, gas flame test, slurry usage log"
+      },
+      {
+        "name": "5. সোলার এনার্জি (Solar)",
+        "goal": "Self-power dairy cold chain; SREDA net metering cuts grid bill",
+        "science": "5–10 kWp PV array → MPPT charge controller → battery / grid tie → DC loads + AC inverter",
+        "inputs": [
+          "Rooftop / ground mount space",
+          "PV panels + inverter",
+          "Battery bank (optional)",
+          "SREDA registration"
+        ],
+        "outputs": [
+          "Dairy cold chain power",
+          "Biogas pump",
+          "Lighting + digital server",
+          "Grid export (if net metering)"
+        ],
+        "capex": "CAPEX: 3,00,000–6,00,000 BDT (5–10 kWp)",
+        "opex": "OPEX: 5,000–10,000 BDT/month (cleaning + maintenance)",
+        "timing": "Year 1: 5 kWp → Year 2–3: 10 kWp + net metering → Year 4: stable",
+        "stopRule": "Self-use < 4 hrs/day = add battery backup; no SREDA = no export",
+        "proof": "SREDA application, panel invoice, generation log, electricity bill comparison"
+      },
+      {
+        "name": "6. কম্পোস্ট / ভার্মিকম্পোস্ট",
+        "goal": "Convert dung + crop residue to organic fertilizer for fodder fields",
+        "science": "Aerobic composting (C:N 25–30:1) → thermophilic phase 55°C → 45–60 days → mature compost",
+        "inputs": [
+          "Dung + crop residue",
+          "Composting pit / vermi-bed",
+          "Water, turning labour",
+          "Red wriggler worms (vermi)"
+        ],
+        "outputs": [
+          "Organic fertilizer for fodder",
+          "Soil health improvement",
+          "Reduced chemical input"
+        ],
+        "capex": "CAPEX: 15,000–30,000 BDT",
+        "opex": "OPEX: 2,000–3,000 BDT/month",
+        "timing": "Year 0: pit build → Year 1: first batch → Year 2: continuous",
+        "stopRule": "Compost temp < 45°C = pathogen risk; heavy metal fail = stop",
+        "proof": "Temperature log, C:N test, mature compost photo, field application photo"
+      }
+    ]
   },
   "proof": {
     "heroTitle": "প্রমাণ ও নিয়ন্ত্রণ",
@@ -247,15 +658,62 @@
     "privacyBanner": "🔒 প্রাইভেসি নীতি: এই ওয়েবসাইটে কোনো NID, PIN, ব্যাংক অ্যাকাউন্ট নম্বর, সংবেদনশীল ID বা প্রাইভেট আইনি নথি প্রকাশ করা হয় না। শুধুমাত্র নিরাপদ সারসংক্ষেপ ও redacted প্রমাণ পাবলিকলি দেখানো হয়।",
     "ledgerTitle": "Verification Audit Ledger (৭টি Open Gap)",
     "ledgerSubtitle": "সব verification requirement-এর বাস্তব স্ট্যাটাস। অগ্রগতি হলে আপডেট হয়। Open gap মানে সেই পর্যায় শুরু হয়নি।",
-    "tableHeaders": ["Verification Gap", "বর্তমান স্ট্যাটাস", "প্রয়োজনীয় প্রমাণ", "Stop Rule"],
+    "tableHeaders": [
+      "Verification Gap",
+      "বর্তমান স্ট্যাটাস",
+      "প্রয়োজনীয় প্রমাণ",
+      "Stop Rule"
+    ],
     "auditRows": [
-      { "gap": "জমির কাগজপত্র", "status": "চলমান", "statusKey": "inProgress", "evidence": "দলিল, খতিয়ান/পর্চা, মিউটেশন", "stopRule": "কাগজ ছাড়া বড় CAPEX নয়" },
-      { "gap": "বাউন্ডারি সার্ভে", "status": "চলমান", "statusKey": "inProgress", "evidence": "Survey + sketch + photos", "stopRule": "স্থায়ী কাজ নয়" },
-      { "gap": "SPT মাটি পরীক্ষা", "status": "শুরু হয়নি", "statusKey": "notStarted", "evidence": "SPT রিপোর্ট", "stopRule": "G+5 foundation নয়" },
-      { "gap": "লেভেল ও ড্রেনেজ", "status": "শুরু হয়নি", "statusKey": "notStarted", "evidence": "Level table, outlet plan", "stopRule": "Blind fill নয়" },
-      { "gap": "জোন বি আইনি স্ট্যাটাস", "status": "Open Gap", "statusKey": "openGap", "evidence": "লিখিত legal note", "stopRule": "RCC/septic নয়" },
-      { "gap": "ঠিকানা/পোস্ট অফিস মিল", "status": "Open Gap", "statusKey": "openGap", "evidence": "সংশোধিত ঠিকানা", "stopRule": "লোন আবেদন নয়" },
-      { "gap": "Rental demand প্রমাণ", "status": "প্রযোজ্য নয়", "statusKey": "notApplicable", "evidence": "১৫–৩০ ইন্টারভিউ + LOI", "stopRule": "Apartment নয়" }
+      {
+        "gap": "জমির কাগজপত্র",
+        "status": "চলমান",
+        "statusKey": "inProgress",
+        "evidence": "দলিল, খতিয়ান/পর্চা, মিউটেশন",
+        "stopRule": "কাগজ ছাড়া বড় CAPEX নয়"
+      },
+      {
+        "gap": "বাউন্ডারি সার্ভে",
+        "status": "চলমান",
+        "statusKey": "inProgress",
+        "evidence": "Survey + sketch + photos",
+        "stopRule": "স্থায়ী কাজ নয়"
+      },
+      {
+        "gap": "SPT মাটি পরীক্ষা",
+        "status": "শুরু হয়নি",
+        "statusKey": "notStarted",
+        "evidence": "SPT রিপোর্ট",
+        "stopRule": "G+5 foundation নয়"
+      },
+      {
+        "gap": "লেভেল ও ড্রেনেজ",
+        "status": "শুরু হয়নি",
+        "statusKey": "notStarted",
+        "evidence": "Level table, outlet plan",
+        "stopRule": "Blind fill নয়"
+      },
+      {
+        "gap": "জোন বি আইনি স্ট্যাটাস",
+        "status": "Open Gap",
+        "statusKey": "openGap",
+        "evidence": "লিখিত legal note",
+        "stopRule": "RCC/septic নয়"
+      },
+      {
+        "gap": "ঠিকানা/পোস্ট অফিস মিল",
+        "status": "Open Gap",
+        "statusKey": "openGap",
+        "evidence": "সংশোধিত ঠিকানা",
+        "stopRule": "লোন আবেদন নয়"
+      },
+      {
+        "gap": "Rental demand প্রমাণ",
+        "status": "প্রযোজ্য নয়",
+        "statusKey": "notApplicable",
+        "evidence": "১৫–৩০ ইন্টারভিউ + LOI",
+        "stopRule": "Apartment নয়"
+      }
     ],
     "stopRulesTitle": "অলঙ্ঘনীয় Stop Rules",
     "stopRules": [
@@ -278,16 +736,48 @@
     "breedingTitle": "জাত উন্নয়ন Governance",
     "breedingBody": "পাবলিকলি \"genetic engineering\" নয় — AI-based improvement + selective breeding, DLS/BLRI/BRAC/ACI/Lal Teer/ST Genetics সমর্থিত।",
     "breedingRecordsLabel": "বাধ্যতামূলক রেকর্ড",
-    "breedingRecords": ["গাভী ID", "Heat timing", "Semen breed", "Bull ID", "Technician", "PD তারিখ", "বাছুর record"],
+    "breedingRecords": [
+      "গাভী ID",
+      "Heat timing",
+      "Semen breed",
+      "Bull ID",
+      "Technician",
+      "PD তারিখ",
+      "বাছুর record"
+    ],
     "evidenceTitle": "Evidence Pack (Public) স্ট্যাটাস",
     "evidenceSubtitle": "যোগ্য স্টেকহোল্ডারদের (ব্যাংক, সরকার, সিরিয়াস বিনিয়োগকারী) আনুষ্ঠানিক অনুরোধে ডকুমেন্টেশন শেয়ার করা হয়।",
     "evidenceCards": [
-      { "label": "Land Document Index", "status": "pending", "note": "দলিল ও মালিকানা chain পর্যালোচনাধীন। অনুরোধে summary PDF — NID বা সংবেদনশীল ID ছাড়া।" },
-      { "label": "Soil Test Report", "status": "missing", "note": "SPT মাটি পরীক্ষা এখনো হয়নি। Foundation পরিকল্পনার আগে আবশ্যক। Year 0-এ নির্ধারিত।" },
-      { "label": "Survey Sketch + Photos", "status": "missing", "note": "বাউন্ডারি demarcation survey এখনো সম্পূর্ণ নয়। Surveyor নিয়োগকৃত।" },
-      { "label": "Drainage Level Table", "status": "missing", "note": "মাটি ভরাট বা earthwork-এর আগে site level ও drainage outlet survey আবশ্যক।" },
-      { "label": "Vendor Quote Comparison", "status": "pending", "note": "প্রতিটি বড় ক্রয়ের জন্য ৩টি quote নীতি। প্রথম তুলনা সংকলনাধীন।" },
-      { "label": "Monthly Breeding Log Summary", "status": "missing", "note": "Year 1 AI breeding শুরু হলে মাসিক সারসংক্ষেপ প্রকাশ পাবে। ব্র্যান্ড ও identity লকড (২১ জুন ২০২৬)।" }
+      {
+        "label": "Land Document Index",
+        "status": "pending",
+        "note": "দলিল ও মালিকানা chain পর্যালোচনাধীন। অনুরোধে summary PDF — NID বা সংবেদনশীল ID ছাড়া।"
+      },
+      {
+        "label": "Soil Test Report",
+        "status": "missing",
+        "note": "SPT মাটি পরীক্ষা এখনো হয়নি। Foundation পরিকল্পনার আগে আবশ্যক। Year 0-এ নির্ধারিত।"
+      },
+      {
+        "label": "Survey Sketch + Photos",
+        "status": "missing",
+        "note": "বাউন্ডারি demarcation survey এখনো সম্পূর্ণ নয়। Surveyor নিয়োগকৃত।"
+      },
+      {
+        "label": "Drainage Level Table",
+        "status": "missing",
+        "note": "মাটি ভরাট বা earthwork-এর আগে site level ও drainage outlet survey আবশ্যক।"
+      },
+      {
+        "label": "Vendor Quote Comparison",
+        "status": "pending",
+        "note": "প্রতিটি বড় ক্রয়ের জন্য ৩টি quote নীতি। প্রথম তুলনা সংকলনাধীন।"
+      },
+      {
+        "label": "Monthly Breeding Log Summary",
+        "status": "missing",
+        "note": "Year 1 AI breeding শুরু হলে মাসিক সারসংক্ষেপ প্রকাশ পাবে। ব্র্যান্ড ও identity লকড (২১ জুন ২০২৬)।"
+      }
     ],
     "requestNote": "সম্পূর্ণ evidence pack-এর জন্য: যোগাযোগ পেজে আনুষ্ঠানিক অনুসন্ধান জমা দিন। \"ব্যাংক / সরকার / বিনিয়োগকারী\" নির্বাচন করে উদ্দেশ্য লিখুন। ভূমিকা অনুযায়ী উপযুক্ত ডকুমেন্টেশন শেয়ার করা হবে। NID, PIN বা প্রাইভেট আইনি নথি কখনো পাবলিকলি শেয়ার হয় না।",
     "requestNoteLabel": "সম্পূর্ণ Evidence Pack যেভাবে অনুরোধ করবেন:",
@@ -308,14 +798,25 @@
       "title": "জোন এ — ব্যক্তিগত মূল জমি",
       "sub": "১০ ডেসিমাল, ব্যক্তিগত পারিবারিক জমি",
       "body": "পূর্ণ মালিকানা। Foundation-এর আগে SPT মাটি পরীক্ষা আবশ্যক। Year 0-এর সব যাচাই পাস হলে স্থায়ী স্থাপনা অনুমোদিত। Soil-test gate-এর পরে G+5 সম্ভাবনা।",
-      "uses": ["ছাগল/গবাদিপশু শেড (Year 1)", "বায়োগ্যাস ডাইজেস্টার (Year 3)", "সোলার রুফটপ", "স্থায়ী স্থাপনা (soil test-এর পরে)"]
+      "uses": [
+        "ছাগল/গবাদিপশু শেড (Year 1)",
+        "বায়োগ্যাস ডাইজেস্টার (Year 3)",
+        "সোলার রুফটপ",
+        "স্থায়ী স্থাপনা (soil test-এর পরে)"
+      ]
     },
     "zoneB": {
       "title": "জোন বি — অ-ব্যক্তিগত / এজমালি",
       "sub": "১২ ডেসিমাল, এজমালি যাচাই বাকি",
       "body": "আইনি স্ট্যাটাস যাচাইধীন। এজমালি নিশ্চিতকরণ পর্যন্ত শুধুমাত্র অপসারণযোগ্য স্থাপনা। কংক্রিট নয়, RCC নয়, স্থায়ী প্লাম্বিং নয়।",
       "stopRule": "জোন বি-তে স্থায়ী RCC / রুম / septic = শূন্য — আইনি যাচাই সম্পূর্ণ না হওয়া পর্যন্ত।",
-      "uses": ["Fodder rack", "অস্থায়ী ছাউনি", "Portable compost", "লোডিং/পার্কিং area", "অপসারণযোগ্য water tank"]
+      "uses": [
+        "Fodder rack",
+        "অস্থায়ী ছাউনি",
+        "Portable compost",
+        "লোডিং/পার্কিং area",
+        "অপসারণযোগ্য water tank"
+      ]
     },
     "ctaTitle": "ব্যাংক ও সরকারি প্যাক অনুরোধ করুন",
     "ctaBody": "ব্যাংক ক্রেডিট কর্মকর্তা, সরকারি বিভাগ, NGO বা সিরিয়াস বিনিয়োগকারী — আনুষ্ঠানিক evidence pack-এর জন্য ভূমিকা ও উদ্দেশ্যসহ অনুসন্ধান জমা দিন।",
@@ -327,14 +828,46 @@
     "loopTitle": "Core Loop — ৮টি Node",
     "loopSubtitle": "কুটিরচর ইকোফার্মের চক্রাকার সিস্টেমের মূল যুক্তি। প্রতিটি তীর একটি বাস্তব, নথিভুক্ত মূল্য স্থানান্তর।",
     "loopNodes": [
-      { "num": "১", "title": "গবাদিপশু", "desc": "গোবর/লেদা উৎপাদন" },
-      { "num": "২", "title": "গোবর → বায়োগ্যাস", "desc": "Year 3+, 6m³ ডাইজেস্টার" },
-      { "num": "৩", "title": "বায়োগ্যাস → শক্তি ও আয়", "desc": "রান্নার গ্যাস, LPG সাশ্রয়" },
-      { "num": "৪", "title": "বায়ো-স্লারি → জৈব সার", "desc": "\"Farm Bio-Organic Fertilizer\"" },
-      { "num": "৫", "title": "জৈব সার → ঘাস/সাইলেজ", "desc": "৮০ ডেসিমাল; Pakchong-1 + BLRI Napier-3 + Maize" },
-      { "num": "৬", "title": "ঘাস/সাইলেজ → পশুখাদ্য", "desc": "Feed খরচ ৬৫–৭৫% কমানোর লক্ষ্য" },
-      { "num": "৭", "title": "সোলার → ফার্ম পাওয়ার", "desc": "৫–১০kWp, self-use first; SREDA হলে net metering" },
-      { "num": "৮", "title": "রেকর্ড + ব্র্যান্ড", "desc": "প্রশিক্ষণ + content + sourcing সেবা" }
+      {
+        "num": "১",
+        "title": "গবাদিপশু",
+        "desc": "গোবর/লেদা উৎপাদন"
+      },
+      {
+        "num": "২",
+        "title": "গোবর → বায়োগ্যাস",
+        "desc": "Year 3+, 6m³ ডাইজেস্টার"
+      },
+      {
+        "num": "৩",
+        "title": "বায়োগ্যাস → শক্তি ও আয়",
+        "desc": "রান্নার গ্যাস, LPG সাশ্রয়"
+      },
+      {
+        "num": "৪",
+        "title": "বায়ো-স্লারি → জৈব সার",
+        "desc": "\"Farm Bio-Organic Fertilizer\""
+      },
+      {
+        "num": "৫",
+        "title": "জৈব সার → ঘাস/সাইলেজ",
+        "desc": "৮০ ডেসিমাল; Pakchong-1 + BLRI Napier-3 + Maize"
+      },
+      {
+        "num": "৬",
+        "title": "ঘাস/সাইলেজ → পশুখাদ্য",
+        "desc": "Feed খরচ ৬৫–৭৫% কমানোর লক্ষ্য"
+      },
+      {
+        "num": "৭",
+        "title": "সোলার → ফার্ম পাওয়ার",
+        "desc": "৫–১০kWp, self-use first; SREDA হলে net metering"
+      },
+      {
+        "num": "৮",
+        "title": "রেকর্ড + ব্র্যান্ড",
+        "desc": "প্রশিক্ষণ + content + sourcing সেবা"
+      }
     ],
     "loopRestart": "চক্র পুনরায় শুরু — ঘাস আবার পশুকে খাওয়ায়",
     "breedingCenterTitle": "কেন্দ্রে জাত উন্নয়ন",
@@ -342,30 +875,102 @@
     "systemsTitle": "সিস্টেম কম্পোনেন্ট — Input → Output",
     "systemsSubtitle": "প্রতিটি কম্পোনেন্টের বাস্তব input-output ম্যাপিং, phase অনুযায়ী।",
     "flowCards": [
-      { "icon": "🐐", "title": "ছাগল ও গবাদিপশু + জাত উন্নয়ন",
-        "inputs": ["ছাগল nucleus (Year 1: ৩৫–৪০ ছাগী + ২ পাঁঠা)", "Selective dairy (Year 2: ২–৪ দেশি গাভী + AI F1)", "Verified semen (DLS/BRAC/ACI/Lal Teer/ST Genetics)"],
-        "outputs": ["Breeding stock (full record)", "দুধ (selective dairy)", "গোবর/লেদা (বায়োগ্যাস input)"],
-        "phase": "Next", "phaseNote": "Year 1: goat nucleus pilot; Year 2: selective dairy" },
-      { "icon": "⚗️", "title": "বায়োগ্যাস ডাইজেস্টার",
-        "inputs": ["গোবর (দৈনিক)", "Slurry mix-এর পানি", "জৈব বর্জ্য"],
-        "outputs": ["রান্নার গ্যাস (LPG সাশ্রয় ৳১–২ হাজার/মাস, indicative)", "বায়ো-স্লারি তরল সার", "বর্জ্য-গন্ধ হ্রাস"],
-        "phase": "Later", "phaseNote": "Year 3: 6m³ ডাইজেস্টার (gate: ধারাবাহিক গোবর)" },
-      { "icon": "🌿", "title": "বায়ো-স্লারি সার",
-        "inputs": ["ডাইজেস্টার effluent", "পানি dilution", "Compost blend"],
-        "outputs": ["জৈব তরল সার", "মাটির microbiome উন্নতি", "ঘাসের ফলন বৃদ্ধি"],
-        "phase": "Later", "phaseNote": "Year 3+: বায়োগ্যাস চালুর পরে" },
-      { "icon": "🌾", "title": "ঘাস / সাইলেজ / Fodder",
-        "inputs": ["বায়ো-স্লারি সার", "বৃষ্টি + সেচ", "~৮০ ডেসিমাল ক্ষেত্র (~২ কিমি)"],
-        "outputs": ["সারা বছর পশুখাদ্য", "সাইলেজ surplus বিক্রয়", "Feed ক্রয় খরচ হ্রাস"],
-        "phase": "Next", "phaseNote": "Year 2: Pakchong-1 + BLRI Napier-3 scale" },
-      { "icon": "☀️", "title": "সোলার এনার্জি",
-        "inputs": ["রুফটপ installation area", "প্যানেল + inverter", "ব্যাটারি / grid tie"],
-        "outputs": ["ফার্ম অপারেশন পাওয়ার", "CCTV ও মনিটরিং পাওয়ার", "বিদ্যুৎ বিল হ্রাস"],
-        "phase": "Next", "phaseNote": "Year 1: ছোট সোলার; Year 4: ৫–১০kWp" },
-      { "icon": "📊", "title": "ডিজিটাল মনিটরিং",
-        "inputs": ["Starlink connectivity", "CCTV ক্যামেরা", "UPS ব্যাকআপ"],
-        "outputs": ["Real-time ফার্ম দৃশ্যমানতা", "Remote মনিটরিং ড্যাশবোর্ড", "Governance-এর প্রমাণ"],
-        "phase": "Later", "phaseNote": "Connectivity নিশ্চিত হওয়ার পরে" }
+      {
+        "icon": "🐐",
+        "title": "ছাগল ও গবাদিপশু + জাত উন্নয়ন",
+        "inputs": [
+          "ছাগল nucleus (Year 1: ৩৫–৪০ ছাগী + ২ পাঁঠা)",
+          "Selective dairy (Year 2: ২–৪ দেশি গাভী + AI F1)",
+          "Verified semen (DLS/BRAC/ACI/Lal Teer/ST Genetics)"
+        ],
+        "outputs": [
+          "Breeding stock (full record)",
+          "দুধ (selective dairy)",
+          "গোবর/লেদা (বায়োগ্যাস input)"
+        ],
+        "phase": "Next",
+        "phaseNote": "Year 1: goat nucleus pilot; Year 2: selective dairy"
+      },
+      {
+        "icon": "⚗️",
+        "title": "বায়োগ্যাস ডাইজেস্টার",
+        "inputs": [
+          "গোবর (দৈনিক)",
+          "Slurry mix-এর পানি",
+          "জৈব বর্জ্য"
+        ],
+        "outputs": [
+          "রান্নার গ্যাস (LPG সাশ্রয় ৳১–২ হাজার/মাস, indicative)",
+          "বায়ো-স্লারি তরল সার",
+          "বর্জ্য-গন্ধ হ্রাস"
+        ],
+        "phase": "Later",
+        "phaseNote": "Year 3: 6m³ ডাইজেস্টার (gate: ধারাবাহিক গোবর)"
+      },
+      {
+        "icon": "🌿",
+        "title": "বায়ো-স্লারি সার",
+        "inputs": [
+          "ডাইজেস্টার effluent",
+          "পানি dilution",
+          "Compost blend"
+        ],
+        "outputs": [
+          "জৈব তরল সার",
+          "মাটির microbiome উন্নতি",
+          "ঘাসের ফলন বৃদ্ধি"
+        ],
+        "phase": "Later",
+        "phaseNote": "Year 3+: বায়োগ্যাস চালুর পরে"
+      },
+      {
+        "icon": "🌾",
+        "title": "ঘাস / সাইলেজ / Fodder",
+        "inputs": [
+          "বায়ো-স্লারি সার",
+          "বৃষ্টি + সেচ",
+          "~৮০ ডেসিমাল ক্ষেত্র (~২ কিমি)"
+        ],
+        "outputs": [
+          "সারা বছর পশুখাদ্য",
+          "সাইলেজ surplus বিক্রয়",
+          "Feed ক্রয় খরচ হ্রাস"
+        ],
+        "phase": "Next",
+        "phaseNote": "Year 2: Pakchong-1 + BLRI Napier-3 scale"
+      },
+      {
+        "icon": "☀️",
+        "title": "সোলার এনার্জি",
+        "inputs": [
+          "রুফটপ installation area",
+          "প্যানেল + inverter",
+          "ব্যাটারি / grid tie"
+        ],
+        "outputs": [
+          "ফার্ম অপারেশন পাওয়ার",
+          "CCTV ও মনিটরিং পাওয়ার",
+          "বিদ্যুৎ বিল হ্রাস"
+        ],
+        "phase": "Next",
+        "phaseNote": "Year 1: ছোট সোলার; Year 4: ৫–১০kWp"
+      },
+      {
+        "icon": "📊",
+        "title": "ডিজিটাল মনিটরিং",
+        "inputs": [
+          "Starlink connectivity",
+          "CCTV ক্যামেরা",
+          "UPS ব্যাকআপ"
+        ],
+        "outputs": [
+          "Real-time ফার্ম দৃশ্যমানতা",
+          "Remote মনিটরিং ড্যাশবোর্ড",
+          "Governance-এর প্রমাণ"
+        ],
+        "phase": "Later",
+        "phaseNote": "Connectivity নিশ্চিত হওয়ার পরে"
+      }
     ],
     "inputsLabel": "Inputs",
     "outputsLabel": "Outputs",
@@ -380,23 +985,96 @@
     "impactTitle": "আর্থিক প্রভাব (Year 5 forecast — indicative)",
     "impactNote": "নিচের সংখ্যাগুলো পূর্বাভাস (forecast) — নিশ্চিত আয় নয়। প্রতিটি সংখ্যা সংশ্লিষ্ট পর্যায়ের বাস্তব প্রমাণ সাপেক্ষে।",
     "impactRows": [
-      { "label": "Feed খরচ", "value": "৬৫–৭৫% → ৪৫–৫৫%" },
-      { "label": "LPG সাশ্রয়", "value": "৳১–২ হাজার/মাস" },
-      { "label": "সোলার (১০kWp)", "value": "৳১৭–২৪ হাজার/মাস" },
-      { "label": "বায়ো-স্লারি", "value": "৳১২–৩০ হাজার/মাস" },
-      { "label": "সাইলেজ surplus", "value": "৳১০–৩০ হাজার/মাস" }
+      {
+        "label": "Feed খরচ",
+        "value": "৬৫–৭৫% → ৪৫–৫৫%"
+      },
+      {
+        "label": "LPG সাশ্রয়",
+        "value": "৳১–২ হাজার/মাস"
+      },
+      {
+        "label": "সোলার (১০kWp)",
+        "value": "৳১৭–২৪ হাজার/মাস"
+      },
+      {
+        "label": "বায়ো-স্লারি",
+        "value": "৳১২–৩০ হাজার/মাস"
+      },
+      {
+        "label": "সাইলেজ surplus",
+        "value": "৳১০–৩০ হাজার/মাস"
+      }
     ],
     "whyTitle": "কেন চক্রাকার?",
     "whySubtitle": "প্রতিটি লুপ কেনা input-এর ওপর নির্ভরতা কমায় এবং ফার্মের resilience বাড়ায়।",
     "whyItems": [
-      { "icon": "💸", "title": "Input খরচ কমায়", "body": "বায়ো-স্লারি রাসায়নিক সার প্রতিস্থাপন করে। সাইলেজ feed ক্রয় কমায়। বায়োগ্যাস LPG প্রতিস্থাপন করে।" },
-      { "icon": "♻️", "title": "Zero Waste লক্ষ্য", "body": "গোবর → বায়োগ্যাস → বায়ো-স্লারি → সার → ঘাস → গোবর। কিছুই নষ্ট হয় না।" },
-      { "icon": "🏦", "title": "Bankable মডেল", "body": "নথিভুক্ত চক্রাকার output প্রতিটি পর্যায়ে যাচাইযোগ্য আয়ের ধারা তৈরি করে। স্পষ্ট audit trail।" },
-      { "icon": "🌱", "title": "মাটির পুনর্জীবন", "body": "বায়ো-স্লারি সময়ের সাথে মাটির জৈব উপাদান বাড়ায়। দীর্ঘমেয়াদে জমির মূল্য বৃদ্ধি।" },
-      { "icon": "⚡", "title": "শক্তি স্বাধীনতা", "body": "সোলার + বায়োগ্যাস মিলে grid ও LPG সরবরাহের ওপর নির্ভরতা কমায়।" },
-      { "icon": "📡", "title": "মনিটরড ও যাচাইকৃত", "body": "ডিজিটাল মনিটরিং নিশ্চিত করে সব output পরিমাপ ও governance-এর জন্য নথিভুক্ত।" }
+      {
+        "icon": "💸",
+        "title": "Input খরচ কমায়",
+        "body": "বায়ো-স্লারি রাসায়নিক সার প্রতিস্থাপন করে। সাইলেজ feed ক্রয় কমায়। বায়োগ্যাস LPG প্রতিস্থাপন করে।"
+      },
+      {
+        "icon": "♻️",
+        "title": "Zero Waste লক্ষ্য",
+        "body": "গোবর → বায়োগ্যাস → বায়ো-স্লারি → সার → ঘাস → গোবর। কিছুই নষ্ট হয় না।"
+      },
+      {
+        "icon": "🏦",
+        "title": "Bankable মডেল",
+        "body": "নথিভুক্ত চক্রাকার output প্রতিটি পর্যায়ে যাচাইযোগ্য আয়ের ধারা তৈরি করে। স্পষ্ট audit trail।"
+      },
+      {
+        "icon": "🌱",
+        "title": "মাটির পুনর্জীবন",
+        "body": "বায়ো-স্লারি সময়ের সাথে মাটির জৈব উপাদান বাড়ায়। দীর্ঘমেয়াদে জমির মূল্য বৃদ্ধি।"
+      },
+      {
+        "icon": "⚡",
+        "title": "শক্তি স্বাধীনতা",
+        "body": "সোলার + বায়োগ্যাস মিলে grid ও LPG সরবরাহের ওপর নির্ভরতা কমায়।"
+      },
+      {
+        "icon": "📡",
+        "title": "মনিটরড ও যাচাইকৃত",
+        "body": "ডিজিটাল মনিটরিং নিশ্চিত করে সব output পরিমাপ ও governance-এর জন্য নথিভুক্ত।"
+      }
     ],
-    "seeProducts": "Phase-Gated পণ্য দেখুন"
+    "seeProducts": "Phase-Gated পণ্য দেখুন",
+    "silageScience": {
+      "title": "সাইলেজ কীভাবে কাজ করে (প্রক্রিয়া ও সাইন্স)",
+      "steps": [
+        "ভুট্টা কাছানো → সারাবছর (Wilting) পর্যন্ত ড্রাই মেটার ২৫–৩০% নির্ণয়",
+        "ছোট করা (১.৫–২.৫ সেমি) → ব্যাক্টেরিয়াল ফার্মেন্টেশন জরালি",
+        "মোলাসিস (২–৪%) মিশ্রন → প্রারম্ভিক ব্যাক্টেরিয়া কলোনি",
+        "আরটাইট সাইলো (২১–৩০ দিন) → এনারোবিক ফার্মেন্টেশন",
+        "pH ৩.৮–৪.৫ → সারাবছর খাবার; feed খরচ ৬৫–৭৫% কম"
+      ],
+      "source": "BLRI / BARI silage protocol aligned"
+    },
+    "biogasScience": {
+      "title": "বায়োগ্যাস প্রক্রিয়া: গোবর → গ্যাস → বায়ো-স্লারি",
+      "inputs": [
+        "দৈনিক ৬m³ digester ক্যাপাসিটি",
+        "দুগ্ধ কাছ কার্বন",
+        "মানব তাপমাত্রা ৩৫°C বা তার বেশি"
+      ],
+      "process": "Anaerobic digestion → CH₄ (৫৫–৬৫%) + CO₂ → কাঠের গ্যাস / রান্নার গ্যাস",
+      "outputs": [
+        "দৈনিক রান্নার গ্যাস পরিবার + স্টাফ কিচেন",
+        "বায়ো-স্লারি → জৈব সার ঘাসের ক্ষেতে",
+        "ইনপুট কার্বন ফুটপ্রিন্ট কম"
+      ],
+      "source": "IDCOL biogas program aligned; ৬m³ fixed-dome design"
+    },
+    "solarScience": {
+      "title": "সোলার এনার্জি: স্বয়ং চাহিদা → নেট মিটারিং",
+      "capacity": "৫–১০ kWp স্বয়ং ব্যবহার (Year 1–২)",
+      "use": "দুগ্ধ কোল্ড চেইন, বায়োগ্যাস পাম্প, লাইট, ডিজিটাল সার্ভার",
+      "netMetering": "SREDA net metering রেজিস্ট্রেশন থাকলে এক্সপোর্ট সম্ভব",
+      "saving": "আনুমানিক মাসিক বিদ্যুৎ ছাড় এবং গ্রিড-এর বিকল্প কম",
+      "source": "SREDA / IDCOL solar program aligned"
+    }
   },
   "products": {
     "heroTitle": "পণ্য ও সেবা",
@@ -407,28 +1085,84 @@
     "nowTitle": "এখন Available",
     "nowSubtitle": "যাচাইকৃত sourcing, consultation, vendor onboarding ও partnership আলোচনা আজই খোলা।",
     "now": [
-      { "title": "যাচাইকৃত পশু Sourcing ও Verification", "body": "১০০-পয়েন্ট scorecard দিয়ে পশু যাচাই ও sourcing সেবা। প্রতিটি পশুর রেকর্ড ও যাচাই রিপোর্টসহ।", "ctaLabel": "Sourcing অনুসন্ধান" },
-      { "title": "AI-ভিত্তিক জাত উন্নয়ন Consultation", "body": "Artificial Insemination-ভিত্তিক জাত উন্নয়ন পরামর্শ — verified semen source (DLS/BRAC/ACI/Lal Teer/ST Genetics) ভিত্তিক।", "ctaLabel": "Consultation অনুসন্ধান" },
-      { "title": "Vendor / Partner Onboarding", "body": "Soil test, survey, solar, biogas, CCTV, নির্মাণ (শুধু জোন এ), vet ও AI semen vendor-দের quote আহ্বান। প্রতিটি ক্রয়ে ৩ quote নীতি।", "ctaLabel": "Vendor Quote জমা দিন" },
-      { "title": "Partnership আলোচনা", "body": "ব্যাংক/সরকার/NGO/CSR-এর সাথে অংশীদারিত্ব আলোচনা খোলা। কোনো প্রতিশ্রুতি নয় — শুধুমাত্র আলোচনা ও due diligence।", "ctaLabel": "আলোচনা শুরু করুন" }
+      {
+        "title": "যাচাইকৃত পশু Sourcing ও Verification",
+        "body": "১০০-পয়েন্ট scorecard দিয়ে পশু যাচাই ও sourcing সেবা। প্রতিটি পশুর রেকর্ড ও যাচাই রিপোর্টসহ।",
+        "ctaLabel": "Sourcing অনুসন্ধান"
+      },
+      {
+        "title": "AI-ভিত্তিক জাত উন্নয়ন Consultation",
+        "body": "Artificial Insemination-ভিত্তিক জাত উন্নয়ন পরামর্শ — verified semen source (DLS/BRAC/ACI/Lal Teer/ST Genetics) ভিত্তিক।",
+        "ctaLabel": "Consultation অনুসন্ধান"
+      },
+      {
+        "title": "Vendor / Partner Onboarding",
+        "body": "Soil test, survey, solar, biogas, CCTV, নির্মাণ (শুধু জোন এ), vet ও AI semen vendor-দের quote আহ্বান। প্রতিটি ক্রয়ে ৩ quote নীতি।",
+        "ctaLabel": "Vendor Quote জমা দিন"
+      },
+      {
+        "title": "Partnership আলোচনা",
+        "body": "ব্যাংক/সরকার/NGO/CSR-এর সাথে অংশীদারিত্ব আলোচনা খোলা। কোনো প্রতিশ্রুতি নয় — শুধুমাত্র আলোচনা ও due diligence।",
+        "ctaLabel": "আলোচনা শুরু করুন"
+      }
     ],
     "nextTitle": "Next (Phase 1–3)",
     "nextSubtitle": "সংশ্লিষ্ট পর্যায়ের verification gate পাস হলে available। এখনো সক্রিয় নয়।",
     "next": [
-      { "title": "ছাগল Breeding Stock", "body": "Full record-সহ ছাগল breeding stock — Year 1 nucleus (৩৫–৪০ ছাগী + ২ পাঁঠা) স্থিতিশীল হলে।", "gated": "Gate: Year 1 goat nucleus চালু ও নথিভুক্ত" },
-      { "title": "দেশি গাভী + F1 Selective Dairy", "body": "২–৪ দেশি গাভী + AI F1 selective dairy। ছোট ভলিউম, সম্পূর্ণ health record সাপেক্ষে।", "gated": "Gate: Year 2 dairy চালু ও health record বিদ্যমান" },
-      { "title": "কম্পোস্ট / ভার্মিকম্পোস্ট", "body": "গোবর ও ঘাসের অবশেষ থেকে জৈব কম্পোস্ট — স্থানীয় কৃষক ও বাগানের জন্য।", "gated": "Gate: Year 2 compost loop চালু" },
-      { "title": "ঘাস / সাইলেজ / Fodder (Pakchong-1 cuttings)", "body": "Pakchong-1 cuttings ও সাইলেজ surplus — মৌসুম ও নিজস্ব চাহিদা সাপেক্ষে।", "gated": "Gate: ঘাস প্রতিষ্ঠিত ও surplus নিশ্চিত" },
-      { "title": "বায়ো-স্লারি সার", "body": "বায়োগ্যাস ডাইজেস্টার effluent থেকে জৈব তরল সার। মূল্য ও ভলিউম Year 3-এর পরে।", "gated": "Gate: Year 3 বায়োগ্যাস চালু" }
+      {
+        "title": "ছাগল Breeding Stock",
+        "body": "Full record-সহ ছাগল breeding stock — Year 1 nucleus (৩৫–৪০ ছাগী + ২ পাঁঠা) স্থিতিশীল হলে।",
+        "gated": "Gate: Year 1 goat nucleus চালু ও নথিভুক্ত"
+      },
+      {
+        "title": "দেশি গাভী + F1 Selective Dairy",
+        "body": "২–৪ দেশি গাভী + AI F1 selective dairy। ছোট ভলিউম, সম্পূর্ণ health record সাপেক্ষে।",
+        "gated": "Gate: Year 2 dairy চালু ও health record বিদ্যমান"
+      },
+      {
+        "title": "কম্পোস্ট / ভার্মিকম্পোস্ট",
+        "body": "গোবর ও ঘাসের অবশেষ থেকে জৈব কম্পোস্ট — স্থানীয় কৃষক ও বাগানের জন্য।",
+        "gated": "Gate: Year 2 compost loop চালু"
+      },
+      {
+        "title": "ঘাস / সাইলেজ / Fodder (Pakchong-1 cuttings)",
+        "body": "Pakchong-1 cuttings ও সাইলেজ surplus — মৌসুম ও নিজস্ব চাহিদা সাপেক্ষে।",
+        "gated": "Gate: ঘাস প্রতিষ্ঠিত ও surplus নিশ্চিত"
+      },
+      {
+        "title": "বায়ো-স্লারি সার",
+        "body": "বায়োগ্যাস ডাইজেস্টার effluent থেকে জৈব তরল সার। মূল্য ও ভলিউম Year 3-এর পরে।",
+        "gated": "Gate: Year 3 বায়োগ্যাস চালু"
+      }
     ],
     "laterTitle": "Later (Phase 4–5) — Demand-Gated",
     "laterSubtitle": "দূর ভবিষ্যৎ। পূর্ববর্তী সব পর্যায় যাচাইকৃত ও স্থিতিশীল হলে কেবল আনলক।",
     "later": [
-      { "title": "প্রশিক্ষণ ও Farm Tour (Paid)", "body": "চক্রাকার ফার্মিং, বায়োগ্যাস ও ডিজিটাল মনিটরিং প্রশিক্ষণ — Year 4+ ও মনিটরিং লাইভ হলে।", "gated": "Gate: Year 4 + মনিটরিং সিস্টেম চালু" },
-      { "title": "Smart Monitoring Demo", "body": "কৃষি প্রতিষ্ঠান, উন্নয়ন সংস্থা ও অন্য খামারিদের জন্য লাইভ ড্যাশবোর্ড ডেমো — নিজেদের সিস্টেম প্রমাণিত হওয়ার পরে।", "gated": "Gate: Starlink + CCTV + ড্যাশবোর্ড সম্পূর্ণ চালু" },
-      { "title": "Premium Breeding Stock (Pedigree)", "body": "Pedigree রেকর্ডসহ premium breeding stock বিক্রয় — বহু প্রজন্মের নথিভুক্ত genetics সাপেক্ষে।", "gated": "Gate: বহু-বছরের breeding রেকর্ড যাচাইকৃত" },
-      { "title": "Demand-Gated Service Residence", "body": "শুধুমাত্র demand-gated। আইনি যাচাই + আনুষ্ঠানিক অনুসন্ধান রেকর্ডে চাহিদা প্রমাণিত না হলে পরিকল্পনাই হবে না।", "gated": "Gate: আইনি ছাড় + যাচাইকৃত চাহিদা + Year 4 স্থিতিশীল" },
-      { "title": "Content / Documentation Service", "body": "গ্রামীণ খামারের জন্য documentation ও evidence-first reporting সেবা — কুটিরচর ইকোফার্ম প্রমাণিত reference হওয়ার পরে।", "gated": "Gate: পর্যায় 0–4 সম্পূর্ণ ও externally যাচাইকৃত" }
+      {
+        "title": "প্রশিক্ষণ ও Farm Tour (Paid)",
+        "body": "চক্রাকার ফার্মিং, বায়োগ্যাস ও ডিজিটাল মনিটরিং প্রশিক্ষণ — Year 4+ ও মনিটরিং লাইভ হলে।",
+        "gated": "Gate: Year 4 + মনিটরিং সিস্টেম চালু"
+      },
+      {
+        "title": "Smart Monitoring Demo",
+        "body": "কৃষি প্রতিষ্ঠান, উন্নয়ন সংস্থা ও অন্য খামারিদের জন্য লাইভ ড্যাশবোর্ড ডেমো — নিজেদের সিস্টেম প্রমাণিত হওয়ার পরে।",
+        "gated": "Gate: Starlink + CCTV + ড্যাশবোর্ড সম্পূর্ণ চালু"
+      },
+      {
+        "title": "Premium Breeding Stock (Pedigree)",
+        "body": "Pedigree রেকর্ডসহ premium breeding stock বিক্রয় — বহু প্রজন্মের নথিভুক্ত genetics সাপেক্ষে।",
+        "gated": "Gate: বহু-বছরের breeding রেকর্ড যাচাইকৃত"
+      },
+      {
+        "title": "Demand-Gated Service Residence",
+        "body": "শুধুমাত্র demand-gated। আইনি যাচাই + আনুষ্ঠানিক অনুসন্ধান রেকর্ডে চাহিদা প্রমাণিত না হলে পরিকল্পনাই হবে না।",
+        "gated": "Gate: আইনি ছাড় + যাচাইকৃত চাহিদা + Year 4 স্থিতিশীল"
+      },
+      {
+        "title": "Content / Documentation Service",
+        "body": "গ্রামীণ খামারের জন্য documentation ও evidence-first reporting সেবা — কুটিরচর ইকোফার্ম প্রমাণিত reference হওয়ার পরে।",
+        "gated": "Gate: পর্যায় 0–4 সম্পূর্ণ ও externally যাচাইকৃত"
+      }
     ],
     "laterStopRule": "Later-পর্যায়ের সেবা বর্তমানে available নয় এবং নিশ্চিতও নয়। প্রয়োজনীয় সব verification gate পাস ও নথিভুক্ত হওয়ার পরে প্রকল্পের সম্ভাব্য দিক দেখাতেই কেবল তালিকাভুক্ত।",
     "whyUsTitle": "কেন আমাদের কাছ থেকে",
@@ -449,10 +1183,49 @@
     "archTitle": "৪-স্তর আর্কিটেকচার",
     "archSubtitle": "Connectivity · Power Safety · Security · Network — প্রতিটি স্তর স্বাধীন ও gate-নিয়ন্ত্রিত।",
     "modules": [
-      { "icon": "📡", "title": "Connectivity (Starlink)", "items": ["Starlink স্যাটেলাইট ইন্টারনেট", "মনিটরিংয়ের primary WAN", "Portability ও address check আবশ্যক", "সাইটে clear sky view test"], "phase": "Later" },
-      { "icon": "⚡", "title": "Power Safety (UPS + Battery)", "items": ["UPS ব্যাকআপ (লোডশেডিং সুরক্ষা)", "UPS চার্জিংয়ে সোলার ইন্টিগ্রেশন", "Grounding plan আবশ্যক", "সব মনিটরিং ডিভাইস সুরক্ষা"], "phase": "Next" },
-      { "icon": "🔒", "title": "Security (CCTV/NVR — Local-First)", "items": ["IP ক্যামেরা (PoE)", "Local NVR storage (primary)", "Cloud secondary", "Tamper-evident প্রমাণ"], "phase": "Next" },
-      { "icon": "🌐", "title": "Network (Wi-Fi 6 + Switch + VLAN)", "items": ["Wi-Fi 6 + managed switch", "VLAN — ক্যামেরা network আলাদা", "ভবিষ্যৎ ডিভাইসের জন্য scalable"], "phase": "Next" }
+      {
+        "icon": "📡",
+        "title": "Connectivity (Starlink)",
+        "items": [
+          "Starlink স্যাটেলাইট ইন্টারনেট",
+          "মনিটরিংয়ের primary WAN",
+          "Portability ও address check আবশ্যক",
+          "সাইটে clear sky view test"
+        ],
+        "phase": "Later"
+      },
+      {
+        "icon": "⚡",
+        "title": "Power Safety (UPS + Battery)",
+        "items": [
+          "UPS ব্যাকআপ (লোডশেডিং সুরক্ষা)",
+          "UPS চার্জিংয়ে সোলার ইন্টিগ্রেশন",
+          "Grounding plan আবশ্যক",
+          "সব মনিটরিং ডিভাইস সুরক্ষা"
+        ],
+        "phase": "Next"
+      },
+      {
+        "icon": "🔒",
+        "title": "Security (CCTV/NVR — Local-First)",
+        "items": [
+          "IP ক্যামেরা (PoE)",
+          "Local NVR storage (primary)",
+          "Cloud secondary",
+          "Tamper-evident প্রমাণ"
+        ],
+        "phase": "Next"
+      },
+      {
+        "icon": "🌐",
+        "title": "Network (Wi-Fi 6 + Switch + VLAN)",
+        "items": [
+          "Wi-Fi 6 + managed switch",
+          "VLAN — ক্যামেরা network আলাদা",
+          "ভবিষ্যৎ ডিভাইসের জন্য scalable"
+        ],
+        "phase": "Next"
+      }
     ],
     "gatesTitle": "৫টি Gate",
     "gates": [
@@ -466,22 +1239,74 @@
     "systemsTitle": "প্রতিটি সিস্টেমের Verification Gate",
     "systemsSubtitle": "Installation-এর আগে প্রতিটি সিস্টেমের gate নিশ্চিত করতে হবে।",
     "systems": [
-      { "icon": "📡", "title": "Starlink Connectivity", "phase": "Later",
+      {
+        "icon": "📡",
+        "title": "Starlink Connectivity",
+        "phase": "Later",
         "desc": "Remote ফার্ম মনিটরিং, ড্যাশবোর্ড ও real-time reporting-এর জন্য হাই-স্পিড স্যাটেলাইট ইন্টারনেট।",
-        "gates": ["কুটিরচরে availability নিশ্চিত", "Final checkout price যাচাই", "Service address portability নিয়ম পরিষ্কার", "সাইটে clear sky view test পাস"],
-        "outputs": ["Remote মনিটরিং access", "CCTV footage-এর cloud backup", "যেকোনো জায়গা থেকে ড্যাশবোর্ড", "Report generation ও file upload"] },
-      { "icon": "📷", "title": "CCTV ও NVR Security", "phase": "Next",
+        "gates": [
+          "কুটিরচরে availability নিশ্চিত",
+          "Final checkout price যাচাই",
+          "Service address portability নিয়ম পরিষ্কার",
+          "সাইটে clear sky view test পাস"
+        ],
+        "outputs": [
+          "Remote মনিটরিং access",
+          "CCTV footage-এর cloud backup",
+          "যেকোনো জায়গা থেকে ড্যাশবোর্ড",
+          "Report generation ও file upload"
+        ]
+      },
+      {
+        "icon": "📷",
+        "title": "CCTV ও NVR Security",
+        "phase": "Next",
         "desc": "শেড, বায়োগ্যাস সাইট ও প্রধান প্রবেশপথে IP ক্যামেরা। Local NVR storage আগে, cloud পরে।",
-        "gates": ["ক্যামেরা placement plan সম্পূর্ণ", "NVR local storage সেটআপ (cloud-এর আগে)", "Bandwidth plan = local NVR first", "UPS থেকে power backup নিশ্চিত"],
-        "outputs": ["২৪/৭ সাইট নিরাপত্তা footage", "Governance ও বীমার প্রমাণ", "Remote viewing (সংযুক্ত হলে)", "ঘটনা documentation"] },
-      { "icon": "🔋", "title": "UPS ও Power Backup", "phase": "Next",
+        "gates": [
+          "ক্যামেরা placement plan সম্পূর্ণ",
+          "NVR local storage সেটআপ (cloud-এর আগে)",
+          "Bandwidth plan = local NVR first",
+          "UPS থেকে power backup নিশ্চিত"
+        ],
+        "outputs": [
+          "২৪/৭ সাইট নিরাপত্তা footage",
+          "Governance ও বীমার প্রমাণ",
+          "Remote viewing (সংযুক্ত হলে)",
+          "ঘটনা documentation"
+        ]
+      },
+      {
+        "icon": "🔋",
+        "title": "UPS ও Power Backup",
+        "phase": "Next",
         "desc": "লোডশেডিংয়ের সময় CCTV, মনিটরিং ও নেটওয়ার্ক সুরক্ষায় uninterruptible power supply।",
-        "gates": ["Load calculation সম্পূর্ণ (CCTV + রাউটার + NVR)", "ব্যাটারি capacity + grounding plan প্রস্তুত", "সোলার output-এর সাথে UPS সংযোগ যাচাই"],
-        "outputs": ["বিদ্যুৎ বিভ্রাটেও নিরবচ্ছিন্ন মনিটরিং", "NVR-কে data loss থেকে রক্ষা", "লোডশেডিংয়ে ফার্ম অপারেশন সচল"] },
-      { "icon": "🌐", "title": "Network ও Router", "phase": "Next",
+        "gates": [
+          "Load calculation সম্পূর্ণ (CCTV + রাউটার + NVR)",
+          "ব্যাটারি capacity + grounding plan প্রস্তুত",
+          "সোলার output-এর সাথে UPS সংযোগ যাচাই"
+        ],
+        "outputs": [
+          "বিদ্যুৎ বিভ্রাটেও নিরবচ্ছিন্ন মনিটরিং",
+          "NVR-কে data loss থেকে রক্ষা",
+          "লোডশেডিংয়ে ফার্ম অপারেশন সচল"
+        ]
+      },
+      {
+        "icon": "🌐",
+        "title": "Network ও Router",
+        "phase": "Next",
         "desc": "NVR, ক্যামেরা ও মনিটরিং ডিভাইসের local network। Starlink available হলে WAN।",
-        "gates": ["Device inventory সম্পূর্ণ", "শেড + বায়োগ্যাস এলাকার cable routing plan", "Router/switch placement নির্ধারিত"],
-        "outputs": ["সব মনিটরিং ডিভাইসের local LAN", "নিরাপত্তা ক্যামেরার isolated network", "ভবিষ্যৎ ডিভাইসের জন্য scalable"] }
+        "gates": [
+          "Device inventory সম্পূর্ণ",
+          "শেড + বায়োগ্যাস এলাকার cable routing plan",
+          "Router/switch placement নির্ধারিত"
+        ],
+        "outputs": [
+          "সব মনিটরিং ডিভাইসের local LAN",
+          "নিরাপত্তা ক্যামেরার isolated network",
+          "ভবিষ্যৎ ডিভাইসের জন্য scalable"
+        ]
+      }
     ],
     "gatesLabel": "Verification Gates",
     "outputsLabel": "Outputs",
@@ -496,10 +1321,30 @@
     "rolloutTitle": "ফেজ রোলআউট",
     "rolloutSubtitle": "ক্রম লঙ্ঘন নয় — প্রতিটি ধাপ আগেরটির ওপর নির্ভরশীল। খরচ indicative।",
     "rollout": [
-      { "step": "P1", "title": "রাউটার + ১–২ ক্যামেরা + ছোট UPS", "note": "মৌলিক connectivity ও নিরাপত্তা।", "cost": "৳২৫–৪০ হাজার (indicative)" },
-      { "step": "P2", "title": "Starlink + UPS + ৪ ক্যামেরা + NVR", "note": "পূর্ণ connectivity ও local-first নিরাপত্তা।", "cost": "৳১.৫–২.৫ লাখ (indicative)" },
-      { "step": "P3", "title": "৮ ক্যামেরা + VLAN + ব্যাটারি", "note": "সম্পূর্ণ coverage ও network segmentation।", "cost": "৳২–৪ লাখ (indicative)" },
-      { "step": "P4", "title": "IoT sensor + ড্যাশবোর্ড", "note": "সেন্সর ডেটা ও সম্পূর্ণ মনিটরিং ড্যাশবোর্ড।", "cost": "৳১–৩ লাখ (indicative)" }
+      {
+        "step": "P1",
+        "title": "রাউটার + ১–২ ক্যামেরা + ছোট UPS",
+        "note": "মৌলিক connectivity ও নিরাপত্তা।",
+        "cost": "৳২৫–৪০ হাজার (indicative)"
+      },
+      {
+        "step": "P2",
+        "title": "Starlink + UPS + ৪ ক্যামেরা + NVR",
+        "note": "পূর্ণ connectivity ও local-first নিরাপত্তা।",
+        "cost": "৳১.৫–২.৫ লাখ (indicative)"
+      },
+      {
+        "step": "P3",
+        "title": "৮ ক্যামেরা + VLAN + ব্যাটারি",
+        "note": "সম্পূর্ণ coverage ও network segmentation।",
+        "cost": "৳২–৪ লাখ (indicative)"
+      },
+      {
+        "step": "P4",
+        "title": "IoT sensor + ড্যাশবোর্ড",
+        "note": "সেন্সর ডেটা ও সম্পূর্ণ মনিটরিং ড্যাশবোর্ড।",
+        "cost": "৳১–৩ লাখ (indicative)"
+      }
     ],
     "outputsTitle": "Outputs",
     "outputsItems": [
@@ -518,53 +1363,161 @@
     "editorialNote": "📸 Photo-first · Evidence-referenced · কোনো confidential ID নয় · Auditor tone · Negative-news transparency",
     "cadenceLabel": "Cadence: মাসিক (১–৫ তারিখ) · ত্রৈমাসিক (Q1 এপ্রিল, Q2 জুলাই, Q3 অক্টোবর, Q4 জানুয়ারি) · বার্ষিক (জানুয়ারি)",
     "categories": [
-      { "id": "all", "label": "সব" },
-      { "id": "verification", "label": "Verification" },
-      { "id": "breedLivestock", "label": "জাত/পশুসম্পদ" },
-      { "id": "fodderSilage", "label": "ঘাস/সাইলেজ" },
-      { "id": "energy", "label": "শক্তি" },
-      { "id": "digitalInfra", "label": "ডিজিটাল" },
-      { "id": "governance", "label": "Governance" },
-      { "id": "partnership", "label": "অংশীদারিত্ব" },
-      { "id": "monetization", "label": "Monetization" }
+      {
+        "id": "all",
+        "label": "সব"
+      },
+      {
+        "id": "verification",
+        "label": "Verification"
+      },
+      {
+        "id": "breedLivestock",
+        "label": "জাত/পশুসম্পদ"
+      },
+      {
+        "id": "fodderSilage",
+        "label": "ঘাস/সাইলেজ"
+      },
+      {
+        "id": "energy",
+        "label": "শক্তি"
+      },
+      {
+        "id": "digitalInfra",
+        "label": "ডিজিটাল"
+      },
+      {
+        "id": "governance",
+        "label": "Governance"
+      },
+      {
+        "id": "partnership",
+        "label": "অংশীদারিত্ব"
+      },
+      {
+        "id": "monetization",
+        "label": "Monetization"
+      }
     ],
     "entries": [
-      { "date": "জুন ২০২৬", "categoryId": "governance", "phase": "Now", "statusKey": "completed", "status": "সম্পন্ন",
+      {
+        "date": "জুন ২০২৬",
+        "categoryId": "governance",
+        "phase": "Now",
+        "statusKey": "completed",
+        "status": "সম্পন্ন",
         "title": "ব্র্যান্ড ও ডিজিটাল পরিচিতি লকড — FINAL",
         "summary": "অফিসিয়াল ব্র্যান্ড নাম 'Kutirchar EcoFarm / কুটিরচর ইকোফার্ম' ২১ জুন ২০২৬-এ লকড। লোগো, কালার সিস্টেম, দ্বিভাষিক টাইপোগ্রাফি ও identity documentation প্রকাশিত ও version-controlled।",
-        "evidenceAdded": ["ব্র্যান্ড পরিচিতি গাইড প্রকাশিত", "কালার টোকেন নথিভুক্ত", "লোগো সিস্টেম চূড়ান্ত"],
+        "evidenceAdded": [
+          "ব্র্যান্ড পরিচিতি গাইড প্রকাশিত",
+          "কালার টোকেন নথিভুক্ত",
+          "লোগো সিস্টেম চূড়ান্ত"
+        ],
         "openGaps": [],
-        "next30": ["ব্র্যান্ড গাইড GitHub-এ push", "ডোমেইন রেজিস্ট্রেশন নিশ্চিতকরণ শুরু"] },
-      { "date": "জুন ২০২৬", "categoryId": "verification", "phase": "Now", "statusKey": "inProgress", "status": "চলমান",
+        "next30": [
+          "ব্র্যান্ড গাইড GitHub-এ push",
+          "ডোমেইন রেজিস্ট্রেশন নিশ্চিতকরণ শুরু"
+        ]
+      },
+      {
+        "date": "জুন ২০২৬",
+        "categoryId": "verification",
+        "phase": "Now",
+        "statusKey": "inProgress",
+        "status": "চলমান",
         "title": "জোন এ বাউন্ডারি সার্ভে — শুরু",
         "summary": "জোন এ (১০ ডেসিমাল ব্যক্তিগত জমি) boundary demarcation-এর আনুষ্ঠানিক প্রক্রিয়া শুরু। Surveyor চিহ্নিত। জেলা ভূমি জরিপ অফিসে অ্যাপয়েন্টমেন্ট বাকি।",
-        "evidenceAdded": ["Surveyor contact নিশ্চিত"],
-        "openGaps": ["Survey অ্যাপয়েন্টমেন্ট এখনো নিশ্চিত নয়", "Boundary peg বসানো হয়নি"],
-        "next30": ["আনুষ্ঠানিক survey অ্যাপয়েন্টমেন্ট বুক", "উপজেলা ভূমি অফিসের সাথে সমন্বয়"] },
-      { "date": "মে ২০২৬", "categoryId": "verification", "phase": "Now", "statusKey": "open", "status": "উন্মুক্ত",
+        "evidenceAdded": [
+          "Surveyor contact নিশ্চিত"
+        ],
+        "openGaps": [
+          "Survey অ্যাপয়েন্টমেন্ট এখনো নিশ্চিত নয়",
+          "Boundary peg বসানো হয়নি"
+        ],
+        "next30": [
+          "আনুষ্ঠানিক survey অ্যাপয়েন্টমেন্ট বুক",
+          "উপজেলা ভূমি অফিসের সাথে সমন্বয়"
+        ]
+      },
+      {
+        "date": "মে ২০২৬",
+        "categoryId": "verification",
+        "phase": "Now",
+        "statusKey": "open",
+        "status": "উন্মুক্ত",
         "title": "জোন বি এজমালি আইনি স্ট্যাটাস — open gap",
         "summary": "জোন বি (১২ ডেসিমাল) অ-ব্যক্তিগত/এজমালি। ওই জমিতে কোনো পরিকল্পনার আগে উপজেলা ভূমি অফিস থেকে আইনি স্পষ্টীকরণ আবশ্যক। বর্তমানে: শুধুমাত্র অপসারণযোগ্য ব্যবহার।",
         "evidenceAdded": [],
-        "openGaps": ["এজমালি স্ট্যাটাস আইনিভাবে নিশ্চিত নয়", "জোন বি-র কোনো survey sketch নেই", "উপজেলা verification বাকি"],
-        "next30": ["উপজেলা ভূমি অফিস থেকে আনুষ্ঠানিক legal opinion অনুরোধ", "জোন বি documentation brief প্রস্তুত"] },
-      { "date": "মে ২০২৬", "categoryId": "verification", "phase": "Now", "statusKey": "inProgress", "status": "চলমান",
+        "openGaps": [
+          "এজমালি স্ট্যাটাস আইনিভাবে নিশ্চিত নয়",
+          "জোন বি-র কোনো survey sketch নেই",
+          "উপজেলা verification বাকি"
+        ],
+        "next30": [
+          "উপজেলা ভূমি অফিস থেকে আনুষ্ঠানিক legal opinion অনুরোধ",
+          "জোন বি documentation brief প্রস্তুত"
+        ]
+      },
+      {
+        "date": "মে ২০২৬",
+        "categoryId": "verification",
+        "phase": "Now",
+        "statusKey": "inProgress",
+        "status": "চলমান",
         "title": "মাটি পরীক্ষা পরিকল্পনা — Year 0 requirement",
         "summary": "জোন এ-তে কোনো foundation পরিকল্পনার আগে SPT মাটি পরীক্ষা আবশ্যক। এটি hard gate — ফলাফল হাতে না আসা পর্যন্ত কোনো G+5 বা structural foundation সিদ্ধান্ত নয়। Lab চিহ্নিত, sample collection বাকি।",
-        "evidenceAdded": ["Soil test lab চিহ্নিত"],
-        "openGaps": ["Sample collection হয়নি", "Lab report নেই"],
-        "next30": ["Sample collection শিডিউল", "Structural engineer-এর সাথে SPT test parameter নিশ্চিত"] },
-      { "date": "এপ্রিল ২০২৬", "categoryId": "governance", "phase": "Now", "statusKey": "completed", "status": "সম্পন্ন",
+        "evidenceAdded": [
+          "Soil test lab চিহ্নিত"
+        ],
+        "openGaps": [
+          "Sample collection হয়নি",
+          "Lab report নেই"
+        ],
+        "next30": [
+          "Sample collection শিডিউল",
+          "Structural engineer-এর সাথে SPT test parameter নিশ্চিত"
+        ]
+      },
+      {
+        "date": "এপ্রিল ২০২৬",
+        "categoryId": "governance",
+        "phase": "Now",
+        "statusKey": "completed",
+        "status": "সম্পন্ন",
         "title": "Year 0 চেকলিস্ট আনুষ্ঠানিকীকরণ",
         "summary": "Year 0-এর সব verification requirement নথিভুক্ত: জমির title, boundary, soil test, drainage, এজমালি স্ট্যাটাস, পোস্ট অফিস ঠিকানা। সব item চেক না হলে কোনো পর্যায় অগ্রসর হবে না।",
-        "evidenceAdded": ["Year 0 checklist document তৈরি", "Stop rules লিখিত ও প্রকাশিত"],
+        "evidenceAdded": [
+          "Year 0 checklist document তৈরি",
+          "Stop rules লিখিত ও প্রকাশিত"
+        ],
         "openGaps": [],
-        "next30": ["অগ্রাধিকারক্রমে Year 0 item-গুলোতে কাজ চালিয়ে যাওয়া"] },
-      { "date": "এপ্রিল ২০২৬", "categoryId": "digitalInfra", "phase": "Next", "statusKey": "planning", "status": "পরিকল্পনায়",
+        "next30": [
+          "অগ্রাধিকারক্রমে Year 0 item-গুলোতে কাজ চালিয়ে যাওয়া"
+        ]
+      },
+      {
+        "date": "এপ্রিল ২০২৬",
+        "categoryId": "digitalInfra",
+        "phase": "Next",
+        "statusKey": "planning",
+        "status": "পরিকল্পনায়",
         "title": "ডিজিটাল অবকাঠামো scoping — Starlink + CCTV + UPS",
         "summary": "ডিজিটাল অবকাঠামোর প্রাথমিক scope: connectivity-তে Starlink, নিরাপত্তায় IP ক্যামেরা + NVR, পাওয়ার ব্যাকআপে UPS। Installation ক্রম খসড়া। Year 0 সম্পূর্ণ না হলে কোনো ক্রয় নয়।",
-        "evidenceAdded": ["Infrastructure scoping document তৈরি", "Vendor shortlist শুরু"],
-        "openGaps": ["Starlink address portability নিশ্চিত নয়", "সাইটে clear sky view test হয়নি", "UPS load calculation অসম্পূর্ণ"],
-        "next30": ["UPS + CCTV-র জন্য ৩টি vendor quote", "Starlink address eligibility নিশ্চিত"] }
+        "evidenceAdded": [
+          "Infrastructure scoping document তৈরি",
+          "Vendor shortlist শুরু"
+        ],
+        "openGaps": [
+          "Starlink address portability নিশ্চিত নয়",
+          "সাইটে clear sky view test হয়নি",
+          "UPS load calculation অসম্পূর্ণ"
+        ],
+        "next30": [
+          "UPS + CCTV-র জন্য ৩টি vendor quote",
+          "Starlink address eligibility নিশ্চিত"
+        ]
+      }
     ],
     "evidenceLabel": "যুক্ত প্রমাণ",
     "gapsLabel": "Open Gaps",
@@ -573,10 +1526,26 @@
     "howTitle": "আমরা যেভাবে রিপোর্ট করি",
     "howSubtitle": "স্বচ্ছ, evidence-first যোগাযোগে আমাদের অঙ্গীকার।",
     "howItems": [
-      { "icon": "📅", "title": "তারিখ-স্ট্যাম্পড", "body": "প্রতিটি আপডেট তারিখযুক্ত। নোটেশন ছাড়া কিছুই backdate বা পরিবর্তন হয় না।" },
-      { "icon": "🔗", "title": "Evidence-referenced", "body": "প্রতিটি দাবি নির্দিষ্ট documentation-এ referenced — যোগ্য স্টেকহোল্ডারদের আনুষ্ঠানিক অনুরোধে available। প্রমাণ ছাড়া দাবি নয়।" },
-      { "icon": "🔓", "title": "Open gap প্রকাশ্যে", "body": "যা হয়নি তা প্রকাশ্যে দেখাই। Gap লুকানো হয় না — সেগুলোই কাজ চালায়। Negative-news transparency।" },
-      { "icon": "🔒", "title": "প্রাইভেসি সুরক্ষিত", "body": "NID, PIN, ব্যাংক বিবরণ বা সংবেদনশীল ব্যক্তিগত পরিচয় কখনো প্রকাশিত হয় না।" }
+      {
+        "icon": "📅",
+        "title": "তারিখ-স্ট্যাম্পড",
+        "body": "প্রতিটি আপডেট তারিখযুক্ত। নোটেশন ছাড়া কিছুই backdate বা পরিবর্তন হয় না।"
+      },
+      {
+        "icon": "🔗",
+        "title": "Evidence-referenced",
+        "body": "প্রতিটি দাবি নির্দিষ্ট documentation-এ referenced — যোগ্য স্টেকহোল্ডারদের আনুষ্ঠানিক অনুরোধে available। প্রমাণ ছাড়া দাবি নয়।"
+      },
+      {
+        "icon": "🔓",
+        "title": "Open gap প্রকাশ্যে",
+        "body": "যা হয়নি তা প্রকাশ্যে দেখাই। Gap লুকানো হয় না — সেগুলোই কাজ চালায়। Negative-news transparency।"
+      },
+      {
+        "icon": "🔒",
+        "title": "প্রাইভেসি সুরক্ষিত",
+        "body": "NID, PIN, ব্যাংক বিবরণ বা সংবেদনশীল ব্যক্তিগত পরিচয় কখনো প্রকাশিত হয় না।"
+      }
     ]
   },
   "contact": {
@@ -598,8 +1567,16 @@
     },
     "teamOthersLabel": "সহ-যোগাযোগ",
     "teamOthers": [
-      { "name": "এমডি ইশতিয়াক আহমেদ", "role": "Director — Operations & Partnerships", "phone": "+8801730679998" },
-      { "name": "মোঃ আনিছুর রহমান", "role": "Family Land Guardian", "phone": "+8801718761373" }
+      {
+        "name": "এমডি ইশতিয়াক আহমেদ",
+        "role": "Director — Operations & Partnerships",
+        "phone": "+8801730679998"
+      },
+      {
+        "name": "মোঃ আনিছুর রহমান",
+        "role": "Family Land Guardian",
+        "phone": "+8801718761373"
+      }
     ],
     "locationTitle": "অবস্থান",
     "addressLines": "কুটিরচর গ্রাম, ভদ্রঘাট\nকামারখন্দ, সিরাজগঞ্জ\nবাংলাদেশ",
@@ -621,17 +1598,46 @@
     ],
     "partnersTitle": "পার্টনার ইকোসিস্টেম",
     "partners": [
-      { "name": "SYSmoAI", "note": "Parent tech প্রতিষ্ঠান" },
-      { "name": "Bangladesh AI Mission", "note": "AI উদ্যোগ" },
-      { "name": "emonhossain.pro", "note": "ফাউন্ডার প্রোফাইল" }
+      {
+        "name": "SYSmoAI",
+        "note": "Parent tech প্রতিষ্ঠান"
+      },
+      {
+        "name": "Bangladesh AI Mission",
+        "note": "AI উদ্যোগ"
+      },
+      {
+        "name": "emonhossain.pro",
+        "note": "ফাউন্ডার প্রোফাইল"
+      }
     ],
     "inquiryTypesTitle": "অনুসন্ধানের ধরন",
     "inquiryTypes": [
-      { "value": "bank-govt-investor", "label": "ব্যাংক / সরকার / বিনিয়োগকারী / NGO-CSR", "desc": "কৃষি ও পল্লী refinance, green refinance, IDCOL biogas, SREDA net metering, NGO/CSR, equity — due diligence ও evidence pack" },
-      { "value": "vendor", "label": "Vendor / Contractor", "desc": "Soil test, survey, solar, biogas, CCTV, নির্মাণ (শুধু জোন এ), vet, AI semen — quote জমা" },
-      { "value": "buyer", "label": "Buyer", "desc": "Breeding stock, fattening goat, compost, silage, bio-slurry, দুধ surplus (Next-পর্যায়ের অফার)" },
-      { "value": "training", "label": "প্রশিক্ষণ / পরিদর্শন / ইন্টার্নশিপ", "desc": "Farm tour, প্রশিক্ষণ বা ইন্টার্নশিপ অনুসন্ধান (Later পর্যায়)" },
-      { "value": "general", "label": "সাধারণ অনুসন্ধান", "desc": "অন্য যেকোনো প্রশ্ন বা বার্তা" }
+      {
+        "value": "bank-govt-investor",
+        "label": "ব্যাংক / সরকার / বিনিয়োগকারী / NGO-CSR",
+        "desc": "কৃষি ও পল্লী refinance, green refinance, IDCOL biogas, SREDA net metering, NGO/CSR, equity — due diligence ও evidence pack"
+      },
+      {
+        "value": "vendor",
+        "label": "Vendor / Contractor",
+        "desc": "Soil test, survey, solar, biogas, CCTV, নির্মাণ (শুধু জোন এ), vet, AI semen — quote জমা"
+      },
+      {
+        "value": "buyer",
+        "label": "Buyer",
+        "desc": "Breeding stock, fattening goat, compost, silage, bio-slurry, দুধ surplus (Next-পর্যায়ের অফার)"
+      },
+      {
+        "value": "training",
+        "label": "প্রশিক্ষণ / পরিদর্শন / ইন্টার্নশিপ",
+        "desc": "Farm tour, প্রশিক্ষণ বা ইন্টার্নশিপ অনুসন্ধান (Later পর্যায়)"
+      },
+      {
+        "value": "general",
+        "label": "সাধারণ অনুসন্ধান",
+        "desc": "অন্য যেকোনো প্রশ্ন বা বার্তা"
+      }
     ],
     "form": {
       "title": "আনুষ্ঠানিক অনুসন্ধান জমা দিন",
@@ -650,10 +1656,22 @@
       "budget": "বাজেট রেঞ্জ (ঐচ্ছিক)",
       "budgetNone": "বলতে চাই না",
       "budgetOptions": [
-        { "value": "under-50k", "label": "৳৫০,০০০-এর নিচে" },
-        { "value": "50k-200k", "label": "৳৫০,০০০ – ২,০০,০০০" },
-        { "value": "200k-1m", "label": "৳২,০০,০০০ – ১০,০০,০০০" },
-        { "value": "above-1m", "label": "৳১০,০০,০০০-এর বেশি" }
+        {
+          "value": "under-50k",
+          "label": "৳৫০,০০০-এর নিচে"
+        },
+        {
+          "value": "50k-200k",
+          "label": "৳৫০,০০০ – ২,০০,০০০"
+        },
+        {
+          "value": "200k-1m",
+          "label": "৳২,০০,০০০ – ১০,০০,০০০"
+        },
+        {
+          "value": "above-1m",
+          "label": "৳১০,০০,০০০-এর বেশি"
+        }
       ],
       "visit": "সাইট পরিদর্শন করতে চান?",
       "message": "বার্তা *",
@@ -678,19 +1696,58 @@
     "heroTitle": "প্রশ্নোত্তর",
     "heroSubtitle": "কুটিরচর ইকোফার্ম সম্পর্কে সৎ, evidence-first উত্তর — প্রকল্প, অর্থায়ন, জোন বি, পণ্য-সেবা, প্রাইভেসি, পরিদর্শন, চাকরি, পরিবেশ ও দুর্যোগ ঝুঁকি।",
     "items": [
-      { "q": "কুটিরচর ইকোফার্ম কী?", "a": "সিরাজগঞ্জের কুটিরচরে একটি প্রমাণ-নির্ভর, পর্যায়ভিত্তিক গ্রামীণ স্মার্ট ফার্ম ও চক্রাকার শক্তি ইকোসিস্টেম — শুরু AI-ভিত্তিক জাত উন্নয়ন দিয়ে; সাথে ছাগল nucleus, selective dairy, বায়োগ্যাস, ঘাস/সাইলেজ, বায়ো-স্লারি সার, সোলার ও ডিজিটাল মনিটরিং।" },
-      { "q": "প্রকল্প এখন কোন পর্যায়ে?", "a": "Year 0: Verification ও Foundation। জমির document পর্যালোচনা, boundary survey পরিকল্পনা, soil test ব্যবস্থা, জোন বি এজমালি স্ট্যাটাস যাচাই ও drainage survey। সব Year 0 item সম্পূর্ণ না হলে কোনো নির্মাণ নয়।" },
-      { "q": "ব্যাংক/অর্থায়ন কীভাবে কাজ করে?", "a": "রক্ষণশীল আর্থিক নীতি: মাসিক EMI যাচাইকৃত রোলিং ১২-মাস আয়ের ৫০%-এর মধ্যে। Phase-wise CAPEX, প্রতিটি বড় ক্রয়ে ৩ vendor quote, Low/Base/High stress test, runway <৪৫ দিনে CAPEX freeze। প্রাসঙ্গিক চ্যানেল: BB কৃষি ও পল্লী refinance, BB Green Refinance, IDCOL biogas, SREDA net metering, PKSF GREEN, BIFFL।" },
-      { "q": "জোন বি কী এবং সেখানে কী অনুমোদিত?", "a": "জোন বি হলো ১২ ডেসিমাল অ-ব্যক্তিগত/এজমালি জমি — আইনি যাচাইধীন। শুধুমাত্র অপসারণযোগ্য স্থাপনা অনুমোদিত: fodder rack, অস্থায়ী ছাউনি, portable compost, লোডিং area, অপসারণযোগ্য water tank। কংক্রিট বা স্থায়ী স্থাপনা নয়।" },
-      { "q": "জাত উন্নয়ন কীভাবে হয়? এটা কি genetic engineering?", "a": "না। এটি Artificial Insemination-ভিত্তিক জাত উন্নয়ন ও selective breeding — শুধুমাত্র DLS/BRAC/ACI/Lal Teer/ST Genetics verified semen ব্যবহারে। Lab-based gene editing/embryo transfer শুধুমাত্র institutional partner-এর সাথে হতে পারে।" },
-      { "q": "এখন কী কী পণ্য/সেবা available?", "a": "Now: যাচাইকৃত পশু sourcing ও verification (১০০-পয়েন্ট scorecard), AI-ভিত্তিক জাত উন্নয়ন consultation, vendor/partner onboarding, partnership আলোচনা। Next/Later পণ্য (breeding stock, dairy, compost, সাইলেজ, বায়ো-স্লারি, প্রশিক্ষণ) সংশ্লিষ্ট পর্যায়ের gate পাস হলে।" },
-      { "q": "পরিদর্শন কীভাবে করব?", "a": "শুধুমাত্র pre-scheduled অ্যাপয়েন্টমেন্টে (Phase 1+)। যোগাযোগ পেজ থেকে অনুসন্ধান জমা দিন। অবস্থান: কুটিরচর, ভদ্রঘাট, কামারখন্দ, সিরাজগঞ্জ, বাংলাদেশ।" },
-      { "q": "Open gap প্রকাশ্যে দেখান কেন?", "a": "স্বচ্ছতার মাধ্যমে বিশ্বাসযোগ্যতা। ব্যাংক কর্মকর্তা, সরকার ও বিনিয়োগকারীদের জন্য নির্মিত। Open gap প্রমাণ করে আমরা জানি কী নিয়ে কাজ করতে হবে — কিছুই লুকানো নেই।" },
-      { "q": "Vendor বা partner হিসেবে আবেদন কীভাবে?", "a": "যোগাযোগ ফর্ম ব্যবহার করুন। Vendor/Contractor বা ব্যাংক/সরকার/NGO-CSR নির্বাচন করে যোগ্যতা ও প্রস্তাব লিখুন। প্রতিটি বড় ক্রয়ে ৩ quote নীতি প্রযোজ্য।" },
-      { "q": "চাকরি বা ইন্টার্নশিপ আছে কি?", "a": "বর্তমানে (Year 0) নিয়মিত নিয়োগ নেই। মাঠ পর্যায়ে Field Operations Coordinator কর্মরত। ভবিষ্যৎ পর্যায়ে প্রশিক্ষণ/ইন্টার্নশিপ demand-gated ভিত্তিতে খুলতে পারে — যোগাযোগ ফর্মে 'প্রশিক্ষণ/পরিদর্শন/ইন্টার্নশিপ' নির্বাচন করুন।" },
-      { "q": "পরিবেশ ও টেকসইতা কীভাবে নিশ্চিত হয়?", "a": "চক্রাকার মডেলই মূল: গোবর → বায়োগ্যাস → বায়ো-স্লারি → জৈব সার → ঘাস → পশুখাদ্য। রাসায়নিক সার ও LPG নির্ভরতা হ্রাস, সোলার self-use first, মাটির জৈব উপাদান পুনর্জীবন।" },
-      { "q": "বন্যা/দুর্যোগ ঝুঁকি কীভাবে মোকাবিলা হয়?", "a": "চরাঞ্চল বলেই verification-first: লেভেল ও drainage survey বাধ্যতামূলক, drainage outlet পরিষ্কার না হলে blind filling নয়, স্থায়ী নির্মাণ soil test gate-এর পরে। ঝুঁকি ও stop rule প্রতিটি আপডেটে রিপোর্ট হয়।" },
-      { "q": "ব্যক্তিগত তথ্য কি সংগ্রহ করা হয়?", "a": "শুধুমাত্র উত্তর দিতে যা দরকার। কখনো NID, PIN, ব্যাংক বিবরণ বা সংবেদনশীল নথি নয়। বিস্তারিত গোপনীয়তা পেজে।" }
+      {
+        "q": "কুটিরচর ইকোফার্ম কী?",
+        "a": "সিরাজগঞ্জের কুটিরচরে একটি প্রমাণ-নির্ভর, পর্যায়ভিত্তিক গ্রামীণ স্মার্ট ফার্ম ও চক্রাকার শক্তি ইকোসিস্টেম — শুরু AI-ভিত্তিক জাত উন্নয়ন দিয়ে; সাথে ছাগল nucleus, selective dairy, বায়োগ্যাস, ঘাস/সাইলেজ, বায়ো-স্লারি সার, সোলার ও ডিজিটাল মনিটরিং।"
+      },
+      {
+        "q": "প্রকল্প এখন কোন পর্যায়ে?",
+        "a": "Year 0: Verification ও Foundation। জমির document পর্যালোচনা, boundary survey পরিকল্পনা, soil test ব্যবস্থা, জোন বি এজমালি স্ট্যাটাস যাচাই ও drainage survey। সব Year 0 item সম্পূর্ণ না হলে কোনো নির্মাণ নয়।"
+      },
+      {
+        "q": "ব্যাংক/অর্থায়ন কীভাবে কাজ করে?",
+        "a": "রক্ষণশীল আর্থিক নীতি: মাসিক EMI যাচাইকৃত রোলিং ১২-মাস আয়ের ৫০%-এর মধ্যে। Phase-wise CAPEX, প্রতিটি বড় ক্রয়ে ৩ vendor quote, Low/Base/High stress test, runway <৪৫ দিনে CAPEX freeze। প্রাসঙ্গিক চ্যানেল: BB কৃষি ও পল্লী refinance, BB Green Refinance, IDCOL biogas, SREDA net metering, PKSF GREEN, BIFFL।"
+      },
+      {
+        "q": "জোন বি কী এবং সেখানে কী অনুমোদিত?",
+        "a": "জোন বি হলো ১২ ডেসিমাল অ-ব্যক্তিগত/এজমালি জমি — আইনি যাচাইধীন। শুধুমাত্র অপসারণযোগ্য স্থাপনা অনুমোদিত: fodder rack, অস্থায়ী ছাউনি, portable compost, লোডিং area, অপসারণযোগ্য water tank। কংক্রিট বা স্থায়ী স্থাপনা নয়।"
+      },
+      {
+        "q": "জাত উন্নয়ন কীভাবে হয়? এটা কি genetic engineering?",
+        "a": "না। এটি Artificial Insemination-ভিত্তিক জাত উন্নয়ন ও selective breeding — শুধুমাত্র DLS/BRAC/ACI/Lal Teer/ST Genetics verified semen ব্যবহারে। Lab-based gene editing/embryo transfer শুধুমাত্র institutional partner-এর সাথে হতে পারে।"
+      },
+      {
+        "q": "এখন কী কী পণ্য/সেবা available?",
+        "a": "Now: যাচাইকৃত পশু sourcing ও verification (১০০-পয়েন্ট scorecard), AI-ভিত্তিক জাত উন্নয়ন consultation, vendor/partner onboarding, partnership আলোচনা। Next/Later পণ্য (breeding stock, dairy, compost, সাইলেজ, বায়ো-স্লারি, প্রশিক্ষণ) সংশ্লিষ্ট পর্যায়ের gate পাস হলে।"
+      },
+      {
+        "q": "পরিদর্শন কীভাবে করব?",
+        "a": "শুধুমাত্র pre-scheduled অ্যাপয়েন্টমেন্টে (Phase 1+)। যোগাযোগ পেজ থেকে অনুসন্ধান জমা দিন। অবস্থান: কুটিরচর, ভদ্রঘাট, কামারখন্দ, সিরাজগঞ্জ, বাংলাদেশ।"
+      },
+      {
+        "q": "Open gap প্রকাশ্যে দেখান কেন?",
+        "a": "স্বচ্ছতার মাধ্যমে বিশ্বাসযোগ্যতা। ব্যাংক কর্মকর্তা, সরকার ও বিনিয়োগকারীদের জন্য নির্মিত। Open gap প্রমাণ করে আমরা জানি কী নিয়ে কাজ করতে হবে — কিছুই লুকানো নেই।"
+      },
+      {
+        "q": "Vendor বা partner হিসেবে আবেদন কীভাবে?",
+        "a": "যোগাযোগ ফর্ম ব্যবহার করুন। Vendor/Contractor বা ব্যাংক/সরকার/NGO-CSR নির্বাচন করে যোগ্যতা ও প্রস্তাব লিখুন। প্রতিটি বড় ক্রয়ে ৩ quote নীতি প্রযোজ্য।"
+      },
+      {
+        "q": "চাকরি বা ইন্টার্নশিপ আছে কি?",
+        "a": "বর্তমানে (Year 0) নিয়মিত নিয়োগ নেই। মাঠ পর্যায়ে Field Operations Coordinator কর্মরত। ভবিষ্যৎ পর্যায়ে প্রশিক্ষণ/ইন্টার্নশিপ demand-gated ভিত্তিতে খুলতে পারে — যোগাযোগ ফর্মে 'প্রশিক্ষণ/পরিদর্শন/ইন্টার্নশিপ' নির্বাচন করুন।"
+      },
+      {
+        "q": "পরিবেশ ও টেকসইতা কীভাবে নিশ্চিত হয়?",
+        "a": "চক্রাকার মডেলই মূল: গোবর → বায়োগ্যাস → বায়ো-স্লারি → জৈব সার → ঘাস → পশুখাদ্য। রাসায়নিক সার ও LPG নির্ভরতা হ্রাস, সোলার self-use first, মাটির জৈব উপাদান পুনর্জীবন।"
+      },
+      {
+        "q": "বন্যা/দুর্যোগ ঝুঁকি কীভাবে মোকাবিলা হয়?",
+        "a": "চরাঞ্চল বলেই verification-first: লেভেল ও drainage survey বাধ্যতামূলক, drainage outlet পরিষ্কার না হলে blind filling নয়, স্থায়ী নির্মাণ soil test gate-এর পরে। ঝুঁকি ও stop rule প্রতিটি আপডেটে রিপোর্ট হয়।"
+      },
+      {
+        "q": "ব্যক্তিগত তথ্য কি সংগ্রহ করা হয়?",
+        "a": "শুধুমাত্র উত্তর দিতে যা দরকার। কখনো NID, PIN, ব্যাংক বিবরণ বা সংবেদনশীল নথি নয়। বিস্তারিত গোপনীয়তা পেজে।"
+      }
     ],
     "moreQuestions": "আরও প্রশ্ন? আমাদের ইমেইল করুন: support@kutircharecofarm.com"
   },
@@ -699,24 +1756,60 @@
     "heroSubtitle": "কুটিরচর ইকোফার্ম আপনার প্রাইভেসিকে সম্মান করে। এই নীতিতে ব্যাখ্যা — আমরা কী সংগ্রহ করি, কীভাবে ব্যবহার ও সুরক্ষা করি।",
     "lastUpdated": "সর্বশেষ আপডেট: জুলাই ২০২৬",
     "sections": [
-      { "title": "Hard boundary — যা কখনো পাবলিক নয়", "body": "NID, PIN, ব্যাংক তথ্য, পরিবারের পরিচয়-নথি ও কাঁচা legal document কখনো পাবলিক ওয়েবসাইট বা repository-তে প্রকাশ পাবে না। এগুলো শুধুমাত্র ব্যাংক/সরকারি due-diligence-এর জন্য প্রাইভেটভাবে সংরক্ষিত।" },
-      { "title": "যে তথ্য আমরা সংগ্রহ করি", "body": "শুধুমাত্র যোগাযোগ ফর্মে আপনি স্বেচ্ছায় যা দেন (নাম, সংস্থা, পদবী, ফোন/ইমেইল, বার্তা)। আমরা কখনো NID, PIN, পাসপোর্ট নম্বর, ব্যাংক অ্যাকাউন্ট বা সংবেদনশীল পরিচয়-নথি চাই না বা সংগ্রহ করি না।" },
-      { "title": "তথ্যের ব্যবহার", "body": "আপনার দেওয়া তথ্য শুধুমাত্র আপনার নির্দিষ্ট অনুসন্ধানের উত্তরে ব্যবহৃত হয়। Marketing ইমেইল নয়, তৃতীয় পক্ষে বিক্রয়/শেয়ার নয়, automated profiling নয়।" },
-      { "title": "সংরক্ষণ ও নিরাপত্তা", "body": "Inquiry data সমাধানের পর সর্বোচ্চ ~২৪ মাস সংরক্ষিত হয় (আইনি প্রয়োজনে দীর্ঘতর হতে পারে)। ওয়েবসাইট HTTPS encryption ব্যবহার করে।" },
-      { "title": "Cookies ও Analytics", "body": "এই ওয়েবসাইট personalized advertising, user tracking বা behavioral profiling-এর জন্য cookie ব্যবহার করে না। শুধুমাত্র cookieless, aggregate analytics (যেমন Plausible/Umami ধরনের) ব্যবহার হতে পারে।" },
-      { "title": "তৃতীয়-পক্ষ শেয়ার নীতি", "body": "আমরা আপনার তথ্য বিক্রি, বিনিময় বা ভাড়া দিই না। শুধুমাত্র আপনার স্পষ্ট অনুরোধে, আইনি বাধ্যবাধকতায়, বা আইনি অধিকার রক্ষায় শেয়ার হতে পারে।" },
-      { "title": "আপনার অধিকার", "body": "আপনি জানতে পারেন আমরা কী তথ্য রাখি; সংশোধন, মুছে ফেলা (আইনি সীমা সাপেক্ষে) ও ভবিষ্যৎ যোগাযোগ থেকে withdraw-এর অনুরোধ করতে পারেন। সব data request-এ ১৪ কর্মদিবসের মধ্যে সাড়া দিই।" },
-      { "title": "Data breach নীতি", "body": "কোনো data breach শনাক্ত হলে ক্ষতিগ্রস্ত ব্যক্তিদের ৩ কর্মদিবসের মধ্যে অবহিত করা হবে।" },
-      { "title": "যোগাযোগ", "body": "এই নীতি বা আপনার ডেটা সংক্রান্ত প্রশ্নে: support@kutircharecofarm.com। ঠিকানা: কুটিরচর ইকোফার্ম, কুটিরচর, ভদ্রঘাট, কামারখন্দ, সিরাজগঞ্জ, বাংলাদেশ।" }
+      {
+        "title": "Hard boundary — যা কখনো পাবলিক নয়",
+        "body": "NID, PIN, ব্যাংক তথ্য, পরিবারের পরিচয়-নথি ও কাঁচা legal document কখনো পাবলিক ওয়েবসাইট বা repository-তে প্রকাশ পাবে না। এগুলো শুধুমাত্র ব্যাংক/সরকারি due-diligence-এর জন্য প্রাইভেটভাবে সংরক্ষিত।"
+      },
+      {
+        "title": "যে তথ্য আমরা সংগ্রহ করি",
+        "body": "শুধুমাত্র যোগাযোগ ফর্মে আপনি স্বেচ্ছায় যা দেন (নাম, সংস্থা, পদবী, ফোন/ইমেইল, বার্তা)। আমরা কখনো NID, PIN, পাসপোর্ট নম্বর, ব্যাংক অ্যাকাউন্ট বা সংবেদনশীল পরিচয়-নথি চাই না বা সংগ্রহ করি না।"
+      },
+      {
+        "title": "তথ্যের ব্যবহার",
+        "body": "আপনার দেওয়া তথ্য শুধুমাত্র আপনার নির্দিষ্ট অনুসন্ধানের উত্তরে ব্যবহৃত হয়। Marketing ইমেইল নয়, তৃতীয় পক্ষে বিক্রয়/শেয়ার নয়, automated profiling নয়।"
+      },
+      {
+        "title": "সংরক্ষণ ও নিরাপত্তা",
+        "body": "Inquiry data সমাধানের পর সর্বোচ্চ ~২৪ মাস সংরক্ষিত হয় (আইনি প্রয়োজনে দীর্ঘতর হতে পারে)। ওয়েবসাইট HTTPS encryption ব্যবহার করে।"
+      },
+      {
+        "title": "Cookies ও Analytics",
+        "body": "এই ওয়েবসাইট personalized advertising, user tracking বা behavioral profiling-এর জন্য cookie ব্যবহার করে না। শুধুমাত্র cookieless, aggregate analytics (যেমন Plausible/Umami ধরনের) ব্যবহার হতে পারে।"
+      },
+      {
+        "title": "তৃতীয়-পক্ষ শেয়ার নীতি",
+        "body": "আমরা আপনার তথ্য বিক্রি, বিনিময় বা ভাড়া দিই না। শুধুমাত্র আপনার স্পষ্ট অনুরোধে, আইনি বাধ্যবাধকতায়, বা আইনি অধিকার রক্ষায় শেয়ার হতে পারে।"
+      },
+      {
+        "title": "আপনার অধিকার",
+        "body": "আপনি জানতে পারেন আমরা কী তথ্য রাখি; সংশোধন, মুছে ফেলা (আইনি সীমা সাপেক্ষে) ও ভবিষ্যৎ যোগাযোগ থেকে withdraw-এর অনুরোধ করতে পারেন। সব data request-এ ১৪ কর্মদিবসের মধ্যে সাড়া দিই।"
+      },
+      {
+        "title": "Data breach নীতি",
+        "body": "কোনো data breach শনাক্ত হলে ক্ষতিগ্রস্ত ব্যক্তিদের ৩ কর্মদিবসের মধ্যে অবহিত করা হবে।"
+      },
+      {
+        "title": "যোগাযোগ",
+        "body": "এই নীতি বা আপনার ডেটা সংক্রান্ত প্রশ্নে: support@kutircharecofarm.com। ঠিকানা: কুটিরচর ইকোফার্ম, কুটিরচর, ভদ্রঘাট, কামারখন্দ, সিরাজগঞ্জ, বাংলাদেশ।"
+      }
     ]
   },
   "execSummary": {
     "heroTitle": "কার্যনির্বাহী সারসংক্ষেপ",
     "heroSubtitle": "ব্যাংক ও সরকারের জন্য এক-পৃষ্ঠার সারসংক্ষেপ। Due diligence পরিচালনাকারী যোগ্য স্টেকহোল্ডারদের জন্য।",
     "cards": [
-      { "title": "প্রকল্প সারসংক্ষেপ", "body": "কুটিরচর ইকোফার্ম — সিরাজগঞ্জের কুটিরচরে প্রমাণ-নির্ভর, পর্যায়ভিত্তিক গ্রামীণ স্মার্ট ফার্ম ও চক্রাকার শক্তি ইকোসিস্টেম। শুরু AI-ভিত্তিক জাত উন্নয়ন দিয়ে; ছাগল nucleus, selective dairy, বায়োগ্যাস, ঘাস/সাইলেজ, বায়ো-স্লারি, সোলার ও ডিজিটাল মনিটরিং। জোন এ (১০ ডেসিমাল, ব্যক্তিগত) মূল কার্যক্রম; জোন বি (১২ ডেসিমাল, অ-ব্যক্তিগত/এজমালি) আইনি যাচাই পর্যন্ত শুধু অপসারণযোগ্য ব্যবহার।" },
-      { "title": "পর্যায় স্ট্যাটাস", "body": "বর্তমানে Year 0: Verification ও Foundation। ৭টি open verification gap। সব Year 0 item সম্পূর্ণ না হলে স্থায়ী নির্মাণ নয়। রক্ষণশীল আর্থিক নীতি: EMI যাচাইকৃত রোলিং ১২-মাস আয়ের ৫০%-এর মধ্যে। ৬টি পর্যায় (Year 0–5), প্রতিটি আগের পর্যায়ের প্রমাণে gated।" },
-      { "title": "যোগাযোগ", "body": "Founder & Project Lead: ইমন হোসেন (+8801730679999)। Director — Operations & Partnerships: এমডি ইশতিয়াক আহমেদ (+8801730679998)। ইমেইল: support@kutircharecofarm.com। অবস্থান: কুটিরচর, ভদ্রঘাট, কামারখন্দ, সিরাজগঞ্জ। Field Ops: মোঃ আল আমিন। সম্পূর্ণ ডকুমেন্টেশন আনুষ্ঠানিক অনুরোধে — প্রমাণ ও নিয়ন্ত্রণ সেকশন দেখুন।" }
+      {
+        "title": "প্রকল্প সারসংক্ষেপ",
+        "body": "কুটিরচর ইকোফার্ম — সিরাজগঞ্জের কুটিরচরে প্রমাণ-নির্ভর, পর্যায়ভিত্তিক গ্রামীণ স্মার্ট ফার্ম ও চক্রাকার শক্তি ইকোসিস্টেম। শুরু AI-ভিত্তিক জাত উন্নয়ন দিয়ে; ছাগল nucleus, selective dairy, বায়োগ্যাস, ঘাস/সাইলেজ, বায়ো-স্লারি, সোলার ও ডিজিটাল মনিটরিং। জোন এ (১০ ডেসিমাল, ব্যক্তিগত) মূল কার্যক্রম; জোন বি (১২ ডেসিমাল, অ-ব্যক্তিগত/এজমালি) আইনি যাচাই পর্যন্ত শুধু অপসারণযোগ্য ব্যবহার।"
+      },
+      {
+        "title": "পর্যায় স্ট্যাটাস",
+        "body": "বর্তমানে Year 0: Verification ও Foundation। ৭টি open verification gap। সব Year 0 item সম্পূর্ণ না হলে স্থায়ী নির্মাণ নয়। রক্ষণশীল আর্থিক নীতি: EMI যাচাইকৃত রোলিং ১২-মাস আয়ের ৫০%-এর মধ্যে। ৬টি পর্যায় (Year 0–5), প্রতিটি আগের পর্যায়ের প্রমাণে gated।"
+      },
+      {
+        "title": "যোগাযোগ",
+        "body": "Founder & Project Lead: ইমন হোসেন (+8801730679999)। Director — Operations & Partnerships: এমডি ইশতিয়াক আহমেদ (+8801730679998)। ইমেইল: support@kutircharecofarm.com। অবস্থান: কুটিরচর, ভদ্রঘাট, কামারখন্দ, সিরাজগঞ্জ। Field Ops: মোঃ আল আমিন। সম্পূর্ণ ডকুমেন্টেশন আনুষ্ঠানিক অনুরোধে — প্রমাণ ও নিয়ন্ত্রণ সেকশন দেখুন।"
+      }
     ]
   },
   "notFound": {
@@ -729,24 +1822,71 @@
     "now": "Now",
     "next": "Next",
     "later": "Later",
-    "illustrative": "প্রতীকী চিত্র — বাস্তব সাইট ছবি নয়"
+    "illustrative": "প্রতীকী চিত্র — বাস্তব সাইট ছবি নয়",
+    "bdContext": {
+      "region": "সিরাজগঞ্জ জেলা, চরাঞ্চল, ভদ্রঘাট ইউনিয়ন",
+      "soil": "বার্ষিক জুমি, বন্যা প্রবণ, উর্বর পরিবর্তন জুমি",
+      "climate": "মৌসুমি এর্দশিত বন্যা, গুলি কাল বন্যার জলমগ্ন ক্ষেত্র",
+      "grass": "Pakchong-1 Napier, BLRI Napier-3, Maize, Sorghum, Para grass — সিরাজগঞ্জ প্রমাণিত",
+      "institutions": "DLS, BLRI, BARI, SREDA, IDCOL, PKSF, Milk Vita, কৃষি ব্যাংক refinance",
+      "market": "হাট, মোকাম, স্থানীয় ভেন্ডার, খুচরা পরিবহন বাস্তবতা"
+    }
   },
   "seo": {
     "siteName": "Kutirchar EcoFarm | কুটিরচর ইকোফার্ম",
     "pages": {
-      "home": { "title": "কুটিরচর ইকোফার্ম — Smart Cattle & Circular Energy Ecosystem | সিরাজগঞ্জ", "description": "AI-ভিত্তিক জাত উন্নয়ন থেকে শুরু — প্রমাণ-নির্ভর গ্রামীণ স্মার্ট ফার্ম ইকোসিস্টেম। ডেইরি, বায়োগ্যাস, সোলার, সাইলেজ — কুটিরচর, সিরাজগঞ্জ, বাংলাদেশ।" },
-      "project": { "title": "প্রকল্প পরিচিতি — কুটিরচর ইকোফার্ম", "description": "Evidence-first স্মার্ট ফার্ম: মিশন, ৫-বছর phase-gated রোডম্যাপ, ১০-বছর ভিশন, আমাদের মানুষ — কুটিরচর, সিরাজগঞ্জ।" },
-      "proof": { "title": "প্রমাণ ও নিয়ন্ত্রণ — Due Diligence | কুটিরচর ইকোফার্ম", "description": "ব্যাংক/সরকার/বিনিয়োগকারীর জন্য Due Diligence Summary: ৭ open gap audit ledger, stop rules, আর্থিক শৃঙ্খলা, অর্থায়ন কাঠামো।" },
-      "ecosystem": { "title": "চক্রাকার ইকোসিস্টেম — ৮-Node Core Loop | কুটিরচর ইকোফার্ম", "description": "গবাদিপশু → বায়োগ্যাস → বায়ো-স্লারি → ঘাস/সাইলেজ → পশুখাদ্য + সোলার — চক্রাকার লাভজনক সিস্টেমের সম্পূর্ণ ম্যাপ।" },
-      "products": { "title": "পণ্য ও সেবা — Now/Next/Later | কুটিরচর ইকোফার্ম", "description": "Phase-gated পণ্য: যাচাইকৃত পশু sourcing, AI জাত উন্নয়ন consultation, breeding stock, compost, সাইলেজ, বায়ো-স্লারি।" },
-      "digital": { "title": "ডিজিটাল অবকাঠামো — Starlink, CCTV, UPS | কুটিরচর ইকোফার্ম", "description": "৪-স্তর ডিজিটাল অবকাঠামো: connectivity, power safety, security, network — governance-প্রথম, gate-নিয়ন্ত্রিত রোলআউট।" },
-      "updates": { "title": "আপডেট ও প্রতিবেদন — কুটিরচর ইকোফার্ম", "description": "তারিখ-স্ট্যাম্পড স্বচ্ছ আপডেট: অগ্রগতি, open gap, যুক্ত প্রমাণ ও পরবর্তী ৩০ দিনের পরিকল্পনা।" },
-      "contact": { "title": "যোগাযোগ ও অংশীদারিত্ব — কুটিরচর ইকোফার্ম", "description": "ব্যাংক/সরকার/NGO/buyer/vendor অনুসন্ধান। ইমেইল, ফোন/WhatsApp ও আনুষ্ঠানিক অনুসন্ধান ফর্ম। সাড়া: ২৪–৪৮ ঘণ্টা (ব্যাংক/সরকার)।" },
-      "faq": { "title": "প্রশ্নোত্তর — কুটিরচর ইকোফার্ম", "description": "প্রকল্প, অর্থায়ন, জোন বি, জাত উন্নয়ন, প্রাইভেসি, পরিদর্শন ও দুর্যোগ ঝুঁকি নিয়ে auditor-tone প্রশ্নোত্তর।" },
-      "privacy": { "title": "গোপনীয়তা ও ডেটা ব্যবহার — কুটিরচর ইকোফার্ম", "description": "Hard boundary: NID/PIN/ব্যাংক/legal document কখনো পাবলিক নয়। Cookieless analytics, ~২৪ মাস data retention, আপনার অধিকার।" },
-      "execSummary": { "title": "কার্যনির্বাহী সারসংক্ষেপ — কুটিরচর ইকোফার্ম", "description": "ব্যাংক ও সরকারের জন্য এক-পৃষ্ঠার প্রকল্প সারসংক্ষেপ — পর্যায় স্ট্যাটাস, stop rules ও যোগাযোগ।" },
-      "brandGuide": { "title": "Brand Identity Guide — Kutirchar EcoFarm", "description": "সম্পূর্ণ ব্র্যান্ড সিস্টেম: লোগো, ১২ কালার টোকেন, টাইপোগ্রাফি, সিল, এক্সপোর্ট অ্যাসেট।" },
-      "notFound": { "title": "পেজ পাওয়া যায়নি — কুটিরচর ইকোফার্ম", "description": "অনুরোধকৃত পেজটি নেই বা সরানো হয়েছে।" }
+      "home": {
+        "title": "কুটিরচর ইকোফার্ম — Smart Cattle & Circular Energy Ecosystem | সিরাজগঞ্জ",
+        "description": "AI-ভিত্তিক জাত উন্নয়ন থেকে শুরু — প্রমাণ-নির্ভর গ্রামীণ স্মার্ট ফার্ম ইকোসিস্টেম। ডেইরি, বায়োগ্যাস, সোলার, সাইলেজ — কুটিরচর, সিরাজগঞ্জ, বাংলাদেশ।"
+      },
+      "project": {
+        "title": "প্রকল্প পরিচিতি — কুটিরচর ইকোফার্ম",
+        "description": "Evidence-first স্মার্ট ফার্ম: মিশন, ৫-বছর phase-gated রোডম্যাপ, ১০-বছর ভিশন, আমাদের মানুষ — কুটিরচর, সিরাজগঞ্জ।"
+      },
+      "proof": {
+        "title": "প্রমাণ ও নিয়ন্ত্রণ — Due Diligence | কুটিরচর ইকোফার্ম",
+        "description": "ব্যাংক/সরকার/বিনিয়োগকারীর জন্য Due Diligence Summary: ৭ open gap audit ledger, stop rules, আর্থিক শৃঙ্খলা, অর্থায়ন কাঠামো।"
+      },
+      "ecosystem": {
+        "title": "চক্রাকার ইকোসিস্টেম — ৮-Node Core Loop | কুটিরচর ইকোফার্ম",
+        "description": "গবাদিপশু → বায়োগ্যাস → বায়ো-স্লারি → ঘাস/সাইলেজ → পশুখাদ্য + সোলার — চক্রাকার লাভজনক সিস্টেমের সম্পূর্ণ ম্যাপ।"
+      },
+      "products": {
+        "title": "পণ্য ও সেবা — Now/Next/Later | কুটিরচর ইকোফার্ম",
+        "description": "Phase-gated পণ্য: যাচাইকৃত পশু sourcing, AI জাত উন্নয়ন consultation, breeding stock, compost, সাইলেজ, বায়ো-স্লারি।"
+      },
+      "digital": {
+        "title": "ডিজিটাল অবকাঠামো — Starlink, CCTV, UPS | কুটিরচর ইকোফার্ম",
+        "description": "৪-স্তর ডিজিটাল অবকাঠামো: connectivity, power safety, security, network — governance-প্রথম, gate-নিয়ন্ত্রিত রোলআউট।"
+      },
+      "updates": {
+        "title": "আপডেট ও প্রতিবেদন — কুটিরচর ইকোফার্ম",
+        "description": "তারিখ-স্ট্যাম্পড স্বচ্ছ আপডেট: অগ্রগতি, open gap, যুক্ত প্রমাণ ও পরবর্তী ৩০ দিনের পরিকল্পনা।"
+      },
+      "contact": {
+        "title": "যোগাযোগ ও অংশীদারিত্ব — কুটিরচর ইকোফার্ম",
+        "description": "ব্যাংক/সরকার/NGO/buyer/vendor অনুসন্ধান। ইমেইল, ফোন/WhatsApp ও আনুষ্ঠানিক অনুসন্ধান ফর্ম। সাড়া: ২৪–৪৮ ঘণ্টা (ব্যাংক/সরকার)।"
+      },
+      "faq": {
+        "title": "প্রশ্নোত্তর — কুটিরচর ইকোফার্ম",
+        "description": "প্রকল্প, অর্থায়ন, জোন বি, জাত উন্নয়ন, প্রাইভেসি, পরিদর্শন ও দুর্যোগ ঝুঁকি নিয়ে auditor-tone প্রশ্নোত্তর।"
+      },
+      "privacy": {
+        "title": "গোপনীয়তা ও ডেটা ব্যবহার — কুটিরচর ইকোফার্ম",
+        "description": "Hard boundary: NID/PIN/ব্যাংক/legal document কখনো পাবলিক নয়। Cookieless analytics, ~২৪ মাস data retention, আপনার অধিকার।"
+      },
+      "execSummary": {
+        "title": "কার্যনির্বাহী সারসংক্ষেপ — কুটিরচর ইকোফার্ম",
+        "description": "ব্যাংক ও সরকারের জন্য এক-পৃষ্ঠার প্রকল্প সারসংক্ষেপ — পর্যায় স্ট্যাটাস, stop rules ও যোগাযোগ।"
+      },
+      "brandGuide": {
+        "title": "Brand Identity Guide — Kutirchar EcoFarm",
+        "description": "সম্পূর্ণ ব্র্যান্ড সিস্টেম: লোগো, ১২ কালার টোকেন, টাইপোগ্রাফি, সিল, এক্সপোর্ট অ্যাসেট।"
+      },
+      "notFound": {
+        "title": "পেজ পাওয়া যায়নি — কুটিরচর ইকোফার্ম",
+        "description": "অনুরোধকৃত পেজটি নেই বা সরানো হয়েছে।"
+      }
     }
   }
 }

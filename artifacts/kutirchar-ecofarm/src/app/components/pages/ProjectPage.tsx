@@ -92,7 +92,7 @@ export function ProjectPage() {
             <p style={{ fontFamily: FONTS.sans, fontSize: 13, color: "#555", lineHeight: 1.65, margin: "0 0 18px" }}>{p.missionBody}</p>
             <p style={{ fontFamily: FONTS.sans, fontSize: 13, fontWeight: 700, color: COLORS.kutircharGreen, margin: "0 0 6px" }}>{p.vision10Title}</p>
             <p style={{ fontFamily: FONTS.sans, fontSize: 13, color: "#555", lineHeight: 1.65, margin: "0 0 12px" }}>{p.vision10Body}</p>
-            <Stagger style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 8 }}>
+            <Stagger style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 8 }}>
               {p.tenYearPhases.map((tp) => (
                 <StaggerItem key={tp.phase} y={10} style={{ height: "100%" }}>
                   <div style={{ background: "white", border: "1px solid #e5eee9", borderRadius: 8, padding: "10px 12px", height: "100%" }}>
@@ -201,6 +201,83 @@ export function ProjectPage() {
           <StopRule>{p.kycNote}</StopRule>
         </Reveal>
       </PageSection>
+
+      {/* P5: Breed Science deep section */}
+      {p.breedScience && (
+        <PageSection bg={COLORS.fieldMist}>
+          <Reveal>
+            <SectionHeading title={p.breedScience.title} />
+            <p style={{ fontFamily: FONTS.sans, fontSize: 11, color: "#888", margin: "-10px 0 18px" }}>{p.breedScience.orgs}</p>
+          </Reveal>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 12 }}>
+            {p.breedScience.process.map((step: string, i: number) => (
+              <Reveal key={i} delay={i * 0.06}>
+                <div style={{ background: "white", borderRadius: 10, border: "1px solid #e5eee9", padding: "14px 16px", height: "100%" }}>
+                  <p style={{ fontFamily: FONTS.mono, fontSize: 12, fontWeight: 700, color: COLORS.kutircharGreen, margin: "0 0 6px" }}>0{i + 1}</p>
+                  <p style={{ fontFamily: FONTS.sans, fontSize: 12.5, color: "#444", lineHeight: 1.65, margin: 0 }}>{step}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+          <Reveal>
+            <p style={{ fontFamily: FONTS.sans, fontSize: 11, color: "#666", margin: "16px 0 0", lineHeight: 1.6, fontStyle: "italic" }}>
+              {p.breedScience.note}
+            </p>
+          </Reveal>
+        </PageSection>
+      )}
+
+      {/* P5: Sub-project plans (6 sub-projects with full CAPEX/OPEX/stop rules) */}
+      {p.subProjects && (
+        <PageSection>
+          <Reveal>
+            <SectionHeading title="Sub-Project Plans (CAPEX / OPEX / Stop Rules)" />
+          </Reveal>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: 16 }}>
+            {p.subProjects.map((sp: any, i: number) => (
+              <Reveal key={sp.name} delay={i * 0.05}>
+                <div style={{ background: "white", borderRadius: 12, border: "1px solid #e5eee9", padding: "18px", height: "100%" }}>
+                  <p style={{ fontFamily: FONTS.sans, fontSize: 13, fontWeight: 700, color: COLORS.kutircharGreen, margin: "0 0 8px" }}>{sp.name}</p>
+                  <p style={{ fontFamily: FONTS.sans, fontSize: 12, color: "#555", lineHeight: 1.6, margin: "0 0 10px" }}>{sp.goal}</p>
+                  <p style={{ fontFamily: FONTS.sans, fontSize: 11, color: "#888", margin: "0 0 4px" }}><strong>Science:</strong> {sp.science}</p>
+                  <p style={{ fontFamily: FONTS.sans, fontSize: 11, color: "#888", margin: "0 0 4px" }}><strong>CAPEX:</strong> {sp.capex}</p>
+                  <p style={{ fontFamily: FONTS.sans, fontSize: 11, color: "#888", margin: "0 0 4px" }}><strong>OPEX:</strong> {sp.opex}</p>
+                  <p style={{ fontFamily: FONTS.sans, fontSize: 11, color: "#888", margin: "0 0 4px" }}><strong>Timing:</strong> {sp.timing}</p>
+                  <div style={{ background: "#fff5f5", borderRadius: 6, padding: "8px 10px", marginTop: 10 }}>
+                    <p style={{ fontFamily: FONTS.sans, fontSize: 11, color: "#7f1d1d", margin: 0, fontWeight: 600 }}>Stop: {sp.stopRule}</p>
+                  </div>
+                  <p style={{ fontFamily: FONTS.sans, fontSize: 10, color: "#aaa", margin: "8px 0 0" }}>Proof: {sp.proof}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </PageSection>
+      )}
+
+      {/* P5: 5-Year Roadmap */}
+      {p.roadmap5Year && (
+        <PageSection bg={COLORS.fieldMist}>
+          <Reveal>
+            <SectionHeading title={p.roadmap5Year.title} />
+          </Reveal>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 16 }}>
+            {p.roadmap5Year.phases.map((ph: any, i: number) => (
+              <Reveal key={ph.year} delay={i * 0.08}>
+                <div style={{ background: "white", borderRadius: 12, border: "1px solid #e5eee9", padding: "16px", height: "100%", borderTop: `3px solid ${i === 0 ? COLORS.kutircharGreen : i === 4 ? COLORS.solarGold : COLORS.riverBlue}` }}>
+                  <p style={{ fontFamily: FONTS.mono, fontSize: 11, fontWeight: 700, color: COLORS.charcoalText, margin: "0 0 4px" }}>{ph.year}</p>
+                  <p style={{ fontFamily: FONTS.sans, fontSize: 13, fontWeight: 700, color: COLORS.charcoalText, margin: "0 0 8px" }}>{ph.label}</p>
+                  <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+                    {ph.gates.map((g: string) => (
+                      <span key={g} style={{ fontFamily: FONTS.sans, fontSize: 11, color: "#555", lineHeight: 1.5 }}>• {g}</span>
+                    ))}
+                  </div>
+                  <span style={{ display: "inline-block", marginTop: 10, fontFamily: FONTS.sans, fontSize: 10, fontWeight: 700, color: ph.status === "\u099a\u09b2\u09ae\u09be\u09a8" || ph.status === "In Progress" ? COLORS.kutircharGreen : "#888", background: ph.status === "\u099a\u09b2\u09ae\u09be\u09a8" || ph.status === "In Progress" ? "#f0f9f3" : "#f5f5f5", padding: "2px 8px", borderRadius: 4 }}>{ph.status}</span>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </PageSection>
+      )}
 
       {/* Positioning */}
       <PageSection bg={COLORS.fieldMist}>

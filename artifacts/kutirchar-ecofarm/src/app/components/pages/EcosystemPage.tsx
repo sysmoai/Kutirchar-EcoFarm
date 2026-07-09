@@ -160,7 +160,7 @@ export function EcosystemPage() {
                       </div>
                       <PhaseChip phase={item.phase as "Now" | "Next" | "Later"} />
                     </div>
-                    <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 12 }}>
+                    <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: 12, marginBottom: 12 }}>
                       <div>
                         <p style={{ fontFamily: FONTS.sans, fontSize: 10, fontWeight: 700, color: "#6b7280", textTransform: "uppercase" as const, letterSpacing: "0.06em", marginBottom: 6 }}>{e.inputsLabel}</p>
                         {item.inputs.map((inp) => (
@@ -191,6 +191,60 @@ export function EcosystemPage() {
         </Stagger>
       </PageSection>
 
+      {/* P5: Silage Science (deep process) */}
+      {e.silageScience && (
+        <PageSection bg="#faf8f0">
+          <Reveal>
+            <SectionHeading title={e.silageScience.title} />
+            <p style={{ fontFamily: FONTS.sans, fontSize: 11, color: "#888", margin: "-10px 0 18px" }}>{e.silageScience.source}</p>
+          </Reveal>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 12 }}>
+            {e.silageScience.steps.map((step: string, i: number) => (
+              <Reveal key={i} delay={i * 0.06}>
+                <div style={{ background: "white", borderRadius: 10, border: "1px solid #e5eee9", padding: "14px 16px", height: "100%" }}>
+                  <p style={{ fontFamily: FONTS.mono, fontSize: 12, fontWeight: 700, color: COLORS.solarGold, margin: "0 0 6px" }}>0{i + 1}</p>
+                  <p style={{ fontFamily: FONTS.sans, fontSize: 12.5, color: "#444", lineHeight: 1.65, margin: 0 }}>{step}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </PageSection>
+      )}
+
+      {/* P5: Biogas Science (deep process) */}
+      {e.biogasScience && (
+        <PageSection>
+          <Reveal>
+            <SectionHeading title={e.biogasScience.title} />
+            <p style={{ fontFamily: FONTS.sans, fontSize: 11, color: "#888", margin: "-10px 0 18px" }}>{e.biogasScience.source}</p>
+          </Reveal>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 20 }}>
+            <Reveal>
+              <Card style={{ borderLeft: `4px solid ${COLORS.kutircharGreen}`, height: "100%" }}>
+                <p style={{ fontFamily: FONTS.sans, fontSize: 11, fontWeight: 700, color: "#6b7280", textTransform: "uppercase" as const, letterSpacing: "0.08em", margin: "0 0 10px" }}>Inputs</p>
+                {e.biogasScience.inputs.map((inp: string) => (
+                  <p key={inp} style={{ fontFamily: FONTS.sans, fontSize: 12.5, color: "#444", lineHeight: 1.7, margin: "0 0 6px" }}>• {inp}</p>
+                ))}
+              </Card>
+            </Reveal>
+            <Reveal delay={0.08}>
+              <Card style={{ borderLeft: `4px solid ${COLORS.riverBlue}`, height: "100%" }}>
+                <p style={{ fontFamily: FONTS.sans, fontSize: 11, fontWeight: 700, color: "#6b7280", textTransform: "uppercase" as const, letterSpacing: "0.08em", margin: "0 0 10px" }}>Process</p>
+                <p style={{ fontFamily: FONTS.sans, fontSize: 12.5, color: "#444", lineHeight: 1.7, margin: 0 }}>{e.biogasScience.process}</p>
+              </Card>
+            </Reveal>
+            <Reveal delay={0.16}>
+              <Card style={{ borderLeft: `4px solid ${COLORS.solarGold}`, height: "100%" }}>
+                <p style={{ fontFamily: FONTS.sans, fontSize: 11, fontWeight: 700, color: "#6b7280", textTransform: "uppercase" as const, letterSpacing: "0.08em", margin: "0 0 10px" }}>Outputs</p>
+                {e.biogasScience.outputs.map((out: string) => (
+                  <p key={out} style={{ fontFamily: FONTS.sans, fontSize: 12.5, color: "#444", lineHeight: 1.7, margin: "0 0 6px" }}>✓ {out}</p>
+                ))}
+              </Card>
+            </Reveal>
+          </div>
+        </PageSection>
+      )}
+
       {/* Bankable + financial impact */}
       <PageSection bg={COLORS.fieldMist}>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 32 }}>
@@ -218,6 +272,31 @@ export function EcosystemPage() {
           </Reveal>
         </div>
       </PageSection>
+
+      {/* P5: Solar Science */}
+      {e.solarScience && (
+        <PageSection>
+          <Reveal>
+            <SectionHeading title={e.solarScience.title} />
+            <p style={{ fontFamily: FONTS.sans, fontSize: 11, color: "#888", margin: "-10px 0 18px" }}>{e.solarScience.source}</p>
+          </Reveal>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 16 }}>
+            {[
+              { label: "Capacity", value: e.solarScience.capacity },
+              { label: "Use", value: e.solarScience.use },
+              { label: "Net Metering", value: e.solarScience.netMetering },
+              { label: "Saving", value: e.solarScience.saving },
+            ].map((item, i) => (
+              <Reveal key={item.label} delay={i * 0.06}>
+                <div style={{ background: "white", borderRadius: 10, border: "1px solid #e5eee9", padding: "16px", height: "100%" }}>
+                  <p style={{ fontFamily: FONTS.sans, fontSize: 10, fontWeight: 700, color: "#6b7280", textTransform: "uppercase" as const, letterSpacing: "0.08em", margin: "0 0 8px" }}>{item.label}</p>
+                  <p style={{ fontFamily: FONTS.sans, fontSize: 12.5, color: "#444", lineHeight: 1.65, margin: 0 }}>{item.value}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </PageSection>
+      )}
 
       {/* Why circular */}
       <PageSection>

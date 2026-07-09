@@ -200,7 +200,7 @@ export function ContactPage() {
                     placeholder={c.form.namePlaceholder} style={inputStyle(!!errors.name)} aria-required="true" aria-invalid={!!errors.name} />
                 </FormField>
 
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 16 }}>
                   <FormField label={c.form.org}>
                     <input type="text" value={form.org} onChange={(e) => handleChange("org", e.target.value)}
                       placeholder={c.form.orgPlaceholder} style={inputStyle(false)} />
@@ -211,7 +211,7 @@ export function ContactPage() {
                   </FormField>
                 </div>
 
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 16 }}>
                   <FormField label={c.form.phone} error={errors.contact}>
                     <input type="tel" value={form.phone} onChange={(e) => handleChange("phone", e.target.value)}
                       placeholder={c.form.phonePlaceholder} style={inputStyle(!!errors.contact)} aria-invalid={!!errors.contact} />
