@@ -5,7 +5,6 @@ import logoIcon from "../../../imports/image.png";
 import { BRAND, COLORS, FONTS } from "../../brand";
 import { EASE } from "../../motion";
 import { useLocale, type Locale } from "../shared/i18n";
-import { CtaButton } from "../shared/Shared";
 
 type NavLinkItem = { type: "link"; to: string; key: string };
 type NavGroupItem = { type: "group"; key: string; items: { to: string; key: string }[] };
@@ -42,7 +41,14 @@ const navStructure: NavItem[] = [
     ],
   },
   { type: "link", to: "/brand-guide", key: "brandGuideFull" },
-  { type: "link", to: "/contact", key: "contact" },
+  {
+    type: "group",
+    key: "contact",
+    items: [
+      { to: "/contact", key: "contact" },
+      { to: "/contact?type=partnership", key: "partnership" },
+    ],
+  },
 ];
 
 function LangToggle({ compact }: { compact?: boolean }) {
@@ -119,7 +125,10 @@ function ChevronIcon({ open }: { open: boolean }) {
 }
 
 function groupIsActive(item: NavGroupItem, pathname: string) {
-  return item.items.some((child) => pathname === child.to || pathname.startsWith(`${child.to}/`));
+  return item.items.some((child) => {
+    const childPath = child.to.split("?")[0];
+    return pathname === childPath || pathname.startsWith(`${childPath}/`);
+  });
 }
 
 function NavGroup({
@@ -222,9 +231,9 @@ function NavGroup({
           >
             {item.items.map((child) => (
               <NavLink
-                key={child.to}
+                key={child.key}
                 to={child.to}
-                end={child.to === "/"}
+                end={child.to.split("?")[0] === "/"}
                 onClick={() => onClose()}
                 style={({ isActive }) => ({
                   display: "block",
@@ -479,11 +488,6 @@ export function MainNav() {
               );
             })}
             <div style={{ width: 1, height: 20, background: "rgba(255,255,255,0.15)", marginLeft: 6 }} />
-            <div style={{ marginLeft: 6 }}>
-              <CtaButton to="/contact" variant="gold" size="sm">
-                {navLabel("partnership")} \u2192
-              </CtaButton>
-            </div>
             <div style={{ marginLeft: 8 }}>
               <LangToggle />
             </div>
@@ -659,9 +663,9 @@ export function MainNav() {
                               <div style={{ padding: "4px 0 8px 12px", display: "flex", flexDirection: "column", gap: 2 }}>
                                 {item.items.map((child) => (
                                   <NavLink
-                                    key={child.to}
+                                    key={child.key}
                                     to={child.to}
-                                    end={child.to === "/"}
+                                    end={child.to.split("?")[0] === "/"}
                                     onClick={() => setMenuOpen(false)}
                                     style={({ isActive }) => ({
                                       fontFamily: locale === "bn" ? FONTS.bengali : FONTS.sans,
@@ -687,23 +691,6 @@ export function MainNav() {
                       </motion.div>
                     );
                   })}
-
-                  <motion.div
-                    initial={{ opacity: 0, x: -12 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: navStructure.length * 0.04, duration: 0.25, ease: EASE }}
-                  >
-                    <CtaButton
-                      to="/contact"
-                      variant="gold"
-                      size="lg"
-                      fullWidth
-                      style={{ marginTop: 8 }}
-                      onClick={() => setMenuOpen(false)}
-                    >
-                      {navLabel("partnershipInquiry")} \u2192
-                    </CtaButton>
-                  </motion.div>
 
                   <div
                     style={{

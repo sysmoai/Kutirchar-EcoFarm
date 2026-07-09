@@ -28,6 +28,7 @@ export function Root() {
   const { t, locale } = useLocale();
 
   useEffect(() => {
+    document.documentElement.lang = locale;
     const key = seoKeyByPath[pathname] ?? "notFound";
     const page = (t.seo.pages as Record<string, { title: string; description: string }>)[key];
     if (!page) return;

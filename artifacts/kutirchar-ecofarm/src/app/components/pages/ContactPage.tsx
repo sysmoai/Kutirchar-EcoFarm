@@ -1,10 +1,11 @@
 import * as React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { COLORS, FONTS, BRAND } from "../../brand";
 import { EASE, MOTION } from "../../motion";
 import { PageHero, PageSection, SectionHeading, Card, CtaButton } from "../shared/Shared";
 import { useLocale } from "../shared/i18n";
+import { useSearchParams } from "react-router";
 import { Reveal, Stagger, StaggerItem } from "../shared/motion";
 
 type InquiryType = "" | "bank-govt-investor" | "vendor" | "buyer" | "training" | "general";
@@ -15,10 +16,25 @@ interface FormState {
 
 const initialForm: FormState = { name: "", org: "", designation: "", inquiryType: "", phone: "", email: "", message: "", budget: "", visit: false };
 
+const validInquiryTypes: InquiryType[] = ["", "bank-govt-investor", "vendor", "buyer", "training", "general"];
+
+function getInitialInquiryType(typeParam: string | null): InquiryType {
+  if (!typeParam) return "";
+  if (typeParam === "partnership") return "bank-govt-investor";
+  return validInquiryTypes.includes(typeParam as InquiryType) ? (typeParam as InquiryType) : "";
+}
+
 export function ContactPage() {
   const { t } = useLocale();
   const c = t.contact;
-  const [form, setForm] = useState<FormState>(initialForm);
+  const [searchParams] = useSearchParams();
+  const initialInquiryType = getInitialInquiryType(searchParams.get("type"));
+  const [form, setForm] = useState<FormState>({ ...initialForm, inquiryType: initialInquiryType });
+
+  useEffect(() => {
+    const nextType = getInitialInquiryType(searchParams.get("type"));
+    setForm((f) => (f.inquiryType === nextType ? f : { ...f, inquiryType: nextType }));
+  }, [searchParams]);
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
 
@@ -182,8 +198,9 @@ export function ContactPage() {
               <form onSubmit={handleSubmit} noValidate>
                 <h3 style={{ fontFamily: FONTS.serif, fontSize: 22, color: COLORS.charcoalText, margin: "0 0 24px" }}>{c.form.title}</h3>
 
-                <FormField label={c.form.inquiryType} error={errors.inquiryType}>
+                <FormField id="inquiryType" label={c.form.inquiryType} error={errors.inquiryType}>
                   <select
+                    id="inquiryType"
                     value={form.inquiryType}
                     onChange={(e) => handleChange("inquiryType", e.target.value)}
                     style={inputStyle(!!errors.inquiryType)}
@@ -195,48 +212,48 @@ export function ContactPage() {
                   </select>
                 </FormField>
 
-                <FormField label={c.form.name} error={errors.name}>
-                  <input type="text" value={form.name} onChange={(e) => handleChange("name", e.target.value)}
+                <FormField id="name" label={c.form.name} error={errors.name}>
+                  <input type="text" id="name" value={form.name} onChange={(e) => handleChange("name", e.target.value)}
                     placeholder={c.form.namePlaceholder} style={inputStyle(!!errors.name)} aria-required="true" aria-invalid={!!errors.name} />
                 </FormField>
 
                 <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 16 }}>
-                  <FormField label={c.form.org}>
-                    <input type="text" value={form.org} onChange={(e) => handleChange("org", e.target.value)}
+                  <FormField id="org" label={c.form.org}>
+                    <input type="text" id="org" value={form.org} onChange={(e) => handleChange("org", e.target.value)}
                       placeholder={c.form.orgPlaceholder} style={inputStyle(false)} />
                   </FormField>
-                  <FormField label={c.form.designation}>
-                    <input type="text" value={form.designation} onChange={(e) => handleChange("designation", e.target.value)}
+                  <FormField id="designation" label={c.form.designation}>
+                    <input type="text" id="designation" value={form.designation} onChange={(e) => handleChange("designation", e.target.value)}
                       placeholder={c.form.designationPlaceholder} style={inputStyle(false)} />
                   </FormField>
                 </div>
 
                 <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 16 }}>
-                  <FormField label={c.form.phone} error={errors.contact}>
-                    <input type="tel" value={form.phone} onChange={(e) => handleChange("phone", e.target.value)}
+                  <FormField id="phone" label={c.form.phone} error={errors.contact}>
+                    <input type="tel" id="phone" value={form.phone} onChange={(e) => handleChange("phone", e.target.value)}
                       placeholder={c.form.phonePlaceholder} style={inputStyle(!!errors.contact)} aria-invalid={!!errors.contact} />
                   </FormField>
-                  <FormField label={c.form.email} error={errors.email}>
-                    <input type="email" value={form.email} onChange={(e) => handleChange("email", e.target.value)}
+                  <FormField id="email" label={c.form.email} error={errors.email}>
+                    <input type="email" id="email" value={form.email} onChange={(e) => handleChange("email", e.target.value)}
                       placeholder={c.form.emailPlaceholder} style={inputStyle(!!errors.email)} aria-invalid={!!errors.email} />
                   </FormField>
                 </div>
                 {errors.contact && <p style={{ fontFamily: FONTS.sans, fontSize: 11, color: COLORS.riskRed, margin: "-10px 0 12px" }}>{errors.contact}</p>}
 
-                <FormField label={c.form.budget}>
-                  <select value={form.budget} onChange={(e) => handleChange("budget", e.target.value)} style={inputStyle(false)}>
+                <FormField id="budget" label={c.form.budget}>
+                  <select id="budget" value={form.budget} onChange={(e) => handleChange("budget", e.target.value)} style={inputStyle(false)}>
                     <option value="">{c.form.budgetNone}</option>
                     {c.form.budgetOptions.map((opt) => <option key={opt.value} value={opt.value}>{opt.label}</option>)}
                   </select>
                 </FormField>
 
-                <label style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 16, fontFamily: FONTS.sans, fontSize: 13, color: COLORS.charcoalText }}>
-                  <input type="checkbox" checked={form.visit} onChange={(e) => handleChange("visit", e.target.checked)} />
+                <label htmlFor="visit" style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 16, fontFamily: FONTS.sans, fontSize: 13, color: COLORS.charcoalText }}>
+                  <input type="checkbox" id="visit" checked={form.visit} onChange={(e) => handleChange("visit", e.target.checked)} />
                   {c.form.visit}
                 </label>
 
-                <FormField label={c.form.message} error={errors.message}>
-                  <textarea value={form.message} onChange={(e) => handleChange("message", e.target.value)}
+                <FormField id="message" label={c.form.message} error={errors.message}>
+                  <textarea id="message" value={form.message} onChange={(e) => handleChange("message", e.target.value)}
                     placeholder={c.form.messagePlaceholder}
                     rows={5} style={{ ...inputStyle(!!errors.message), resize: "vertical" as const }}
                     aria-required="true" aria-invalid={!!errors.message} />
@@ -264,10 +281,10 @@ export function ContactPage() {
   );
 }
 
-function FormField({ label, children, error }: { label: string; children: React.ReactNode; error?: string }) {
+function FormField({ id, label, children, error }: { id: string; label: string; children: React.ReactNode; error?: string }) {
   return (
     <div style={{ marginBottom: 16 }}>
-      <label style={{ display: "block", fontFamily: FONTS.sans, fontSize: 13, fontWeight: 600, color: COLORS.charcoalText, marginBottom: 5 }}>{label}</label>
+      <label htmlFor={id} style={{ display: "block", fontFamily: FONTS.sans, fontSize: 13, fontWeight: 600, color: COLORS.charcoalText, marginBottom: 5 }}>{label}</label>
       {children}
       {error && <p style={{ fontFamily: FONTS.sans, fontSize: 11, color: COLORS.riskRed, margin: "4px 0 0" }}>{error}</p>}
     </div>
