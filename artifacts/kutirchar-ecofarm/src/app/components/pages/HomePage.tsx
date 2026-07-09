@@ -128,15 +128,9 @@ export function HomePage() {
                 transition={{ duration: MOTION.dur.slow, ease: EASE, delay: 0.42 }}
                 style={{ display: "flex", gap: 12, flexWrap: "wrap" }}
               >
-                <Link to="/proof" style={{ background: COLORS.solarGold, color: COLORS.deepFarmGreen, fontFamily: FONTS.sans, fontSize: 14, fontWeight: 700, padding: "13px 24px", borderRadius: 10, textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 8 }}>
-                  {h.ctaBank} →
-                </Link>
-                <Link to="/products" style={{ background: "rgba(255,255,255,0.12)", color: "white", fontFamily: FONTS.sans, fontSize: 14, fontWeight: 600, padding: "13px 24px", borderRadius: 10, textDecoration: "none", border: "1px solid rgba(255,255,255,0.25)" }}>
-                  {h.ctaProducts}
-                </Link>
-                <Link to="/contact" style={{ background: "transparent", color: "rgba(255,255,255,0.75)", fontFamily: FONTS.sans, fontSize: 14, fontWeight: 500, padding: "13px 20px", borderRadius: 10, textDecoration: "none" }}>
-                  {h.ctaVisit} ↗
-                </Link>
+                <CtaButton to="/proof" variant="gold" size="lg">{h.ctaBank} →</CtaButton>
+                <CtaButton to="/products" variant="secondary" size="md">{h.ctaProducts}</CtaButton>
+                <CtaButton to="/contact" variant="ghostLight" size="md">{h.ctaVisit} ↗</CtaButton>
               </motion.div>
             </div>
 
@@ -345,12 +339,8 @@ export function HomePage() {
               </p>
             </div>
             <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-              <Link to="/brand-guide" style={{ background: COLORS.solarGold, color: COLORS.deepFarmGreen, fontFamily: FONTS.sans, fontSize: 14, fontWeight: 700, padding: "12px 24px", borderRadius: 10, textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 8 }}>
-                🎨 {h.brandCtaOpen}
-              </Link>
-              <Link to="/brand-guide?section=11" style={{ background: "rgba(255,255,255,0.1)", color: "white", fontFamily: FONTS.sans, fontSize: 14, fontWeight: 600, padding: "12px 20px", borderRadius: 10, textDecoration: "none", border: "1px solid rgba(255,255,255,0.2)" }}>
-                ↓ {h.brandCtaDownload}
-              </Link>
+              <CtaButton to="/brand-guide" variant="gold" size="md">{h.brandCtaOpen}</CtaButton>
+              <CtaButton to="/brand-guide?section=11" variant="secondary" size="md">{h.brandCtaDownload}</CtaButton>
             </div>
           </div>
         </Reveal>
@@ -368,12 +358,8 @@ export function HomePage() {
               {h.partnerDesc}
             </p>
             <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
-              <Link to="/contact" style={{ background: COLORS.solarGold, color: COLORS.deepFarmGreen, fontFamily: FONTS.sans, fontSize: 15, fontWeight: 700, padding: "14px 28px", borderRadius: 10, textDecoration: "none" }}>
-                {h.startPartnership} →
-              </Link>
-              <Link to="/proof" style={{ background: "rgba(255,255,255,0.12)", color: "white", fontFamily: FONTS.sans, fontSize: 15, fontWeight: 600, padding: "14px 28px", borderRadius: 10, textDecoration: "none", border: "1px solid rgba(255,255,255,0.3)" }}>
-                {h.viewProofPack}
-              </Link>
+              <CtaButton to="/contact" variant="gold" size="lg">{h.startPartnership} →</CtaButton>
+              <CtaButton to="/proof" variant="secondary" size="lg">{h.viewProofPack}</CtaButton>
             </div>
           </div>
         </Reveal>

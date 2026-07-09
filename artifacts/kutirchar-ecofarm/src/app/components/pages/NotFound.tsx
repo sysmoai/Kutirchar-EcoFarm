@@ -1,5 +1,5 @@
-import { Link } from "react-router";
 import { motion } from "framer-motion";
+import { CtaButton } from "../shared/Shared";
 import { COLORS, FONTS } from "../../brand";
 import { EASE, MOTION } from "../../motion";
 import { useLocale } from "../shared/i18n";
@@ -21,12 +21,8 @@ export function NotFound() {
           {n.body}
         </p>
         <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
-          <Link to="/" style={{ background: COLORS.kutircharGreen, color: "white", fontFamily: FONTS.sans, fontSize: 14, fontWeight: 700, padding: "11px 22px", borderRadius: 10, textDecoration: "none" }}>
-            ← {n.goHome}
-          </Link>
-          <Link to="/contact" style={{ background: "transparent", color: COLORS.kutircharGreen, fontFamily: FONTS.sans, fontSize: 14, fontWeight: 600, padding: "11px 22px", borderRadius: 10, textDecoration: "none", border: `1.5px solid ${COLORS.kutircharGreen}` }}>
-            {n.contactUs}
-          </Link>
+          <CtaButton to="/" variant="primary" size="md">← {n.goHome}</CtaButton>
+          <CtaButton to="/contact" variant="outline" size="md">{n.contactUs}</CtaButton>
         </div>
       </motion.div>
     </div>

@@ -2,6 +2,7 @@
 import * as React from "react";
 import { Link } from "react-router";
 import { COLORS, FONTS } from "../../brand";
+import { useLocale } from "../shared/i18n";
 
 // Page section wrapper
 export function PageSection({
@@ -99,26 +100,178 @@ export function ProofCard({ label, status, note }: { label: string; status: "ver
   );
 }
 
-// CTA Button
-export function CtaButton({ to, href, children, variant = "primary", size = "md" }: {
-  to?: string; href?: string; children: React.ReactNode;
-  variant?: "primary" | "outline" | "gold";
+// CTA Button — shared, consistent, accessible.
+// When disabled with a link destination, it renders as a non-interactive span
+// so it cannot be activated or navigated.
+export function CtaButton({
+  to,
+  href,
+  onClick,
+  type = "button",
+  disabled = false,
+  children,
+  variant = "primary",
+  size = "md",
+  fullWidth = false,
+  icon,
+  external = false,
+  style,
+}: {
+  to?: string;
+  href?: string;
+  onClick?: () => void;
+  type?: "button" | "submit" | "reset";
+  disabled?: boolean;
+  children: React.ReactNode;
+  variant?: "primary" | "secondary" | "outline" | "ghost" | "ghostLight" | "gold" | "white" | "dark";
   size?: "sm" | "md" | "lg";
+  fullWidth?: boolean;
+  icon?: React.ReactNode;
+  external?: boolean;
+  style?: React.CSSProperties;
 }) {
-  const styles: React.CSSProperties = {
-    display: "inline-flex", alignItems: "center", gap: 8,
-    fontFamily: FONTS.sans, fontWeight: 600, textDecoration: "none",
-    borderRadius: 10, cursor: "pointer", transition: "all 0.15s",
-    fontSize: size === "lg" ? 16 : size === "sm" ? 12 : 14,
-    padding: size === "lg" ? "14px 28px" : size === "sm" ? "8px 16px" : "11px 22px",
-    background: variant === "primary" ? COLORS.kutircharGreen : variant === "gold" ? COLORS.solarGold : "transparent",
-    color: variant === "primary" ? "white" : variant === "gold" ? COLORS.deepFarmGreen : COLORS.kutircharGreen,
-    border: variant === "outline" ? `1.5px solid ${COLORS.kutircharGreen}` : "none",
+  const { locale } = useLocale();
+
+  type CssVars = React.CSSProperties & Record<string, string | number>;
+  const v = (vars: Record<string, string>): CssVars => vars as CssVars;
+
+  const sizes = {
+    sm: { minHeight: 36, fontSize: 12, padding: "6px 14px" },
+    md: { minHeight: 40, fontSize: 13.5, padding: "10px 20px" },
+    lg: { minHeight: 48, fontSize: 15, padding: "12px 28px" },
+  } as const;
+  const s = sizes[size];
+
+  const variantVars: Record<string, CssVars> = {
+    primary: v({
+      "--btn-bg": COLORS.kutircharGreen,
+      "--btn-color": "white",
+      "--btn-border": "none",
+      "--btn-border-color": "transparent",
+      "--btn-hover-filter": "brightness(1.08)",
+      "--btn-hover-shadow": "0 6px 14px rgba(31,107,58,0.25)",
+      "--btn-focus-color": COLORS.solarGold,
+    }),
+    gold: v({
+      "--btn-bg": COLORS.solarGold,
+      "--btn-color": COLORS.deepFarmGreen,
+      "--btn-border": "none",
+      "--btn-border-color": "transparent",
+      "--btn-hover-filter": "brightness(1.08)",
+      "--btn-hover-shadow": "0 6px 14px rgba(242,181,68,0.35)",
+      "--btn-focus-color": COLORS.deepFarmGreen,
+    }),
+    white: v({
+      "--btn-bg": "white",
+      "--btn-color": COLORS.deepFarmGreen,
+      "--btn-border": "none",
+      "--btn-border-color": "transparent",
+      "--btn-hover-filter": "brightness(1.05)",
+      "--btn-hover-shadow": "0 6px 14px rgba(255,255,255,0.25)",
+      "--btn-focus-color": COLORS.solarGold,
+    }),
+    dark: v({
+      "--btn-bg": COLORS.deepFarmGreen,
+      "--btn-color": "white",
+      "--btn-border": "none",
+      "--btn-border-color": "transparent",
+      "--btn-hover-filter": "brightness(1.08)",
+      "--btn-hover-shadow": "0 6px 14px rgba(11,79,42,0.3)",
+      "--btn-focus-color": COLORS.solarGold,
+    }),
+    secondary: v({
+      "--btn-bg": "rgba(255,255,255,0.12)",
+      "--btn-color": "white",
+      "--btn-border": "1.5px solid rgba(255,255,255,0.25)",
+      "--btn-border-color": "rgba(255,255,255,0.25)",
+      "--btn-hover-bg": "rgba(255,255,255,0.18)",
+      "--btn-hover-border-color": "rgba(255,255,255,0.35)",
+      "--btn-focus-color": COLORS.solarGold,
+    }),
+    outline: v({
+      "--btn-bg": "transparent",
+      "--btn-color": COLORS.kutircharGreen,
+      "--btn-border": `1.5px solid ${COLORS.kutircharGreen}`,
+      "--btn-border-color": COLORS.kutircharGreen,
+      "--btn-hover-bg": "rgba(31,107,58,0.06)",
+      "--btn-hover-border-color": COLORS.kutircharGreen,
+      "--btn-focus-color": COLORS.kutircharGreen,
+    }),
+    ghost: v({
+      "--btn-bg": "transparent",
+      "--btn-color": COLORS.kutircharGreen,
+      "--btn-border": "none",
+      "--btn-border-color": "transparent",
+      "--btn-hover-bg": "rgba(31,107,58,0.06)",
+      "--btn-focus-color": COLORS.kutircharGreen,
+    }),
+    ghostLight: v({
+      "--btn-bg": "transparent",
+      "--btn-color": "white",
+      "--btn-border": "none",
+      "--btn-border-color": "transparent",
+      "--btn-hover-bg": "rgba(255,255,255,0.1)",
+      "--btn-focus-color": COLORS.solarGold,
+    }),
   };
 
-  if (to) return <Link to={to} style={styles}>{children}</Link>;
-  if (href) return <a href={href} target="_blank" rel="noopener noreferrer" style={styles}>{children}</a>;
-  return <button style={styles} type="button">{children}</button>;
+  const cssVars: CssVars = {
+    "--btn-min-height": `${s.minHeight}px`,
+    "--btn-font-size": `${s.fontSize}px`,
+    "--btn-padding": s.padding,
+    "--btn-width": fullWidth ? "100%" : "auto",
+    ...variantVars[variant],
+  };
+
+  const baseStyle: React.CSSProperties = {
+    fontFamily: locale === "bn" ? FONTS.bengali : FONTS.sans,
+    ...cssVars,
+    ...style,
+  };
+
+  const common = {
+    className: "cta-button",
+    style: baseStyle,
+    "aria-disabled": disabled || undefined,
+    tabIndex: disabled ? -1 : undefined,
+    onClick: disabled ? undefined : onClick,
+  } as const;
+
+  const content = (
+    <>
+      {icon}
+      {children}
+    </>
+  );
+
+  if (to && !disabled) {
+    return <Link to={to} {...common}>{content}</Link>;
+  }
+  if (href && !disabled) {
+    return (
+      <a
+        href={href}
+        target={external ? "_blank" : undefined}
+        rel={external ? "noopener noreferrer" : undefined}
+        {...common}
+      >
+        {content}
+      </a>
+    );
+  }
+  if (to || href) {
+    // Render a non-interactive element when a link-style CTA is disabled.
+    return (
+      <span role="button" {...common} tabIndex={-1}>
+        {content}
+      </span>
+    );
+  }
+  return (
+    <button type={type} disabled={disabled} {...common}>
+      {content}
+    </button>
+  );
 }
 
 // Info row (label + value)

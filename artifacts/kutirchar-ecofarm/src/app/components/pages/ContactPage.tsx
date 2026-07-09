@@ -3,7 +3,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { COLORS, FONTS, BRAND } from "../../brand";
 import { EASE, MOTION } from "../../motion";
-import { PageHero, PageSection, SectionHeading, Card } from "../shared/Shared";
+import { PageHero, PageSection, SectionHeading, Card, CtaButton } from "../shared/Shared";
 import { useLocale } from "../shared/i18n";
 import { Reveal, Stagger, StaggerItem } from "../shared/motion";
 
@@ -174,9 +174,9 @@ export function ContactPage() {
                 <p style={{ fontFamily: FONTS.sans, fontSize: 13, color: "#666", margin: "0 0 24px" }}>
                   {c.form.successUrgent}
                 </p>
-                <button onClick={handleReset} style={{ background: COLORS.kutircharGreen, color: "white", fontFamily: FONTS.sans, fontSize: 14, fontWeight: 600, padding: "11px 24px", borderRadius: 10, border: "none", cursor: "pointer" }}>
+                <CtaButton type="button" variant="primary" size="md" onClick={handleReset}>
                   {c.form.submitAnother}
-                </button>
+                </CtaButton>
               </motion.div>
             ) : (
               <form onSubmit={handleSubmit} noValidate>
@@ -246,19 +246,15 @@ export function ContactPage() {
                   {c.form.privacyNote}
                 </p>
 
-                <motion.button
+                <CtaButton
                   type="submit"
+                  variant="primary"
+                  size="lg"
+                  fullWidth
                   disabled={status === "submitting"}
-                  whileTap={{ scale: 0.98 }}
-                  style={{
-                    width: "100%", background: status === "submitting" ? "#888" : COLORS.kutircharGreen,
-                    color: "white", fontFamily: FONTS.sans, fontSize: 15, fontWeight: 700,
-                    padding: "14px", borderRadius: 10, border: "none",
-                    cursor: status === "submitting" ? "wait" : "pointer", transition: "background 0.15s",
-                  }}
                 >
                   {status === "submitting" ? c.form.submitting : `${c.form.submit} →`}
-                </motion.button>
+                </CtaButton>
               </form>
             )}
           </div>

@@ -5,6 +5,7 @@ import logoIcon from "../../../imports/image.png";
 import { BRAND, COLORS, FONTS } from "../../brand";
 import { EASE } from "../../motion";
 import { useLocale, type Locale } from "../shared/i18n";
+import { CtaButton } from "../shared/Shared";
 
 type NavLinkItem = { type: "link"; to: string; key: string };
 type NavGroupItem = { type: "group"; key: string; items: { to: string; key: string }[] };
@@ -478,23 +479,11 @@ export function MainNav() {
               );
             })}
             <div style={{ width: 1, height: 20, background: "rgba(255,255,255,0.15)", marginLeft: 6 }} />
-            <Link
-              to="/contact"
-              style={{
-                marginLeft: 6,
-                background: COLORS.solarGold,
-                color: COLORS.deepFarmGreen,
-                fontFamily: locale === "bn" ? FONTS.bengali : FONTS.sans,
-                fontSize: 12.5,
-                fontWeight: 700,
-                padding: "7px 14px",
-                borderRadius: 8,
-                textDecoration: "none",
-                whiteSpace: "nowrap",
-              }}
-            >
-              {navLabel("partnership")} \u2192
-            </Link>
+            <div style={{ marginLeft: 6 }}>
+              <CtaButton to="/contact" variant="gold" size="sm">
+                {navLabel("partnership")} \u2192
+              </CtaButton>
+            </div>
             <div style={{ marginLeft: 8 }}>
               <LangToggle />
             </div>
@@ -704,26 +693,16 @@ export function MainNav() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: navStructure.length * 0.04, duration: 0.25, ease: EASE }}
                   >
-                    <Link
+                    <CtaButton
                       to="/contact"
+                      variant="gold"
+                      size="lg"
+                      fullWidth
+                      style={{ marginTop: 8 }}
                       onClick={() => setMenuOpen(false)}
-                      style={{
-                        display: "block",
-                        marginTop: 8,
-                        textAlign: "center",
-                        background: COLORS.solarGold,
-                        color: COLORS.deepFarmGreen,
-                        fontFamily: locale === "bn" ? FONTS.bengali : FONTS.sans,
-                        fontSize: 15,
-                        fontWeight: 700,
-                        padding: "14px",
-                        borderRadius: 10,
-                        textDecoration: "none",
-                        minHeight: 48,
-                      }}
                     >
                       {navLabel("partnershipInquiry")} \u2192
-                    </Link>
+                    </CtaButton>
                   </motion.div>
 
                   <div
