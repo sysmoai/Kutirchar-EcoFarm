@@ -59,6 +59,21 @@ function LangToggle({ compact }: { compact?: boolean }) {
   );
 }
 
+const seoKeyByPath: Record<string, keyof (typeof import("../../../i18n/bn.json"))["seo"]["pages"]> = {
+  "/": "home",
+  "/project": "project",
+  "/proof": "proof",
+  "/products": "products",
+  "/ecosystem": "ecosystem",
+  "/digital": "digital",
+  "/updates": "updates",
+  "/contact": "contact",
+  "/faq": "faq",
+  "/privacy": "privacy",
+  "/executive-summary": "execSummary",
+  "/brand-guide": "brandGuide",
+};
+
 export function Root() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -66,6 +81,20 @@ export function Root() {
   const { t, locale } = useLocale();
 
   useEffect(() => { setMenuOpen(false); }, [pathname]);
+
+  useEffect(() => {
+    const key = seoKeyByPath[pathname] ?? "notFound";
+    const page = (t.seo.pages as Record<string, { title: string; description: string }>)[key];
+    if (!page) return;
+    document.title = page.title;
+    let meta = document.querySelector('meta[name="description"]');
+    if (!meta) {
+      meta = document.createElement("meta");
+      meta.setAttribute("name", "description");
+      document.head.appendChild(meta);
+    }
+    meta.setAttribute("content", page.description);
+  }, [pathname, t]);
 
   // Close the mobile menu on Escape (standard keyboard expectation)
   useEffect(() => {
