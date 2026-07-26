@@ -1,0 +1,103 @@
+############################################################
+# 🧭 PROMPT 8 — WORLD-CLASS HEADER, MENU & FOOTER
+# কুটিরচর ইকোফার্ম | Replit Agent | Bangla-first | Top 0.001%
+############################################################
+
+ROLE: তুমি একজন world-class navigation/UI engineer + brand designer। লক্ষ্য: সাইটের Header (navbar), Menu (ডেস্কটপ + মোবাইল) ও Footer এমনভাবে বানানো/উন্নত করা যেন তা premium, দ্বিভাষিক, সব ডিভাইসে নিখুঁত, accessible এবং brand system-এর সাথে সম্পূর্ণ সঙ্গতিপূর্ণ হয়। কিছুই assume নয়; সব item pass না হওয়া পর্যন্ত থামবে না।
+
+────────────────────────────────────
+0) GUARDRAILS (override নয়)
+────────────────────────────────────
+- Brand SSOT: brand.ts (colors/fonts/spacing), /brand-guide; master logo src/imports/image.png অপরিবর্তিত; নতুন রঙ/ফন্ট নয়।
+- Tech: React 18 + TS · React Router v7 (Link/NavLink) · Tailwind v4 · Vite 6 · pnpm।
+- সব string i18n dictionary (bn.ts/en.ts) থেকে; hardcoded text নয়। বাংলা primary + English।
+- Header ও Footer reusable component (components/layout/Header.tsx, Footer.tsx) — সব পেজে অভিন্ন (Root layout-এ)।
+
+────────────────────────────────────
+1) HEADER / NAVBAR
+────────────────────────────────────
+কাঠামো (বাঁ → ডান):
+  - Logo lockup (image.png + wordmark "কুটিরচর ইকোফার্ম / Kutirchar EcoFarm") → হোমে link; কখনো split নয়।
+  - Primary nav (desktop, center/right)।
+  - বাংলা ⇄ EN toggle (স্পষ্ট, persist localStorage)।
+  - Primary CTA button: "যোগাযোগ / Contact" অথবা "পার্টনারশিপ" (brand primary)।
+আচরণ:
+  - Sticky top; scroll-down এ shrink + subtle background blur/shadow; scroll-up এ পূর্ণ।
+  - Active route highlight (NavLink) — underline draw/brand color।
+  - Route change এ scroll-to-top।
+  - Keyboard: Tab order যৌক্তিক, visible focus ring, Esc menu বন্ধ।
+  - a11y: <header> + <nav aria-label>, aria-current="page" active link-এ।
+
+────────────────────────────────────
+2) MENU STRUCTURE (দ্বিভাষিক — এই ম্যাপিং হুবহু)
+────────────────────────────────────
+Primary menu (৮ item):
+  1. হোম            | Home             → /
+  2. প্রকল্প         | The Project      → /project
+  3. প্রমাণ ও গভর্নেন্স | Proof & Governance → /proof
+  4. ইকোসিস্টেম      | Ecosystem        → /ecosystem
+  5. পণ্য ও সেবা      | Products & Services → /products
+  6. ডিজিটাল         | Digital          → /digital
+  7. আপডেট           | Updates          → /updates
+  8. যোগাযোগ         | Contact          → /contact
+(Optional) menu-তে বেশি হলে "পণ্য ও সেবা" ও "ডিজিটাল"-কে একটি "সমাধান/Solutions" dropdown-এ গোছানো যায় — dropdown hover+click+keyboard accessible, mobile-এ accordion। ৮ item সরাসরি রাখলে সেটাও গ্রহণযোগ্য (পরিষ্কার হলে)।
+Footer-only link: প্রশ্নোত্তর/FAQ → /faq · প্রাইভেসি/Privacy → /privacy · ব্র্যান্ড গাইড/Brand Guide → /brand-guide।
+
+────────────────────────────────────
+3) MOBILE MENU (hamburger)
+────────────────────────────────────
+- Hamburger icon (≥44×44 tap target); tap → full-height drawer/overlay (slide-in বা fade)।
+- খোলা অবস্থায় body-scroll lock; backdrop tap বা Esc-এ বন্ধ; focus trap ভেতরে।
+- Drawer-এ: ৮ nav link (বড় tap target), বাংলা⇄EN toggle, CTA button, ছোট contact strip (email/phone)।
+- Sub-menu থাকলে accordion; smooth height animation (reduced-motion respect)।
+- Animation: drawer slide 300ms brand easing; link stagger; hamburger→close icon morph।
+
+────────────────────────────────────
+4) FOOTER
+────────────────────────────────────
+Multi-column (desktop 4–5 col → mobile 1–2 col stack):
+  A. Brand: logo + এক লাইনে tagline ("Smart Cattle & Circular Energy Ecosystem / স্মার্ট গবাদিপশু ও চক্রাকার শক্তি ইকোসিস্টেম") + সংক্ষিপ্ত মিশন।
+  B. দ্রুত লিংক / Quick Links: হোম, প্রকল্প, ইকোসিস্টেম, আপডেট।
+  C. পণ্য ও সমাধান: পণ্য ও সেবা, ডিজিটাল, প্রমাণ ও গভর্নেন্স।
+  D. যোগাযোগ / Contact: support@kutircharecofarm.com (mailto) · ফোন/WhatsApp তিনটি (tel/wa.me) · অবস্থান কুটিরচর, ভদ্রঘাট, কামারখন্দ, সিরাজগঞ্জ।
+  E. আইনি / Legal: প্রশ্নোত্তর (/faq), প্রাইভেসি (/privacy), ব্র্যান্ড গাইড (/brand-guide)।
+Footer bottom bar:
+  - © {বর্তমান বছর} কুটিরচর ইকোফার্ম। সর্বস্বত্ব সংরক্ষিত। / All rights reserved.
+  - "Powered by SYSmoAI · Bangladesh AI Mission" (link)।
+  - Social/partner link (থাকলে) rel="noopener"; না থাকলে omit — ভুয়া link নয়।
+  - বাংলা⇄EN toggle (optional, footer-এও)।
+Footer-এ কখনো NID/ফোনের বাইরে sensitive তথ্য নয়; email/phone শুধু public contact।
+
+────────────────────────────────────
+5) RESPONSIVE & QUALITY
+────────────────────────────────────
+- 320px–2560px সব সাইজে header/footer overflow-মুক্ত; logo/CTA/toggle কখনো কাটা যায় না।
+- Desktop full nav; tablet condensed; mobile hamburger — breakpoint-এ মসৃণ transition।
+- Footer mobile-এ পরিষ্কার stack; tap target ≥44px।
+- Brand token-only color/spacing/type; বাংলা টাইপোগ্রাফি Noto Sans Bengali আরামদায়ক।
+- Perf: header/footer light, CLS<0.1, কোনো layout shift নয়; icon = inline SVG।
+- a11y: semantic <header>/<nav>/<footer>, landmark, keyboard operable, contrast AA, দ্বিভাষিক aria-label।
+
+────────────────────────────────────
+6) EXECUTION
+────────────────────────────────────
+A. বিদ্যমান Header/Footer অডিট → gap তালিকা print।
+B. উপরের spec অনুযায়ী Header + Menu + Mobile drawer + Footer বানাও/উন্নত করো (reusable, i18n)।
+C. সব route-এ যাচাই; active state, toggle persist, mobile drawer, footer link সব কাজ করছে।
+D. Responsive (320–2560) + Lighthouse ≥95 + a11y AA + build clean।
+E. রিপোর্ট: before→after + অবশিষ্ট issue (থাকলে)।
+
+────────────────────────────────────
+7) SELF-QA CHECKLIST
+────────────────────────────────────
+□ Logo lockup সঠিক (image.png অপরিবর্তিত, নাম split নয়)
+□ ৮ nav item সঠিক bn/en label ও route; active highlight
+□ বাংলা⇄EN toggle header + (optional footer) কাজ করছে ও persist
+□ Sticky + shrink + scroll-to-top ঠিক
+□ Mobile hamburger drawer: body-lock, focus trap, Esc/backdrop close, stagger anim
+□ Footer সব column + contact + legal + copyright + Powered by
+□ 320–2560 responsive, overflow নেই, tap ≥44px
+□ brand token-only; hardcoded text নেই; a11y AA; CLS<0.1; build clean
+
+8) RULE: ধরে নেবে না। অস্পষ্ট হলে থেমে জিজ্ঞেস করবে; বিদ্যমান brand system ও route থেকে সম্পূর্ণ করা যায় এমন সব কিছু নিজে শেষ করবে।
+############################################################

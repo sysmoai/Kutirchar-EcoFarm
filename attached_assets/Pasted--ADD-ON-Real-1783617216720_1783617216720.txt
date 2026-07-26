@@ -1,0 +1,28 @@
+##############################################################
+# 👥 ADD-ON — কুটিরচর ইকোফার্ম: Real Leadership Photo Integration
+# (v5 Master + Graphics Add-On এর সম্পূরক; সব guardrail বহাল)
+##############################################################
+
+CONTEXT: প্রতিষ্ঠাতা কর্তৃক অনুমোদিত একটি আসল নেতৃত্ব-ছবি (founding family) সাইটে যুক্ত হবে। এটি illustrative নয় — সত্যিকারের leadership portrait। ফাইলটি repo-তে যোগ করা হবে: src/assets/images/team/leadership-team.jpg (edited version থাকলে leadership-team-pro.jpg = primary)।
+
+ছবির পরিচয় (বাঁ → ডান):
+- বাঁয়ে: এমডি ইশতিয়াক আহমেদ (MD Esteak Ahmed) — সহ-প্রতিষ্ঠাতা ও পরিচালক, Operations & Partnerships।
+- মাঝে: মোঃ আনিছুর রহমান (Md. Anisur Rahman) — Family Land Guardian & Asset Stakeholder।
+- ডানে: ইমন হোসেন (Md. Emon Hossain) — Founder & CEO / Project Lead।
+
+কাজ:
+1) ছবিটি optimize করো: WebP + AVIF (fallback JPG), responsive srcset (480/768/1200/1920), width/height সেট (CLS<0.1)। মুখ যেন crop-এ কাটা না যায় — object-position সাবধানে; brand-consistent subtle frame/rounded corner + soft shadow।
+2) বসাবে যেখানে:
+   • /project → "নেতৃত্ব / Leadership" section-এ বড় portrait band হিসেবে (People card grid-এর উপরে)।
+   • /contact → "Project Lead + Team" block-এর পাশে supporting image।
+   • Home → founder/story section-এ ছোট সংস্করণ (optional)।
+   এটি farm "proof"/site-photo হিসেবে ব্যবহার করবে না; শুধু নেতৃত্ব পরিচিতি।
+3) নামের ট্যাগ: ছবির নিচে বাঁ→ডান তিনজনের নাম + রোল overlay/caption (দুই ভাষায়)। মোবাইলে caption ছবির নিচে stack।
+4) Story caption (দুই ভাষায়, i18n dictionary-তে):
+   বাংলা: "একটি পরিবার-নেতৃত্বাধীন উদ্যোগ — জমির অভিভাবক, প্রতিষ্ঠাতা ও সহ-প্রতিষ্ঠাতা এক লক্ষ্যে: চরাঞ্চলে প্রমাণ-নির্ভর, চক্রাকার স্মার্ট ফার্ম।"
+   English: "A family-led venture — land guardian, founder, and co-founder united behind one goal: an evidence-first, circular smart farm on the char."
+5) Alt text (দুই ভাষায়, বর্ণনামূলক): "কুটিরচর ইকোফার্মের নেতৃত্ব — এমডি ইশতিয়াক আহমেদ, মোঃ আনিছুর রহমান ও ইমন হোসেন।" / English equivalent।
+6) Animation: scroll-reveal soft fade + subtle scale (≤1.03), মুখ কখনো distort নয়; hover এ প্রতিটি ব্যক্তির নাম/রোল tooltip; prefers-reduced-motion → শুধু fade।
+7) Privacy: শুধু নাম + রোল + এই portrait; NID/PIN/ঠিকানা/জন্মতারিখ কখনো নয়। edited (pro) version থাকলে সেটাই primary, original archive হিসেবে থাকবে।
+8) QA: sharpness, সঠিক left-to-right নাম-ম্যাপিং, দুই ভাষায় caption/alt, CLS ঠিক, Lighthouse ≥95 বজায়। fail হলে ঠিক করে re-verify।
+##############################################################

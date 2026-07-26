@@ -1,0 +1,99 @@
+############################################################
+# 📱💻 PROMPT 6 — FULL RESPONSIVE / CROSS-DEVICE AUDIT & FIX
+# কুটিরচর ইকোফার্ম | Replit Agent | Bangla-first | Top 0.001%
+############################################################
+
+ROLE: তুমি একজন world-class responsive/UI engineer + QA auditor। লক্ষ্য: পুরো webapp প্রতিটি ডিভাইস, স্ক্রিন সাইজ ও ওরিয়েন্টেশনে নিখুঁতভাবে কাজ করছে ও সুন্দর দেখাচ্ছে তা নিশ্চিত করা — প্রতিটি সমস্যা খুঁজে বের করে ঠিক করা। কিছুই assume নয়; সব gap ঠিক না হওয়া পর্যন্ত থামবে না।
+
+────────────────────────────────────
+0) GUARDRAILS (override নয়)
+────────────────────────────────────
+- Brand SSOT অপরিবর্তিত: brand.ts colors/fonts/spacing, /brand-guide, master logo src/imports/image.png। নতুন রঙ/ফন্ট নয়।
+- Tech অপরিবর্তিত: React 18 + TS · React Router v7 · Tailwind v4 · Vite 6 · pnpm। শুধু Tailwind responsive utility + brand token; ad-hoc hardcoded px নয়।
+- Content/ভাষা অপরিবর্তিত: বাংলা primary + English; কোনো কন্টেন্ট মুছবে না; hardcoded text নয়।
+- Privacy hard-stop বজায়।
+
+────────────────────────────────────
+1) TARGET DEVICES & BREAKPOINTS (সব পরীক্ষা করো)
+────────────────────────────────────
+- ছোট মোবাইল: 320px (iPhone SE), 360px (Android), 375px।
+- বড় মোবাইল: 390–430px (iPhone 14/15 Pro Max, Pixel)।
+- Foldable: 280px folded → 717px+ unfolded (Galaxy Fold)।
+- ট্যাবলেট: 768px (iPad), 820px, 1024px (iPad Pro) — portrait ও landscape দুটোই।
+- ল্যাপটপ: 1280px, 1440px।
+- ডেস্কটপ/বড়: 1920px, 2560px (4K scaling)।
+- Tailwind breakpoint (sm/md/lg/xl/2xl) consistent ব্যবহার; প্রতিটি major component প্রতিটি breakpoint-এ যাচাই।
+- Landscape mobile (কম উচ্চতা, যেমন 667×375) আলাদা করে পরীক্ষা।
+
+────────────────────────────────────
+2) AUDIT CHECKLIST (প্রতি পেজ × প্রতি breakpoint)
+────────────────────────────────────
+প্রতিটি route (/ · /project · /proof · /ecosystem · /products · /digital · /updates · /contact · /faq · /privacy · /brand-guide) স্ক্যান করে সমস্যা তালিকা print করো:
+Layout:
+  □ কোনো horizontal scroll/overflow নেই (100vw বেশি নয়)
+  □ কন্টেন্ট edge থেকে কাটা যাচ্ছে না; নিরাপদ padding (mobile ≥16px)
+  □ grid/flex breakpoint-এ ঠিকমতো stack হচ্ছে (multi-col → 1 col)
+  □ টেবিল ছোট স্ক্রিনে scrollable/stack (overflow-x-auto বা card-view)
+  □ image/diagram/SVG responsive (max-width:100%, height:auto), aspect-ratio ঠিক, CLS নেই
+  □ ecosystem loop/animation ছোট স্ক্রিনে fit + readable (দরকারে simplified layout)
+Typography:
+  □ fluid type scale (clamp) — মোবাইলে অতি-বড়/অতি-ছোট নয়; বাংলা line-height আরামদায়ক
+  □ heading wrap ঠিক; দীর্ঘ বাংলা শব্দ overflow করছে না (word-break/hyphens)
+Navigation:
+  □ hamburger menu মোবাইলে কাজ করছে, খোলা/বন্ধ, body-scroll lock
+  □ বাংলা⇄EN toggle সব সাইজে দৃশ্যমান ও clickable
+  □ sticky navbar ছোট স্ক্রিনে জায়গা নষ্ট করছে না; scroll-এ shrink ঠিক
+Touch/interaction:
+  □ সব tap target ≥44×44px; পর্যাপ্ত spacing (মিস-ট্যাপ নয়)
+  □ hover-only interaction-এর touch fallback আছে (mobile tap/focus)
+  □ form input মোবাইলে zoom করে না (font-size ≥16px), সঠিক keyboard type (email/tel/number)
+  □ carousel/slider swipe-friendly
+Media & safe areas:
+  □ notch/safe-area-inset সম্মানিত (env(safe-area-inset-*))
+  □ fixed/sticky element মোবাইল address-bar এর সাথে ঠিক (100dvh, 100vh নয়)
+State:
+  □ empty/loading/error state সব সাইজে ঠিক
+  □ modal/drawer/tooltip মোবাইলে fit + dismissible
+
+────────────────────────────────────
+3) FIX RULES
+────────────────────────────────────
+- mobile-first লেখো: base = mobile, তারপর sm/md/lg/xl progressively enhance।
+- Tailwind responsive utility + brand token ব্যবহার; magic number নয়।
+- fluid spacing/size: clamp() ও container query যেখানে উপযুক্ত।
+- overflow ঠিক করতে min-w-0, flex-wrap, truncate/line-clamp, overflow-x-auto সঠিকভাবে।
+- viewport height: 100dvh/100svh ব্যবহার (mobile browser bar issue এড়াতে)।
+- image: srcset + sizes + width/height + object-fit; ভারী animation/3D scene ছোট/low-power device-এ lazy বা simplified।
+- reduced-motion + কম-শক্তির ডিভাইসে animation degrade।
+- কোনো কন্টেন্ট বা ভাষা হারাবে না; শুধু layout/responsive ঠিক করবে।
+
+────────────────────────────────────
+4) PERFORMANCE (সব ডিভাইসে)
+────────────────────────────────────
+- Mobile Lighthouse ≥95 (Perf/A11y/Best/SEO); Desktop ≥95।
+- LCP<2.5s, CLS<0.1, INP<200ms — slow 4G/mid-tier mobile emulation-এ যাচাই।
+- per-route code-split; image WebP/AVIF + lazy; font display swap; unused CSS/JS কমাও।
+
+────────────────────────────────────
+5) EXECUTION ORDER
+────────────────────────────────────
+A. প্রতিটি পেজ × প্রতিটি breakpoint স্ক্যান → সমস্যা তালিকা print।
+B. mobile-first করে একে একে সব ঠিক করো (layout → typography → nav → touch → media)।
+C. Regression check: এক breakpoint ঠিক করতে গিয়ে অন্যটি ভাঙেনি তা যাচাই।
+D. Mobile + Desktop Lighthouse + a11y + build (pnpm run build) clean।
+E. চূড়ান্ত রিপোর্ট: ডিভাইস × পেজ ম্যাট্রিক্স (pass/fixed), অবশিষ্ট সমস্যা (যদি থাকে)।
+
+────────────────────────────────────
+6) SELF-QA CHECKLIST
+────────────────────────────────────
+□ 320px–2560px কোথাও horizontal scroll/overflow নেই
+□ প্রতিটি পেজ mobile/tablet/desktop/foldable/landscape-এ সুন্দর ও readable
+□ hamburger + language toggle সব সাইজে কাজ করছে
+□ সব tap target ≥44px; form মোবাইলে zoom করে না
+□ টেবিল/diagram/animation ছোট স্ক্রিনে fit
+□ safe-area + 100dvh ঠিক; CLS<0.1
+□ Mobile ও Desktop Lighthouse ≥95; build clean
+□ কোনো কন্টেন্ট/ভাষা হারায়নি; brand token অপরিবর্তিত
+
+7) RULE: ধরে নেবে না। অস্পষ্ট হলে থেমে জিজ্ঞেস করবে; বিদ্যমান design system থেকে ঠিক করা যায় এমন সব সমস্যা নিজেই সম্পূর্ণ করবে।
+############################################################

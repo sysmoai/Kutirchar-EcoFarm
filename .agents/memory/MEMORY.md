@@ -1,0 +1,2 @@
+- [Importing external React sites as artifacts](importing-external-react-site.md) — checklist for porting a standalone GitHub React repo into the pnpm-monorepo artifact scaffold.
+- [Bilingual page i18n conversion pattern](kutirchar-i18n-pattern.md) — converting hardcoded-copy pages to useLocale/t.* against a canonical bn/en JSON dictionary.

@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Kutirchar EcoFarm"
+version = "1.0.0"
+id = "artifacts/kutirchar-ecofarm"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20620
+
+[services.development]
+run = "pnpm --filter @workspace/kutirchar-ecofarm run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/kutirchar-ecofarm", "run", "build" ]
+publicDir = "artifacts/kutirchar-ecofarm/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20620"
+BASE_PATH = "/"

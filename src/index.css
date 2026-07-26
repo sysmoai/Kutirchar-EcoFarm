@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  font-family: 'Inter', 'Manrope', sans-serif;
+  background: #FAF7EF;
+  color: #1E2420;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  min-height: 100dvh;
+  overflow-x: hidden;
+}
+img, svg, video, canvas { max-width: 100%; height: auto; display: block; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid #F2B544;
+  outline-offset: 2px;
+}
+input, select, textarea, button { font-family: inherit; }
+
+/* Skip-to-content link */
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -48px;
+  z-index: 200;
+  background: #F2B544;
+  color: #0B4F2A;
+  font-family: 'Inter', 'Manrope', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 9px 16px;
+  border-radius: 0 0 8px 8px;
+  text-decoration: none;
+  transition: top 0.15s ease;
+}
+.skip-link:focus {
+  top: 0;
+  outline: 2px solid #0B4F2A;
+  outline-offset: 2px;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: #1F6B3A !important;
+  box-shadow: 0 0 0 3px rgba(31,107,58,0.12);
+}
+
+/* Responsive visibility helpers */
+@media (max-width: 768px) {
+  .desktop-only { display: none !important; }
+  .mobile-only { display: flex !important; }
+}
+@media (min-width: 769px) {
+  .mobile-only { display: none !important; }
+}
+
+/* Tap target safety */
+button, a, [role="button"] {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Form zoom prevention on iOS */
+@media (max-width: 768px) {
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* Table responsive scroll */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.table-scroll table {
+  min-width: 640px;
+}
+
+/* Fluid typography scale */
+.fluid-heading {
+  font-size: clamp(1.5rem, 4vw + 0.5rem, 2.5rem);
+}
+.fluid-subheading {
+  font-size: clamp(1.1rem, 2vw + 0.3rem, 1.6rem);
+}
+.fluid-body {
+  font-size: clamp(0.875rem, 1vw + 0.5rem, 1rem);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Footer grid responsive */
+@media (max-width: 480px) {
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+}
+
+/* Safe area insets for notched devices */
+@supports (padding: max(0px)) {
+  .safe-area-inset {
+    padding-left: max(16px, env(safe-area-inset-left));
+    padding-right: max(16px, env(safe-area-inset-right));
+    padding-bottom: max(16px, env(safe-area-inset-bottom));
+  }
+}
+
+/* ─── CTA Button system ───────────────────────────────────────────────────── */
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 10px;
+  white-space: nowrap;
+  line-height: 1.4;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  background: var(--btn-bg);
+  color: var(--btn-color);
+  border: var(--btn-border, none);
+  min-height: var(--btn-min-height, 40px);
+  font-size: var(--btn-font-size, 13.5px);
+  padding: var(--btn-padding, 10px 20px);
+  width: var(--btn-width, auto);
+  box-shadow: var(--btn-shadow, none);
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  box-sizing: border-box;
+}
+.cta-button:disabled,
+.cta-button[aria-disabled="true"] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.cta-button:hover:not(:disabled):not([aria-disabled="true"]) {
+  transform: translateY(-2px);
+  box-shadow: var(--btn-hover-shadow, none);
+  background: var(--btn-hover-bg, var(--btn-bg));
+  border-color: var(--btn-hover-border-color, var(--btn-border-color));
+  filter: var(--btn-hover-filter, none);
+}
+.cta-button:focus-visible {
+  outline: 2px solid var(--btn-focus-color, #F2B544);
+  outline-offset: 2px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .cta-button { transition: none; }
+  .cta-button:hover { transform: none; }
+}
