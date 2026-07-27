@@ -1,6 +1,6 @@
 {
-  "buildCommand": "echo skip-build",
-  "outputDirectory": "artifacts/kutirchar-ecofarm",
+  "buildCommand": "BASE_PATH=/ pnpm --filter @workspace/kutirchar-ecofarm run build",
+  "outputDirectory": "artifacts/kutirchar-ecofarm/dist/public",
   "framework": null,
-  "installCommand": "echo skip-install"
+  "installCommand": "pnpm install --no-frozen-lockfile"
 }
