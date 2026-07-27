@@ -1,5 +1,5 @@
 {
-  "buildCommand": "BASE_PATH=/ pnpm --filter @workspace/kutirchar-ecofarm run build",
+  "buildCommand": "BASE_PATH=/ PORT=3000 pnpm --filter @workspace/kutirchar-ecofarm run build",
   "outputDirectory": "artifacts/kutirchar-ecofarm/dist/public",
   "framework": null,
   "installCommand": "pnpm install --no-frozen-lockfile"
